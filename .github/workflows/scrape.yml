@@ -1,41 +1,12 @@
-name: Scrape mubawab
+results = []
+    page.goto(url, timeout=30000)
+    page.wait_for_timeout(3000)  # laisse le JS charger le contenu
 
-on:
-  schedule:
-    # Toutes les 3 heures — modifiable
-    - cron: "0 */3 * * *"
-  workflow_dispatch: {}  # permet de lancer manuellement depuis GitHub
+    # Cookies / popup éventuels
+    try:
+        page.click("text=Accepter", timeout=3000)
+    except Exception:
+        pass
 
-permissions:
-  contents: write
-
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Installer les dépendances
-        run: |
-          pip install -r requirements.txt
-          playwright install --with-deps chromium
-
-      - name: Lancer le scraper
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
-          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
-        run: python scraper.py
-
-      - name: Sauvegarder les résultats (seen_listings.json + listings.json)
-        run: |
-          git config user.name "mubawab-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add seen_listings.json listings.json
-          git diff --quiet --cached || git commit -m "Update listings [auto]"
-          git push
+    cards = page.query_selector_all("div.listingBox, li.listingBox, div[class*='listing']")
+    print(f"  → {len(cards)} annonces trouvées sur la page ({quartier})")
