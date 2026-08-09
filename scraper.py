@@ -28,6 +28,10 @@ QUARTIERS = {
     "maarif": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif/locaux-a-louer",
     "maarif_extension": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif-extension/locaux-a-louer",
     "racine": "https://www.mubawab.ma/fr/sd/casablanca/racine/locaux-a-louer",
+    "ain_chock": "https://www.mubawab.ma/fr/sd/casablanca/ain-chock/locaux-a-louer",
+    "cfc": "https://www.mubawab.ma/fr/sd/casablanca/casablanca-finance-city/locaux-a-louer",
+    "bourgogne_ouest": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne-ouest/locaux-a-louer",
+    "bourgogne_est": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne-est/locaux-a-louer",
 }
 
 # Critères de filtrage
@@ -38,9 +42,39 @@ SURFACE_MIN = 80
 SURFACE_MAX = 120        # en m² — tolérance gérée via SURFACE_TOLERANCE ci-dessous
 SURFACE_TOLERANCE = 25   # m² de marge acceptée hors fourchette (signalé comme "hors critère strict")
 
-# Mots-clés indiquant la présence (ou l'absence) d'une gaine d'extraction / autorisation restauration
-EXTRACTION_KEYWORDS = ["gaine", "extraction", "hotte", "conduit"]
-RESTAURATION_KEYWORDS = ["restauration autorisée", "restaurant", "usage commerce alimentaire"]
+# Détection extraction / restauration
+EXTRACTION_POSITIVE_PATTERNS = [
+    r"gaine(?: d['’ ]?extraction)? (?:disponible|existante|installée|prévue)",
+    r"gaine d['’ ]?extraction",
+    r"avec extraction",
+    r"extraction (?:disponible|existante|installée|prévue)",
+    r"hotte (?:professionnelle|installée)",
+    r"gain[ée]?(?:,| )+id[ée]al restauration",
+]
+EXTRACTION_NEGATIVE_PATTERNS = [
+    r"sans extraction",
+    r"pas d['’ ]?extraction",
+    r"ne nécessitant pas d['’ ]?extraction",
+    r"ne nécessite pas d['’ ]?extraction",
+    r"extraction (?:non|pas) (?:possible|autorisée)",
+    r"aucune extraction",
+]
+RESTAURATION_POSITIVE_PATTERNS = [
+    r"restauration autorisée",
+    r"restauration possible",
+    r"id[ée]al(?:e)? (?:pour )?(?:la )?restauration",
+    r"restaurant",
+    r"snack",
+    r"café restaurant",
+    r"commerce alimentaire",
+]
+RESTAURATION_NEGATIVE_PATTERNS = [
+    r"sauf restauration",
+    r"restauration interdite",
+    r"pas de restauration",
+    r"restauration non autorisée",
+    r"hors restauration",
+]
 
 SEEN_FILE = Path(__file__).parent / "seen_listings.json"
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -63,20 +97,84 @@ def save_seen(seen_ids):
     SEEN_FILE.write_text(json.dumps(sorted(seen_ids)))
 
 
-def parse_price(text):
-    """Extrait un nombre en DH depuis un texte type '12 500 DH'."""
-    if not text:
+def _clean_number(value):
+    """Convertit '28 350', '28.350' ou '28,350' en entier quand il s'agit d'un montant."""
+    if value is None:
         return None
-    digits = re.sub(r"[^\d]", "", text)
+    digits = re.sub(r"[^\d]", "", value)
     return int(digits) if digits else None
 
 
-def parse_surface(text):
-    """Extrait un nombre en m² depuis un texte type '85 m²'."""
+def parse_price(text):
+    """Extrait un prix en DH/MAD. Priorité aux formulations de loyer/prix."""
     if not text:
         return None
-    match = re.search(r"(\d+)\s*m", text)
-    return int(match.group(1)) if match else None
+
+    normalized = " ".join(text.replace("\xa0", " ").split())
+
+    priority_patterns = [
+        r"(?:loyer|prix|location)\s*(?:mensuel(?:le)?\s*)?(?::|-)?\s*(\d[\d\s.,]{2,})\s*(?:dh|dhs|mad)",
+        r"(\d[\d\s.,]{2,})\s*(?:dh|dhs|mad)\s*(?:ttc|ht|htva|htsc)?\s*(?:/|par)?\s*(?:mois)?",
+    ]
+    for pattern in priority_patterns:
+        match = re.search(pattern, normalized, flags=re.I)
+        if match:
+            value = _clean_number(match.group(1))
+            if value and 1000 <= value <= 1000000:
+                return value
+    return None
+
+
+def parse_surface(text):
+    """Extrait une surface en m² ; accepte 97 m², 97m2, 97.0 m²."""
+    if not text:
+        return None
+    normalized = text.replace("\xa0", " ")
+    match = re.search(r"(\d+(?:[.,]\d+)?)\s*m(?:²|2)\b", normalized, flags=re.I)
+    if not match:
+        return None
+    value = float(match.group(1).replace(",", "."))
+    return int(round(value))
+
+
+def detect_activity_status(text):
+    """Détecte les mentions positives/négatives d'extraction et de restauration."""
+    t = " ".join((text or "").lower().split())
+
+    extraction_negative = any(re.search(p, t, flags=re.I) for p in EXTRACTION_NEGATIVE_PATTERNS)
+    restauration_negative = any(re.search(p, t, flags=re.I) for p in RESTAURATION_NEGATIVE_PATTERNS)
+
+    extraction_positive = (
+        not extraction_negative
+        and any(re.search(p, t, flags=re.I) for p in EXTRACTION_POSITIVE_PATTERNS)
+    )
+    restauration_positive = (
+        not restauration_negative
+        and any(re.search(p, t, flags=re.I) for p in RESTAURATION_POSITIVE_PATTERNS)
+    )
+
+    if extraction_negative:
+        extraction_status = "non"
+    elif extraction_positive:
+        extraction_status = "oui"
+    else:
+        extraction_status = "inconnue"
+
+    return {
+        "gaine_extraction": extraction_positive,
+        "extraction_interdite": extraction_negative,
+        "extraction_status": extraction_status,
+        "restauration_mentionnee": restauration_positive,
+        "restauration_interdite": restauration_negative,
+    }
+
+
+def extract_listing_id(url):
+    """Utilise l'identifiant Mubawab /a/1234567 pour éviter les doublons."""
+    if not url:
+        return None
+    match = re.search(r"/a/(\d+)", url)
+    return match.group(1) if match else url
 
 
 def send_whatsapp_alert(listing, evaluation):
@@ -141,115 +239,152 @@ def send_telegram_alert(listing, evaluation):
 
 # ============ SCRAPING ============
 def scrape_quartier(page, quartier, url):
-    """
-    Scrape une page de résultats mubawab pour un quartier donné.
-    NOTE: les sélecteurs CSS ci-dessous sont basés sur la structure standard
-    des annonces mubawab. À vérifier/ajuster après un premier run réel
-    (structure du site pouvant changer).
-    """
+    """Scrape la page Mubawab d'un quartier et normalise prix/surface/extraction."""
     results = []
-    page.goto(url, timeout=30000)
-    page.wait_for_timeout(3000)  # laisse le JS charger le contenu
+    page.goto(url, timeout=30000, wait_until="domcontentloaded")
+    page.wait_for_timeout(3500)
 
-    # Cookies / popup éventuels
     for label in ["Accepter", "Accepter tout", "J'accepte", "OK", "Tout accepter"]:
         try:
-            page.click(f"text={label}", timeout=2000)
+            page.click(f"text={label}", timeout=1500)
             break
         except Exception:
             continue
 
-    page.wait_for_timeout(1500)
+    page.wait_for_timeout(1000)
 
-    # Debug GitHub Actions : capture PNG + HTML réellement reçus
     if os.environ.get("DEBUG_SCRAPER") == "1":
         debug_dir = Path(__file__).parent / "debug"
         debug_dir.mkdir(exist_ok=True)
         page.screenshot(path=str(debug_dir / f"{quartier}.png"), full_page=True)
-        (debug_dir / f"{quartier}.html").write_text(
-            page.content(),
-            encoding="utf-8"
-        )
+        (debug_dir / f"{quartier}.html").write_text(page.content(), encoding="utf-8")
 
-    cards = page.query_selector_all("div.listingBox, li.listingBox, div[class*='listing']")
-    print(f"  → {len(cards)} annonces trouvées sur la page ({quartier})")
+    cards = page.query_selector_all(
+        "div.listingBox, li.listingBox, div[class*='listing'], "
+        "div[class*='adCard'], article"
+    )
+    print(f"  → {len(cards)} blocs trouvés sur la page ({quartier})")
+
+    seen_urls = set()
 
     for card in cards:
         try:
-            link_el = card.query_selector("a")
+            # Cherche de préférence un vrai lien d'annonce /a/
+            link_el = card.query_selector("a[href*='/a/']") or card.query_selector("a")
             lien = link_el.get_attribute("href") if link_el else None
-            if lien and not lien.startswith("http"):
-                lien = "https://www.mubawab.ma" + lien
-
-            titre_el = card.query_selector("h2, h3, .listingTit")
-            titre = titre_el.inner_text().strip() if titre_el else "Sans titre"
-
-            prix_el = card.query_selector("[class*='price'], .priceTag")
-            prix = parse_price(prix_el.inner_text()) if prix_el else None
-
-            surface_el = card.query_selector("[class*='surface'], .adDetailFeature")
-            surface = parse_surface(surface_el.inner_text()) if surface_el else None
-
-            desc_el = card.query_selector("[class*='description'], p")
-            description = desc_el.inner_text().strip() if desc_el else ""
-
-            listing_id = re.sub(r"\D", "", lien.split("/")[-1]) if lien else titre
-
             if not lien:
                 continue
+            if not lien.startswith("http"):
+                lien = "https://www.mubawab.ma" + lien
 
-            texte_complet = f"{titre} {description}".lower()
-            has_extraction = any(kw in texte_complet for kw in EXTRACTION_KEYWORDS)
-            has_restauration_mention = any(kw in texte_complet for kw in RESTAURATION_KEYWORDS)
+            # Ignore les programmes immobiliers /p/ et les doublons
+            if "/a/" not in lien or lien in seen_urls:
+                continue
+            seen_urls.add(lien)
+
+            titre_el = card.query_selector("h2, h3, .listingTit, [class*='title']")
+            titre = titre_el.inner_text().strip() if titre_el else "Sans titre"
+
+            desc_el = card.query_selector("[class*='description'], [class*='desc'], p")
+            description = desc_el.inner_text().strip() if desc_el else ""
+
+            # Texte complet du bloc : utile quand Mubawab déplace prix/surface dans son HTML
+            try:
+                card_text = card.inner_text().strip()
+            except Exception:
+                card_text = f"{titre} {description}"
+
+            # Exclut les ventes qui apparaissent parfois dans les encarts sponsorisés
+            sale_text = f"{titre} {description}".lower()
+            if re.search(r"\b(?:à vendre|a vendre|vente)\b", sale_text) and not re.search(r"\b(?:à louer|a louer|location)\b", sale_text):
+                continue
+
+            prix = None
+            prix_el = card.query_selector("[class*='price'], .priceTag")
+            if prix_el:
+                prix = parse_price(prix_el.inner_text())
+            if prix is None:
+                prix = parse_price(card_text)
+            if prix is None:
+                prix = parse_price(f"{titre} {description}")
+
+            surface = None
+            surface_el = card.query_selector("[class*='surface'], .adDetailFeature, [class*='feature']")
+            if surface_el:
+                surface = parse_surface(surface_el.inner_text())
+            if surface is None:
+                surface = parse_surface(titre)
+            if surface is None:
+                surface = parse_surface(description)
+            if surface is None:
+                surface = parse_surface(card_text)
+
+            activity = detect_activity_status(f"{titre} {description}")
 
             results.append({
-                "id": listing_id,
+                "id": extract_listing_id(lien),
                 "quartier": quartier,
                 "titre": titre,
                 "description": description,
                 "prix": prix,
                 "surface": surface,
                 "lien": lien,
-                "gaine_extraction": has_extraction,
-                "restauration_mentionnee": has_restauration_mention,
+                **activity,
             })
+
         except Exception as e:
             print(f"  ⚠️ Erreur parsing annonce : {e}")
             continue
 
+    print(f"  → {len(results)} annonces exploitables conservées ({quartier})")
     return results
 
 
 def evaluate_listing(listing):
     """
-    Retourne None si l'annonce est hors critères (à ignorer),
-    ou un dict {strict_match, reasons} si elle mérite une alerte.
-    - strict_match=True  -> coche toutes les cases idéales
-    - strict_match=False -> hors fourchette idéale mais assez proche pour être signalée
-      (ex: loyer > 25000 DH ou surface hors 80-120 m² avec tolérance)
+    Retourne None si l'annonce est clairement hors critères.
+    Sinon retourne strict_match + raisons pour l'alerte.
     """
     prix, surface = listing["prix"], listing["surface"]
     reasons = []
     strict_match = True
 
-    if prix is not None:
+    if prix is None:
+        strict_match = False
+        reasons.append("💰 prix à vérifier")
+    else:
+        if prix < BUDGET_MIN:
+            return None
         if prix > BUDGET_MAX_HARD:
-            return None  # trop cher, même en cas d'opportunité exceptionnelle
+            return None
         if prix > BUDGET_MAX:
             strict_match = False
-            reasons.append(f"💰 loyer {prix} DH > {BUDGET_MAX} DH (à valider si emplacement très fort)")
+            reasons.append(f"💰 loyer {prix} DH > {BUDGET_MAX} DH")
 
-    if surface is not None:
+    if surface is None:
+        strict_match = False
+        reasons.append("📐 surface à vérifier")
+    else:
         if surface < SURFACE_MIN - SURFACE_TOLERANCE or surface > SURFACE_MAX + SURFACE_TOLERANCE:
-            return None  # trop loin de la cible, on ignore
+            return None
         if surface < SURFACE_MIN or surface > SURFACE_MAX:
             strict_match = False
-            reasons.append(f"📐 surface {surface} m² hors fourchette 80-120 m² (tolérance)")
+            reasons.append(f"📐 surface {surface} m² hors cible 80-120 m² (tolérance)")
 
-    if listing["gaine_extraction"]:
-        reasons.append("✅ gaine d'extraction mentionnée")
-    elif listing["restauration_mentionnee"]:
-        reasons.append("⚠️ restauration mentionnée, extraction à confirmer")
+    if listing.get("extraction_interdite"):
+        strict_match = False
+        reasons.append("❌ extraction explicitement absente/interdite")
+    elif listing.get("gaine_extraction"):
+        reasons.append("✅ gaine/extraction mentionnée")
+    else:
+        strict_match = False
+        reasons.append("❓ extraction à confirmer")
+
+    if listing.get("restauration_interdite"):
+        strict_match = False
+        reasons.append("❌ restauration explicitement interdite")
+    elif listing.get("restauration_mentionnee"):
+        reasons.append("✅ restauration mentionnée/possible")
 
     return {"strict_match": strict_match, "reasons": reasons}
 
