@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Locaux commerciaux — Casablanca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 16px; }
+  h1 { font-size: 1.3rem; margin-bottom: 4px; }
+  .count { color: #777; font-size: 0.85rem; margin-bottom: 12px; }
+  .filters { background: white; border-radius: 10px; padding: 14px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .filter-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .filter-row label { font-size: 0.8rem; color: #555; display: block; margin-bottom: 3px; }
+  .filter-group { flex: 1; min-width: 130px; }
+  select, input { padding: 7px; border-radius: 6px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 0.9rem; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { padding: 5px 10px; border-radius: 16px; border: 1px solid #ccc; background: #fafafa; font-size: 0.8rem; cursor: pointer; user-select: none; }
+  .chip.active { background: #1a56db; color: white; border-color: #1a56db; }
+  .reset { font-size: 0.8rem; color: #1a56db; background: none; border: none; cursor: pointer; padding: 0; }
+  .card { background: white; border-radius: 10px; padding: 14px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card h3 { margin: 0 0 6px 0; font-size: 1rem; }
+  .meta { color: #555; font-size: 0.9rem; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-bottom: 6px; margin-right: 4px; }
+  .quartier-tag { background: #e8f0fe; color: #1a56db; }
+  .match-ideal { background: #e6f4ea; color: #1e7e34; }
+  .match-consider { background: #fff4e5; color: #b25000; }
+  a.btn { display: inline-block; margin-top: 8px; color: white; background: #1a56db; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>🏪 Locaux commerciaux — Casablanca</h1>
+  <div class="count" id="count"></div>
+
+  <div class="filters">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label>Prix min (DH)</label>
+        <input id="prixMin" type="number" placeholder="0">
+      </div>
+      <div class="filter-group">
+        <label>Prix max (DH)</label>
+        <input id="prixMax" type="number" placeholder="Illimité">
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-group">
+        <label>Surface min (m²)</label>
+        <input id="surfaceMin" type="number" placeholder="0">
+      </div>
+      <div class="filter-group">
+        <label>Surface max (m²)</label>
+        <input id="surfaceMax" type="number" placeholder="Illimité">
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-group" style="flex:2">
+        <label>Quartiers</label>
+        <div class="chips" id="quartierChips"></div>
+      </div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-group">
+        <label>Extraction</label>
+        <div class="chips">
+          <div class="chip" data-extraction="all">Toutes</div>
+          <div class="chip" data-extraction="yes">Avec gaine ✅</div>
+          <div class="chip" data-extraction="maybe">Restauration mentionnée ⚠️</div>
+        </div>
+      </div>
+    </div>
+    <button class="reset" id="resetBtn">↺ Réinitialiser les filtres</button>
+  </div>
+
+  <div id="list">Chargement…</div>
+
+  <script>
+    let allListings = [];
+    let activeQuartiers = new Set(); // vide = tous
+    let extractionFilter = 'all';
+
+    async function load() {
+      const res = await fetch('listings.json');
+      allListings = await res.json();
+
+      const quartiers = [...new Set(allListings.map(l => l.quartier))];
+      const chipsContainer = document.getElementById('quartierChips');
+      quartiers.forEach(q => {
+        const chip = document.createElement('div');
+        chip.className = 'chip';
+        chip.textContent = q.replace('_', ' ');
+        chip.dataset.quartier = q;
+        chip.addEventListener('click', () => {
+          if (activeQuartiers.has(q)) activeQuartiers.delete(q);
+          else activeQuartiers.add(q);
+          chip.classList.toggle('active');
+          render();
+        });
+        chipsContainer.appendChild(chip);
+      });
+
+      document.querySelectorAll('[data-extraction]').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('[data-extraction]').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          extractionFilter = chip.dataset.extraction;
+          render();
+        });
+      });
+      document.querySelector('[data-extraction="all"]').classList.add('active');
+
+      ['prixMin', 'prixMax', 'surfaceMin', 'surfaceMax'].forEach(id => {
+        document.getElementById(id).addEventListener('input', render);
+      });
+
+      document.getElementById('resetBtn').addEventListener('click', () => {
+        ['prixMin', 'prixMax', 'surfaceMin', 'surfaceMax'].forEach(id => document.getElementById(id).value = '');
+        activeQuartiers.clear();
+        document.querySelectorAll('[data-quartier]').forEach(c => c.classList.remove('active'));
+        extractionFilter = 'all';
+        document.querySelectorAll('[data-extraction]').forEach(c => c.classList.remove('active'));
+        document.querySelector('[data-extraction="all"]').classList.add('active');
+        render();
+      });
+
+      render();
+    }
+
+    function render() {
+      const prixMin = document.getElementById('prixMin').value;
+      const prixMax = document.getElementById('prixMax').value;
+      const surfaceMin = document.getElementById('surfaceMin').value;
+      const surfaceMax = document.getElementById('surfaceMax').value;
+
+      let filtered = allListings.filter(l => {
+        if (prixMin && l.prix && l.prix < Number(prixMin)) return false;
+        if (prixMax && l.prix && l.prix > Number(prixMax)) return false;
+        if (surfaceMin && l.surface && l.surface < Number(surfaceMin)) return false;
+        if (surfaceMax && l.surface && l.surface > Number(surfaceMax)) return false;
+        if (activeQuartiers.size > 0 && !activeQuartiers.has(l.quartier)) return false;
+        if (extractionFilter === 'yes' && !l.gaine_extraction) return false;
+        if (extractionFilter === 'maybe' && !l.gaine_extraction && !l.restauration_mentionnee) return false;
+        return true;
+      });
+
+      document.getElementById('count').textContent = `${filtered.length} annonce(s) sur ${allListings.length}`;
+
+      const list = document.getElementById('list');
+      if (filtered.length === 0) {
+        list.innerHTML = '<p>Aucune annonce ne correspond à ces filtres.</p>';
+        return;
+      }
+
+      list.innerHTML = filtered.map(l => {
+        let matchBadge = '';
+        if (l.gaine_extraction) matchBadge = '<span class="badge match-ideal">✅ gaine extraction</span>';
+        else if (l.restauration_mentionnee) matchBadge = '<span class="badge match-consider">⚠️ extraction à confirmer</span>';
+
+        return `
+        <div class="card">
+          <span class="badge quartier-tag">${l.quartier.replace('_', ' ')}</span>
+          ${matchBadge}
+          <h3>${l.titre}</h3>
+          <div class="meta">
+            💰 ${l.prix ? l.prix + ' DH' : 'Prix non précisé'} ·
+            📐 ${l.surface ? l.surface + ' m²' : 'Surface non précisée'}
+          </div>
+          <a class="btn" href="${l.lien}" target="_blank">Voir l'annonce</a>
+        </div>
+      `;
+      }).join('');
+    }
+
+    load();
+  </script>
+</body>
+</html>
