@@ -156,10 +156,24 @@ def scrape_quartier(page, quartier, url):
     page.wait_for_timeout(3000)  # laisse le JS charger le contenu
 
     # Cookies / popup éventuels
-    try:
-        page.click("text=Accepter", timeout=3000)
-    except Exception:
-        pass
+    for label in ["Accepter", "Accepter tout", "J'accepte", "OK", "Tout accepter"]:
+        try:
+            page.click(f"text={label}", timeout=2000)
+            break
+        except Exception:
+            continue
+
+    page.wait_for_timeout(1500)
+
+    # Debug GitHub Actions : capture PNG + HTML réellement reçus
+    if os.environ.get("DEBUG_SCRAPER") == "1":
+        debug_dir = Path(__file__).parent / "debug"
+        debug_dir.mkdir(exist_ok=True)
+        page.screenshot(path=str(debug_dir / f"{quartier}.png"), full_page=True)
+        (debug_dir / f"{quartier}.html").write_text(
+            page.content(),
+            encoding="utf-8"
+        )
 
     cards = page.query_selector_all("div.listingBox, li.listingBox, div[class*='listing']")
     print(f"  → {len(cards)} annonces trouvées sur la page ({quartier})")
