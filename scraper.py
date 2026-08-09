@@ -24,14 +24,10 @@ from playwright.sync_api import sync_playwright
 # de chaque quartier et corrige ici si besoin — ex: certains quartiers n'ont pas de page
 # dédiée et remontent dans la recherche globale Casablanca).
 QUARTIERS = {
-    "gauthier": "https://www.mubawab.ma/fr/sd/casablanca/gauthier/commerces-a-louer",
-    "maarif": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif/commerces-a-louer",
-    "ain_chock": "https://www.mubawab.ma/fr/sd/casablanca/ain-chock/commerces-a-louer",
-    "racine": "https://www.mubawab.ma/fr/sd/casablanca/racine/commerces-a-louer",
-    "casa_anfa": "https://www.mubawab.ma/fr/sd/casablanca/casa-anfa/commerces-a-louer",
-    "cfc": "https://www.mubawab.ma/fr/sd/casablanca/casablanca-finance-city/commerces-a-louer",
-    "bourgogne": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne/commerces-a-louer",
-    "yacoub_el_mansour": "https://www.mubawab.ma/fr/sd/casablanca/yacoub-el-mansour/commerces-a-louer",
+    "gauthier": "https://www.mubawab.ma/fr/sd/casablanca/gauthier/locaux-a-louer",
+    "maarif": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif/locaux-a-louer",
+    "maarif_extension": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif-extension/locaux-a-louer",
+    "racine": "https://www.mubawab.ma/fr/sd/casablanca/racine/locaux-a-louer",
 }
 
 # Critères de filtrage
