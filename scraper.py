@@ -177,6 +177,52 @@ def extract_listing_id(url):
     return match.group(1) if match else url
 
 
+
+def extract_card_image(card):
+    """Récupère la meilleure image/miniature visible dans une carte de résultats Mubawab."""
+    try:
+        imgs = card.query_selector_all("img")
+        for img in imgs:
+            for attr in ("src", "data-src", "data-original", "data-lazy", "data-srcset"):
+                value = img.get_attribute(attr)
+                if not value:
+                    continue
+                # data-srcset peut contenir plusieurs URLs
+                value = value.split(",")[0].strip().split(" ")[0]
+                if "mubawab-media.com" in value and "/ad/" in value:
+                    return value
+        # fallback: image Mubawab même si le chemin ne contient pas /ad/
+        for img in imgs:
+            value = img.get_attribute("src") or img.get_attribute("data-src")
+            if value and "mubawab-media.com" in value and "logo" not in value.lower():
+                return value
+    except Exception:
+        pass
+    return None
+
+
+def extract_quick_features(card_text):
+    """Extrait les caractéristiques visibles directement sur la carte de résultats."""
+    if not card_text:
+        return []
+    known = [
+        "Garage", "Ascenseur", "Concierge", "Chambre rangement", "Climatisation",
+        "Chauffage central", "Sécurité", "Double vitrage", "Porte blindée",
+        "Cuisine équipée", "Terrasse", "Jardin"
+    ]
+    found = []
+    low = card_text.lower()
+    for item in known:
+        if item.lower() in low:
+            found.append(item)
+
+    bath = re.search(r"(\d+)\s+salle(?:s)? de bain", low)
+    if bath:
+        found.insert(0, f"{bath.group(1)} salle(s) de bain")
+
+    return found[:10]
+
+
 def send_whatsapp_alert(listing, evaluation):
     if not WHATSAPP_PHONE or not WHATSAPP_APIKEY:
         print("⚠️ WhatsApp non configuré, alerte ignorée.")
@@ -294,6 +340,9 @@ def scrape_quartier(page, quartier, url):
             except Exception:
                 card_text = f"{titre} {description}"
 
+            image = extract_card_image(card)
+            caracteristiques = extract_quick_features(card_text)
+
             # Exclut les ventes qui apparaissent parfois dans les encarts sponsorisés
             sale_text = f"{titre} {description}".lower()
             if re.search(r"\b(?:à vendre|a vendre|vente)\b", sale_text) and not re.search(r"\b(?:à louer|a louer|location)\b", sale_text):
@@ -323,11 +372,14 @@ def scrape_quartier(page, quartier, url):
 
             results.append({
                 "id": extract_listing_id(lien),
+                "ville": "Casablanca",
                 "quartier": quartier,
                 "titre": titre,
                 "description": description,
                 "prix": prix,
                 "surface": surface,
+                "image": image,
+                "caracteristiques": caracteristiques,
                 "lien": lien,
                 **activity,
             })
