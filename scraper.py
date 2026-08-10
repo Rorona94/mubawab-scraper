@@ -216,6 +216,44 @@ def extract_quick_features(card_text):
     return found[:10]
 
 
+def extract_property_details(text):
+    """Extrait type de bien / état / étage / année / sol depuis le texte libre de l'annonce."""
+    t = " ".join((text or "").split())
+    low = t.lower()
+    details = {}
+
+    type_match = re.search(
+        r"\b(local commercial|magasin|dépôt|depot|entrepôt|entrepot|bureau|showroom|boutique|fonds de commerce)\b",
+        low,
+    )
+    if type_match:
+        details["type_bien"] = type_match.group(1).capitalize()
+
+    etat_match = re.search(
+        r"\b(bon état|à rénover|a renover|neuf|habitable|nouveau|refait à neuf)\b", low
+    )
+    if etat_match:
+        details["etat"] = etat_match.group(1).capitalize()
+
+    etage_match = re.search(r"\b(rez[- ]de[- ]chauss\w*|\d+\s*(?:er|ère|ème|eme)\s*étage)\b", low)
+    if etage_match:
+        details["etage"] = etage_match.group(1).replace("ere", "re").capitalize()
+
+    annee_match = re.search(r"\b(moins d'un an|\d+\s*ans?)\b", low)
+    if annee_match:
+        details["annee"] = annee_match.group(1).capitalize()
+
+    sol_match = re.search(r"(?:type de sol\s*:?\s*|sol en\s*)(marbre|carrelage|parquet|béton|beton|granit|céramique|ceramique)", low)
+    if sol_match:
+        details["type_sol"] = sol_match.group(1).capitalize()
+
+    bath_match = re.search(r"(\d+)\s+salle(?:s)? de bain", low)
+    if bath_match:
+        details["salle_bain"] = bath_match.group(1)
+
+    return details
+
+
 def send_whatsapp_alert(listing, evaluation):
     if not WHATSAPP_PHONE or not WHATSAPP_APIKEY:
         print("⚠️ WhatsApp non configuré, alerte ignorée.")
@@ -364,6 +402,7 @@ def scrape_quartier(page, quartier, url):
                 surface = parse_surface(card_text)
 
             activity = detect_activity_status(f"{titre} {description}")
+            details = extract_property_details(f"{titre} {description} {card_text}")
 
             results.append({
                 "id": extract_listing_id(lien),
@@ -377,6 +416,7 @@ def scrape_quartier(page, quartier, url):
                 "caracteristiques": caracteristiques,
                 "lien": lien,
                 **activity,
+                **details,
             })
 
         except Exception as e:
