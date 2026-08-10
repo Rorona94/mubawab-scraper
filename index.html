@@ -173,7 +173,7 @@
 
   .card-photo {
     width: 100%;
-    height: 170px;
+    aspect-ratio: 4 / 3;
     background: var(--surface-2) center/cover no-repeat;
     position: relative;
   }
@@ -228,8 +228,29 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 1.3;
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: var(--text);
+  }
+
+  .card-description {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--indigo-deep);
+    margin: 0 0 6px;
+    font-weight: 600;
   }
 
   .stats {
@@ -518,7 +539,7 @@
         if (l.salle_bain) specItems.push(['bain', 'Sdb', l.salle_bain]);
 
         const specsGrid = specItems.length
-          ? `<div class="specs-grid">${specItems.map(([icon, label, value]) => `
+          ? `<p class="section-label">Caractéristiques générales</p><div class="specs-grid">${specItems.map(([icon, label, value]) => `
               <div class="spec-item">
                 <span class="spec-icon">${ICONS[icon]}</span>
                 <span class="spec-text">
@@ -527,6 +548,10 @@
                 </span>
               </div>
             `).join('')}</div>`
+          : '';
+
+        const description = l.description
+          ? `<p class="card-description">${l.description}</p>`
           : '';
 
         const tags = [];
@@ -547,6 +572,7 @@
           </div>
           <div class="card-body">
             <h3 class="card-title">${l.titre}</h3>
+            ${description}
             <div class="stats">
               <div class="stat-box">
                 <div class="stat-label">Loyer</div>
