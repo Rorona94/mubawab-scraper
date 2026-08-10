@@ -1,0 +1,8 @@
+{
+  "budget_min": 0,
+  "budget_max": 25000,
+  "budget_max_hard": 40000,
+  "surface_min": 80,
+  "surface_max": 120,
+  "surface_tolerance": 25
+}
