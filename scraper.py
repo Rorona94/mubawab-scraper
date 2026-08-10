@@ -1,10 +1,11 @@
 """
 Scraper mubawab.ma - Commerces à louer
 Surveille les annonces sur des quartiers ciblés, filtre selon budget/surface,
-et envoie une alerte Telegram pour chaque nouvelle annonce matchée.
+et envoie une alerte Telegram/WhatsApp pour chaque nouvelle annonce matchée.
 
 Usage: python scraper.py
-Variables d'env requises: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+Variables d'env: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, WHATSAPP_PHONE, WHATSAPP_APIKEY, DEBUG_SCRAPER
+Critères modifiables sans toucher au code : voir config.json à la racine du repo
 """
 
 import json
@@ -17,52 +18,17 @@ import requests
 from playwright.sync_api import sync_playwright
 
 # ============ CONFIGURATION ============
-# Quartiers ciblés -> slug utilisé dans l'URL mubawab
-# ⚠️ Slugs "gauthier", "maarif", "ain-chock", "racine" confirmés existants sur mubawab.
-# Les slugs "casa-anfa", "casablanca-finance-city", "bourgogne", "tan-tan", "yacoub-el-mansour"
-# sont des suppositions à vérifier (navigue sur mubawab.ma pour confirmer l'URL exacte
-# de chaque quartier et corrige ici si besoin — ex: certains quartiers n'ont pas de page
-# dédiée et remontent dans la recherche globale Casablanca).
-QUARTIERS = {
-    "gauthier": "https://www.mubawab.ma/fr/sd/casablanca/gauthier/locaux-a-louer",
-    "maarif": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif/locaux-a-louer",
-    "maarif_extension": "https://www.mubawab.ma/fr/sd/casablanca/ma%C3%A2rif-extension/locaux-a-louer",
-    "racine": "https://www.mubawab.ma/fr/sd/casablanca/racine/locaux-a-louer",
-    "ain_chock": "https://www.mubawab.ma/fr/sd/casablanca/ain-chock/locaux-a-louer",
-    "cfc": "https://www.mubawab.ma/fr/sd/casablanca/casablanca-finance-city/locaux-a-louer",
-    "bourgogne_ouest": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne-ouest/locaux-a-louer",
-    "bourgogne_est": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne-est/locaux-a-louer",
-}
-
-# Critères de filtrage — chargés depuis config.json si présent
-DEFAULT_CONFIG = {
-    "budget_min": 0,
-    "budget_max": 25000,
-    "budget_max_hard": 40000,
-    "surface_min": 80,
-    "surface_max": 120,
-    "surface_tolerance": 25,
-}
 CONFIG_FILE = Path(__file__).parent / "config.json"
+with open(CONFIG_FILE, encoding="utf-8") as f:
+    CONFIG = json.load(f)
 
-def load_config():
-    cfg = DEFAULT_CONFIG.copy()
-    if CONFIG_FILE.exists():
-        try:
-            user_cfg = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
-            if isinstance(user_cfg, dict):
-                cfg.update({k: v for k, v in user_cfg.items() if k in cfg})
-        except Exception as e:
-            print(f"⚠️ config.json invalide, valeurs par défaut utilisées : {e}")
-    return cfg
-
-CONFIG = load_config()
-BUDGET_MIN = int(CONFIG["budget_min"])
-BUDGET_MAX = int(CONFIG["budget_max"])
-BUDGET_MAX_HARD = int(CONFIG["budget_max_hard"])
-SURFACE_MIN = int(CONFIG["surface_min"])
-SURFACE_MAX = int(CONFIG["surface_max"])
-SURFACE_TOLERANCE = int(CONFIG["surface_tolerance"])
+QUARTIERS = CONFIG["quartiers"]
+BUDGET_MIN = CONFIG["budget_min"]
+BUDGET_MAX = CONFIG["budget_max"]
+BUDGET_MAX_HARD = CONFIG["budget_max_hard"]
+SURFACE_MIN = CONFIG["surface_min"]
+SURFACE_MAX = CONFIG["surface_max"]
+SURFACE_TOLERANCE = CONFIG["surface_tolerance"]
 
 # Détection extraction / restauration
 EXTRACTION_POSITIVE_PATTERNS = [
@@ -98,13 +64,21 @@ RESTAURATION_NEGATIVE_PATTERNS = [
     r"hors restauration",
 ]
 
+# Filtre anti-résidentiel : exclut appart/villa/studio remontés par des encarts
+# sponsorisés/recommandés hors catégorie "locaux commerciaux"
+RESIDENTIAL_KEYWORDS = ["appartement", "duplex", "studio", "villa", "riad", "chambre à louer", "chambre a louer"]
+COMMERCIAL_KEYWORDS = [
+    "local", "commerce", "commercial", "magasin", "bureau", "boutique",
+    "restaurant", "snack", "café", "cafe", "showroom", "dépôt", "depot",
+    "entrepôt", "entrepot", "rideau", "fonds de commerce"
+]
+
 SEEN_FILE = Path(__file__).parent / "seen_listings.json"
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # WhatsApp via CallMeBot (gratuit, pas besoin de compte WhatsApp Business)
-# Voir README pour l'activation (envoyer un message à un numéro pour obtenir l'apikey)
-WHATSAPP_PHONE = os.environ.get("WHATSAPP_PHONE")     # ton numéro, format international sans +, ex: 212612345678
+WHATSAPP_PHONE = os.environ.get("WHATSAPP_PHONE")
 WHATSAPP_APIKEY = os.environ.get("WHATSAPP_APIKEY")
 
 
@@ -199,74 +173,24 @@ def extract_listing_id(url):
     return match.group(1) if match else url
 
 
-
 def extract_card_image(card):
-    """Récupère la meilleure image/miniature visible ou lazy-loadée dans une carte Mubawab."""
+    """Récupère la meilleure image/miniature visible dans une carte de résultats Mubawab."""
     try:
         imgs = card.query_selector_all("img")
-        candidates = []
         for img in imgs:
-            for attr in (
-                "src", "data-src", "data-original", "data-lazy",
-                "data-srcset", "srcset", "data-lazy-src"
-            ):
-                value = img.get_attribute(attr)
-                if not value:
-                    continue
-                for piece in value.split(","):
-                    url = piece.strip().split(" ")[0]
-                    if url.startswith("//"):
-                        url = "https:" + url
-                    if "mubawab-media.com" in url and "logo" not in url.lower():
-                        candidates.append(url)
-
-        for url in candidates:
-            if "/ad/" in url:
-                return url
-        if candidates:
-            return candidates[0]
-
-        styled = card.query_selector_all("[style*='background-image']")
-        for node in styled:
-            style = node.get_attribute("style") or ""
-            match = re.search(r"url\\((.*?)\\)", style)
-            if match:
-                url = match.group(1).strip(" \'\"")
-                if url.startswith("//"):
-                    url = "https:" + url
-                if "mubawab-media.com" in url:
-                    return url
-    except Exception:
-        pass
-    return None
-
-
-def extract_detail_image(detail_page, url):
-    """Fallback : ouvre la fiche uniquement si la carte n'a fourni aucune image."""
-    if not detail_page or not url:
-        return None
-    try:
-        detail_page.goto(url, timeout=25000, wait_until="domcontentloaded")
-        detail_page.wait_for_timeout(700)
-
-        meta = detail_page.query_selector("meta[property='og:image']")
-        if meta:
-            value = meta.get_attribute("content")
-            if value and "mubawab-media.com" in value:
-                return value
-
-        for img in detail_page.query_selector_all("img"):
-            for attr in ("src", "data-src", "data-original", "data-lazy", "srcset", "data-srcset"):
+            for attr in ("src", "data-src", "data-original", "data-lazy", "data-srcset"):
                 value = img.get_attribute(attr)
                 if not value:
                     continue
                 value = value.split(",")[0].strip().split(" ")[0]
-                if value.startswith("//"):
-                    value = "https:" + value
-                if "mubawab-media.com" in value and "/ad/" in value and "logo" not in value.lower():
+                if "mubawab-media.com" in value and "/ad/" in value:
                     return value
-    except Exception as e:
-        print(f"  ⚠️ Image fiche non récupérée : {e}")
+        for img in imgs:
+            value = img.get_attribute("src") or img.get_attribute("data-src")
+            if value and "mubawab-media.com" in value and "logo" not in value.lower():
+                return value
+    except Exception:
+        pass
     return None
 
 
@@ -353,7 +277,7 @@ def send_telegram_alert(listing, evaluation):
 
 
 # ============ SCRAPING ============
-def scrape_quartier(page, detail_page, quartier, url):
+def scrape_quartier(page, quartier, url):
     """Scrape la page Mubawab d'un quartier et normalise prix/surface/extraction."""
     results = []
     page.goto(url, timeout=30000, wait_until="domcontentloaded")
@@ -384,7 +308,6 @@ def scrape_quartier(page, detail_page, quartier, url):
 
     for card in cards:
         try:
-            # Cherche de préférence un vrai lien d'annonce /a/
             link_el = card.query_selector("a[href*='/a/']") or card.query_selector("a")
             lien = link_el.get_attribute("href") if link_el else None
             if not lien:
@@ -392,7 +315,6 @@ def scrape_quartier(page, detail_page, quartier, url):
             if not lien.startswith("http"):
                 lien = "https://www.mubawab.ma" + lien
 
-            # Ignore les programmes immobiliers /p/ et les doublons
             if "/a/" not in lien or lien in seen_urls:
                 continue
             seen_urls.add(lien)
@@ -403,15 +325,12 @@ def scrape_quartier(page, detail_page, quartier, url):
             desc_el = card.query_selector("[class*='description'], [class*='desc'], p")
             description = desc_el.inner_text().strip() if desc_el else ""
 
-            # Texte complet du bloc : utile quand Mubawab déplace prix/surface dans son HTML
             try:
                 card_text = card.inner_text().strip()
             except Exception:
                 card_text = f"{titre} {description}"
 
             image = extract_card_image(card)
-            if not image:
-                image = extract_detail_image(detail_page, lien)
             caracteristiques = extract_quick_features(card_text)
 
             # Exclut les ventes qui apparaissent parfois dans les encarts sponsorisés
@@ -421,14 +340,7 @@ def scrape_quartier(page, detail_page, quartier, url):
 
             # Exclut le résidentiel (appart/villa/studio) qui remonte parfois via des encarts
             # sponsorisés/recommandés hors catégorie "locaux commerciaux"
-            residential_keywords = ["appartement", "duplex", "studio", "villa", "riad", "chambre à louer", "chambre a louer"]
-            commercial_keywords = [
-                "local", "commerce", "commercial", "magasin", "bureau", "boutique",
-                "restaurant", "snack", "café", "cafe", "showroom", "dépôt", "depot",
-                "entrepôt", "entrepot", "rideau", "fonds de commerce"
-            ]
-            type_text = sale_text
-            if any(k in type_text for k in residential_keywords) and not any(k in type_text for k in commercial_keywords):
+            if any(k in sale_text for k in RESIDENTIAL_KEYWORDS) and not any(k in sale_text for k in COMMERCIAL_KEYWORDS):
                 continue
 
             prix = None
@@ -535,20 +447,15 @@ def main():
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
         ))
-        detail_page = browser.new_page(user_agent=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-        ))
 
         for quartier, url in QUARTIERS.items():
             print(f"Scraping {quartier}...")
-            listings = scrape_quartier(page, detail_page, quartier, url)
+            listings = scrape_quartier(page, quartier, url)
             all_listings.extend(listings)
-            time.sleep(2)  # politesse entre requêtes
+            time.sleep(2)
 
         browser.close()
 
-    # Sauvegarde de toutes les annonces pour la webapp / page de listing
     Path(__file__).parent.joinpath("listings.json").write_text(
         json.dumps(all_listings, ensure_ascii=False, indent=2)
     )
