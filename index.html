@@ -248,6 +248,18 @@ button{cursor:pointer}
   .stats{grid-template-columns:1fr 1fr}
   .grid{grid-template-columns:1fr}
 }
+
+.filterModalOverlay{display:none;position:fixed;inset:0;background:rgba(10,12,28,.48);z-index:80;padding:24px}
+.filterModalOverlay.show{display:grid;place-items:center}
+.filterModal{width:min(560px,100%);background:white;border-radius:16px;padding:22px;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+.filterModal h2{margin:0 0 5px;font-size:20px}
+.filterModal p{margin:0 0 18px;color:var(--muted);font-size:12px}
+.filterGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.filterField label{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}
+.filterField input{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px}
+.filterModalActions{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}
+@media(max-width:580px){.filterGrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -295,7 +307,7 @@ button{cursor:pointer}
         <div class="control"><select id="quartier"><option value="">Tous quartiers</option></select></div>
         <div class="control"><select id="surfacePreset"><option value="80-120">80 – 120 m²</option><option value="55-145">55 – 145 m²</option><option value="all">Toutes surfaces</option></select></div>
         <div class="control"><select id="pricePreset"><option value="25000">Prix max 25 000 DH</option><option value="40000">Prix max 40 000 DH</option><option value="all">Tous les prix</option></select></div>
-        <button class="control" id="resetFilters">☷ Filtres</button>
+        <button class="control" id="openFilters">☷ Filtres</button>
       </div>
 
       <div class="stats">
@@ -330,12 +342,41 @@ button{cursor:pointer}
   </div>
 </div>
 
+
+<div class="filterModalOverlay" id="filterModalOverlay">
+  <div class="filterModal">
+    <h2>Filtres personnalisés</h2>
+    <p>Les valeurs sont mémorisées dans l’application. Tu peux aussi télécharger config.json pour appliquer exactement les mêmes critères aux alertes WhatsApp.</p>
+    <div class="filterGrid">
+      <div class="filterField"><label>Prix minimum (DH)</label><input id="cfgBudgetMin" type="number"></div>
+      <div class="filterField"><label>Prix idéal maximum (DH)</label><input id="cfgBudgetMax" type="number"></div>
+      <div class="filterField"><label>Prix maximum absolu (DH)</label><input id="cfgBudgetHard" type="number"></div>
+      <div class="filterField"><label>Surface minimum (m²)</label><input id="cfgSurfaceMin" type="number"></div>
+      <div class="filterField"><label>Surface maximum (m²)</label><input id="cfgSurfaceMax" type="number"></div>
+      <div class="filterField"><label>Tolérance surface (m²)</label><input id="cfgTolerance" type="number"></div>
+    </div>
+    <div class="filterModalActions">
+      <button class="btn" id="exportConfig">Télécharger config.json</button>
+      <button class="btn" id="closeFilters">Annuler</button>
+      <button class="btn primary" id="saveFilters">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
 <script>
 let listings = [];
 let favorites = new Set(JSON.parse(localStorage.getItem('localia_favorites') || '[]'));
 let activeSection = 'annonces';
 let viewMode = 'grid';
 let selectedId = null;
+let appConfig = JSON.parse(localStorage.getItem('localia_config') || 'null') || {
+  budget_min: 0,
+  budget_max: 25000,
+  budget_max_hard: 40000,
+  surface_min: 80,
+  surface_max: 120,
+  surface_tolerance: 25
+};
 
 const el = id => document.getElementById(id);
 
@@ -404,10 +445,12 @@ function populateQuartiers(){
 
 function getFilters(){
   const surf=el('surfacePreset').value;
-  let smin=0,smax=Infinity;
-  if(surf==='80-120'){smin=80;smax=120}
+  let smin=appConfig.surface_min,smax=appConfig.surface_max;
   if(surf==='55-145'){smin=55;smax=145}
-  const p=el('pricePreset').value==='all'?Infinity:Number(el('pricePreset').value);
+  if(surf==='all'){smin=0;smax=Infinity}
+  const p=el('pricePreset').value==='all'
+    ? Infinity
+    : (el('pricePreset').value==='25000' ? appConfig.budget_max : Number(el('pricePreset').value));
   return {q:el('search').value.trim().toLowerCase(),quartier:el('quartier').value,smin,smax,p};
 }
 function filteredListings(){
@@ -591,9 +634,47 @@ async function loadListings(){
 el('refreshBtn').onclick = loadListings;
 
 ['search','quartier','surfacePreset','pricePreset','sort'].forEach(id=>el(id).addEventListener(id==='search'?'input':'change',render));
-el('resetFilters').onclick=()=>{
-  el('search').value='';el('quartier').value='';el('surfacePreset').value='80-120';el('pricePreset').value='25000';render();
+
+
+function syncConfigToModal(){
+  el('cfgBudgetMin').value=appConfig.budget_min;
+  el('cfgBudgetMax').value=appConfig.budget_max;
+  el('cfgBudgetHard').value=appConfig.budget_max_hard;
+  el('cfgSurfaceMin').value=appConfig.surface_min;
+  el('cfgSurfaceMax').value=appConfig.surface_max;
+  el('cfgTolerance').value=appConfig.surface_tolerance;
+}
+el('openFilters').onclick=()=>{
+  syncConfigToModal();
+  el('filterModalOverlay').classList.add('show');
 };
+el('closeFilters').onclick=()=>el('filterModalOverlay').classList.remove('show');
+el('filterModalOverlay').onclick=e=>{
+  if(e.target===el('filterModalOverlay')) el('filterModalOverlay').classList.remove('show');
+};
+el('saveFilters').onclick=()=>{
+  appConfig={
+    budget_min:Number(el('cfgBudgetMin').value)||0,
+    budget_max:Number(el('cfgBudgetMax').value)||25000,
+    budget_max_hard:Number(el('cfgBudgetHard').value)||40000,
+    surface_min:Number(el('cfgSurfaceMin').value)||80,
+    surface_max:Number(el('cfgSurfaceMax').value)||120,
+    surface_tolerance:Number(el('cfgTolerance').value)||25
+  };
+  localStorage.setItem('localia_config',JSON.stringify(appConfig));
+  el('surfacePreset').value='80-120';
+  el('pricePreset').value='25000';
+  el('filterModalOverlay').classList.remove('show');
+  render();
+};
+el('exportConfig').onclick=()=>{
+  const blob=new Blob([JSON.stringify(appConfig,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;a.download='config.json';a.click();
+  URL.revokeObjectURL(url);
+};
+
 el('gridBtn').onclick=()=>{viewMode='grid';el('gridBtn').classList.add('active');el('listBtn').classList.remove('active');render()};
 el('listBtn').onclick=()=>{viewMode='list';el('listBtn').classList.add('active');el('gridBtn').classList.remove('active');render()};
 
