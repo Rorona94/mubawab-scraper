@@ -9,17 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #023047;
-    --surface: #063C58;
-    --surface-2: #0A4A68;
-    --line: #15607F;
-    --text: #F3FAFD;
-    --text-muted: #8ECAE6;
-    --paprika: #FB8500;
-    --paprika-deep: #7A3F00;
-    --turmeric: #FFB703;
-    --sage: #219EBC;
-    --sage-deep: #0E3E4E;
+    --bg: #FDFCFF;
+    --surface: #FFFFFF;
+    --surface-2: #EAE6F8;
+    --line: #DAD1FB;
+    --text: #241F3D;
+    --text-muted: #6C63C4;
+    --indigo: #7B78F5;
+    --indigo-deep: #4B47C4;
+    --periwinkle: #A79BEF;
+    --periwinkle-deep: #6C63C4;
   }
 
   * { box-sizing: border-box; }
@@ -37,7 +36,7 @@
     font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--paprika);
+    color: var(--indigo-deep);
     margin: 0 0 4px;
     font-weight: 600;
   }
@@ -50,6 +49,7 @@
     text-transform: uppercase;
     margin: 0 0 4px;
     line-height: 1.05;
+    color: var(--text);
   }
 
   .subhead {
@@ -57,12 +57,12 @@
     color: var(--text-muted);
     margin: 0 0 16px;
   }
-  .subhead b { color: var(--turmeric); font-weight: 600; }
+  .subhead b { color: var(--indigo-deep); font-weight: 600; }
 
   .panel {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 14px;
     margin-bottom: 16px;
   }
@@ -82,7 +82,8 @@
     content: '';
     width: 6px;
     height: 6px;
-    background: var(--paprika);
+    border-radius: 50%;
+    background: var(--indigo);
     display: inline-block;
   }
 
@@ -101,16 +102,16 @@
 
   input[type="number"] {
     width: 100%;
-    background: var(--bg);
+    background: var(--surface-2);
     border: 1px solid var(--line);
-    border-radius: 3px;
+    border-radius: 6px;
     color: var(--text);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 13px;
     padding: 7px 8px;
   }
-  input[type="number"]:focus { outline: none; border-color: var(--paprika); }
-  input[type="number"]::placeholder { color: #6B5A3E; }
+  input[type="number"]:focus { outline: none; border-color: var(--indigo); }
+  input[type="number"]::placeholder { color: #A79BEF; }
 
   .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 
@@ -119,16 +120,16 @@
     font-size: 11px;
     padding: 6px 10px;
     border: 1px solid var(--line);
-    border-radius: 3px;
+    border-radius: 6px;
     color: var(--text-muted);
     cursor: pointer;
     user-select: none;
-    background: var(--bg);
+    background: var(--surface-2);
   }
   .chip.active {
-    background: var(--paprika);
-    border-color: var(--paprika);
-    color: #2B0E00;
+    background: var(--indigo);
+    border-color: var(--indigo);
+    color: #FFFFFF;
     font-weight: 600;
   }
 
@@ -146,7 +147,7 @@
     font-size: 12px;
     color: var(--text-muted);
   }
-  .count b { color: var(--turmeric); font-weight: 600; }
+  .count b { color: var(--indigo-deep); font-weight: 700; }
 
   .reset {
     font-family: 'IBM Plex Mono', monospace;
@@ -162,101 +163,117 @@
 
   .card {
     position: relative;
-    display: flex;
-    gap: 10px;
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(75, 71, 196, 0.08);
   }
 
   .card-photo {
-    flex: 0 0 92px;
-    width: 92px;
-    height: 92px;
-    border-radius: 3px;
+    width: 100%;
+    height: 170px;
     background: var(--surface-2) center/cover no-repeat;
     position: relative;
   }
   .card-photo.no-image::after {
-    content: '—';
+    content: 'PAS DE VISUEL';
     position: absolute;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #574A34;
+    color: var(--periwinkle);
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-  }
-
-  .card-main { flex: 1; min-width: 0; }
-
-  .top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 6px;
-    margin-bottom: 4px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
   }
 
   .quartier-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--indigo);
+    color: #FFFFFF;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--turmeric);
     font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
   .stamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 0.04em;
+    font-size: 11px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 3px 7px;
-    border: 1.5px solid;
-    border-radius: 3px;
-    transform: rotate(3deg);
-    white-space: nowrap;
-    flex-shrink: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
   }
-  .stamp.ideal { color: var(--sage); border-color: var(--sage); }
-  .stamp.consider { color: var(--turmeric); border-color: var(--turmeric); }
+  .stamp.ideal { background: var(--indigo-deep); }
+  .stamp.consider { background: var(--periwinkle-deep); }
+
+  .card-body { padding: 14px; }
 
   .card-title {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.25;
-    margin: 0 0 6px;
-  }
-
-  .stats { display: flex; gap: 14px; margin-bottom: 6px; }
-  .stat-value {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 15px;
-    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 12px;
     color: var(--text);
   }
-  .stat-unit { font-size: 10px; color: var(--text-muted); font-weight: 500; }
+
+  .stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .stat-box {
+    flex: 1;
+    background: var(--surface-2);
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+  .stat-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  .stat-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--indigo-deep);
+    line-height: 1.1;
+  }
+  .stat-unit { font-size: 12px; color: var(--text-muted); font-weight: 500; }
 
   .specs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px 8px;
-    margin-bottom: 8px;
-    padding: 8px;
+    gap: 6px 8px;
+    margin-bottom: 10px;
+    padding: 10px;
     background: var(--surface-2);
-    border-radius: 3px;
+    border-radius: 8px;
   }
-  .spec-item { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .spec-item { display: flex; align-items: center; gap: 7px; min-width: 0; }
   .spec-icon {
-    flex: 0 0 20px;
-    width: 20px; height: 20px;
-    color: var(--turmeric);
+    flex: 0 0 22px;
+    width: 22px; height: 22px;
+    color: var(--indigo);
   }
   .spec-icon svg { width: 100%; height: 100%; }
   .spec-text { min-width: 0; }
@@ -268,38 +285,39 @@
     line-height: 1.2;
   }
   .spec-value {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     color: var(--text);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 12px; }
   .tag {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 9px;
-    padding: 2px 6px;
-    border-radius: 3px;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 5px;
     border: 1px solid;
   }
-  .tag.ok { color: var(--sage); border-color: var(--sage-deep); background: rgba(169, 204, 123, 0.1); }
-  .tag.warn { color: var(--turmeric); border-color: #5C4620; background: rgba(255, 187, 46, 0.08); }
-  .tag.eq { color: var(--text-muted); border-color: var(--line); }
+  .tag.ok { color: var(--indigo-deep); border-color: var(--indigo); background: #EEEDFE; }
+  .tag.warn { color: var(--periwinkle-deep); border-color: var(--periwinkle); background: var(--surface-2); }
+  .tag.eq { color: var(--text-muted); border-color: var(--line); background: var(--surface); }
 
   .btn {
-    display: inline-block;
+    display: block;
+    text-align: center;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--bg);
-    background: var(--paprika);
-    padding: 6px 12px;
-    border-radius: 3px;
-    font-weight: 700;
+    color: #FFFFFF;
+    background: var(--indigo);
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 600;
   }
 
   .empty {
@@ -313,7 +331,7 @@
     font-size: 13px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--paprika);
+    color: var(--indigo-deep);
     margin-bottom: 6px;
   }
 </style>
@@ -383,6 +401,15 @@
       surface_tolerance: 25
     };
     let CFG = CONFIG_DEFAULTS;
+
+    const ICONS = {
+      type: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
+      etat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 7l3 3-9 9H5v-3z"/><path d="M13 8l3 3"/></svg>',
+      annee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>',
+      etage: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20V4M6 10l6-6 6 6"/></svg>',
+      sol: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+      bain: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4z"/><path d="M6 12V6a2 2 0 012-2"/></svg>'
+    };
 
     function evaluateListing(l) {
       let strict = true;
@@ -478,18 +505,9 @@
         const evalR = evaluateListing(l);
         const stamp = evalR
           ? (evalR.strict
-              ? '<span class="stamp ideal">Idéal</span>'
-              : '<span class="stamp consider">À confirmer</span>')
+              ? '<div class="stamp ideal">Idéal</div>'
+              : '<div class="stamp consider">À confirmer</div>')
           : '';
-
-        const ICONS = {
-          type: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
-          etat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 7l3 3-9 9H5v-3z"/><path d="M13 8l3 3"/></svg>',
-          annee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>',
-          etage: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20V4M6 10l6-6 6 6"/></svg>',
-          sol: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
-          bain: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4z"/><path d="M6 12V6a2 2 0 012-2"/></svg>'
-        };
 
         const specItems = [];
         if (l.type_bien) specItems.push(['type', 'Type', l.type_bien]);
@@ -523,16 +541,21 @@
 
         return `
         <div class="card">
-          <div class="${photoClass}" ${photoStyle}></div>
-          <div class="card-main">
-            <div class="top-row">
-              <span class="quartier-tag">${l.quartier.replace(/_/g, ' ')}</span>
-              ${stamp}
-            </div>
+          <div class="${photoClass}" ${photoStyle}>
+            <span class="quartier-tag">${l.quartier.replace(/_/g, ' ')}</span>
+            ${stamp}
+          </div>
+          <div class="card-body">
             <h3 class="card-title">${l.titre}</h3>
             <div class="stats">
-              <span class="stat-value">${l.prix ? l.prix.toLocaleString('fr-FR') : '—'}<span class="stat-unit"> DH</span></span>
-              <span class="stat-value">${l.surface || '—'}<span class="stat-unit"> m²</span></span>
+              <div class="stat-box">
+                <div class="stat-label">Loyer</div>
+                <div class="stat-value">${l.prix ? l.prix.toLocaleString('fr-FR') : '—'} <span class="stat-unit">DH</span></div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Surface</div>
+                <div class="stat-value">${l.surface || '—'} <span class="stat-unit">m²</span></div>
+              </div>
             </div>
             ${specsGrid}
             ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
