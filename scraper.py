@@ -34,13 +34,35 @@ QUARTIERS = {
     "bourgogne_est": "https://www.mubawab.ma/fr/sd/casablanca/bourgogne-est/locaux-a-louer",
 }
 
-# Critères de filtrage
-BUDGET_MIN = 0
-BUDGET_MAX = 25000       # en DH/mois — loyer idéal. Au-delà = "à considérer si emplacement fort"
-BUDGET_MAX_HARD = 40000  # au-delà de ce seuil, on ignore même les emplacements exceptionnels
-SURFACE_MIN = 80
-SURFACE_MAX = 120        # en m² — tolérance gérée via SURFACE_TOLERANCE ci-dessous
-SURFACE_TOLERANCE = 25   # m² de marge acceptée hors fourchette (signalé comme "hors critère strict")
+# Critères de filtrage — chargés depuis config.json si présent
+DEFAULT_CONFIG = {
+    "budget_min": 0,
+    "budget_max": 25000,
+    "budget_max_hard": 40000,
+    "surface_min": 80,
+    "surface_max": 120,
+    "surface_tolerance": 25,
+}
+CONFIG_FILE = Path(__file__).parent / "config.json"
+
+def load_config():
+    cfg = DEFAULT_CONFIG.copy()
+    if CONFIG_FILE.exists():
+        try:
+            user_cfg = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
+            if isinstance(user_cfg, dict):
+                cfg.update({k: v for k, v in user_cfg.items() if k in cfg})
+        except Exception as e:
+            print(f"⚠️ config.json invalide, valeurs par défaut utilisées : {e}")
+    return cfg
+
+CONFIG = load_config()
+BUDGET_MIN = int(CONFIG["budget_min"])
+BUDGET_MAX = int(CONFIG["budget_max"])
+BUDGET_MAX_HARD = int(CONFIG["budget_max_hard"])
+SURFACE_MIN = int(CONFIG["surface_min"])
+SURFACE_MAX = int(CONFIG["surface_max"])
+SURFACE_TOLERANCE = int(CONFIG["surface_tolerance"])
 
 # Détection extraction / restauration
 EXTRACTION_POSITIVE_PATTERNS = [
@@ -179,25 +201,72 @@ def extract_listing_id(url):
 
 
 def extract_card_image(card):
-    """Récupère la meilleure image/miniature visible dans une carte de résultats Mubawab."""
+    """Récupère la meilleure image/miniature visible ou lazy-loadée dans une carte Mubawab."""
     try:
         imgs = card.query_selector_all("img")
+        candidates = []
         for img in imgs:
-            for attr in ("src", "data-src", "data-original", "data-lazy", "data-srcset"):
+            for attr in (
+                "src", "data-src", "data-original", "data-lazy",
+                "data-srcset", "srcset", "data-lazy-src"
+            ):
                 value = img.get_attribute(attr)
                 if not value:
                     continue
-                # data-srcset peut contenir plusieurs URLs
-                value = value.split(",")[0].strip().split(" ")[0]
-                if "mubawab-media.com" in value and "/ad/" in value:
-                    return value
-        # fallback: image Mubawab même si le chemin ne contient pas /ad/
-        for img in imgs:
-            value = img.get_attribute("src") or img.get_attribute("data-src")
-            if value and "mubawab-media.com" in value and "logo" not in value.lower():
-                return value
+                for piece in value.split(","):
+                    url = piece.strip().split(" ")[0]
+                    if url.startswith("//"):
+                        url = "https:" + url
+                    if "mubawab-media.com" in url and "logo" not in url.lower():
+                        candidates.append(url)
+
+        for url in candidates:
+            if "/ad/" in url:
+                return url
+        if candidates:
+            return candidates[0]
+
+        styled = card.query_selector_all("[style*='background-image']")
+        for node in styled:
+            style = node.get_attribute("style") or ""
+            match = re.search(r"url\\((.*?)\\)", style)
+            if match:
+                url = match.group(1).strip(" \'\"")
+                if url.startswith("//"):
+                    url = "https:" + url
+                if "mubawab-media.com" in url:
+                    return url
     except Exception:
         pass
+    return None
+
+
+def extract_detail_image(detail_page, url):
+    """Fallback : ouvre la fiche uniquement si la carte n'a fourni aucune image."""
+    if not detail_page or not url:
+        return None
+    try:
+        detail_page.goto(url, timeout=25000, wait_until="domcontentloaded")
+        detail_page.wait_for_timeout(700)
+
+        meta = detail_page.query_selector("meta[property='og:image']")
+        if meta:
+            value = meta.get_attribute("content")
+            if value and "mubawab-media.com" in value:
+                return value
+
+        for img in detail_page.query_selector_all("img"):
+            for attr in ("src", "data-src", "data-original", "data-lazy", "srcset", "data-srcset"):
+                value = img.get_attribute(attr)
+                if not value:
+                    continue
+                value = value.split(",")[0].strip().split(" ")[0]
+                if value.startswith("//"):
+                    value = "https:" + value
+                if "mubawab-media.com" in value and "/ad/" in value and "logo" not in value.lower():
+                    return value
+    except Exception as e:
+        print(f"  ⚠️ Image fiche non récupérée : {e}")
     return None
 
 
@@ -284,7 +353,7 @@ def send_telegram_alert(listing, evaluation):
 
 
 # ============ SCRAPING ============
-def scrape_quartier(page, quartier, url):
+def scrape_quartier(page, detail_page, quartier, url):
     """Scrape la page Mubawab d'un quartier et normalise prix/surface/extraction."""
     results = []
     page.goto(url, timeout=30000, wait_until="domcontentloaded")
@@ -341,6 +410,8 @@ def scrape_quartier(page, quartier, url):
                 card_text = f"{titre} {description}"
 
             image = extract_card_image(card)
+            if not image:
+                image = extract_detail_image(detail_page, lien)
             caracteristiques = extract_quick_features(card_text)
 
             # Exclut les ventes qui apparaissent parfois dans les encarts sponsorisés
@@ -464,10 +535,14 @@ def main():
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
         ))
+        detail_page = browser.new_page(user_agent=(
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+        ))
 
         for quartier, url in QUARTIERS.items():
             print(f"Scraping {quartier}...")
-            listings = scrape_quartier(page, quartier, url)
+            listings = scrape_quartier(page, detail_page, quartier, url)
             all_listings.extend(listings)
             time.sleep(2)  # politesse entre requêtes
 
