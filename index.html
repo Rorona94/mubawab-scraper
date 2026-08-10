@@ -9,17 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #171310;
-    --surface: #221B14;
-    --surface-2: #2C2318;
-    --line: #4A3B27;
-    --text: #FBF3E6;
-    --text-muted: #B3A18A;
-    --paprika: #FF5A24;
-    --paprika-deep: #5C2410;
-    --turmeric: #FFBB2E;
-    --sage: #A9CC7B;
-    --sage-deep: #33421F;
+    --bg: #023047;
+    --surface: #063C58;
+    --surface-2: #0A4A68;
+    --line: #15607F;
+    --text: #F3FAFD;
+    --text-muted: #8ECAE6;
+    --paprika: #FB8500;
+    --paprika-deep: #7A3F00;
+    --turmeric: #FFB703;
+    --sage: #219EBC;
+    --sage-deep: #0E3E4E;
   }
 
   * { box-sizing: border-box; }
@@ -243,15 +243,38 @@
   }
   .stat-unit { font-size: 10px; color: var(--text-muted); font-weight: 500; }
 
-  .specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px 10px;
-    font-size: 11px;
-    color: var(--text-muted);
-    margin-bottom: 6px;
+  .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background: var(--surface-2);
+    border-radius: 3px;
   }
-  .specs b { color: var(--text); font-weight: 500; }
+  .spec-item { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  .spec-icon {
+    flex: 0 0 20px;
+    width: 20px; height: 20px;
+    color: var(--turmeric);
+  }
+  .spec-icon svg { width: 100%; height: 100%; }
+  .spec-text { min-width: 0; }
+  .spec-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    line-height: 1.2;
+  }
+  .spec-value {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
   .tag {
@@ -459,13 +482,34 @@
               : '<span class="stamp consider">À confirmer</span>')
           : '';
 
-        const specs = [];
-        if (l.type_bien) specs.push(`<b>${l.type_bien}</b>`);
-        if (l.etat) specs.push(l.etat);
-        if (l.etage) specs.push(l.etage);
-        if (l.annee) specs.push(l.annee);
-        if (l.type_sol) specs.push(`Sol : ${l.type_sol}`);
-        if (l.salle_bain) specs.push(`${l.salle_bain} SdB`);
+        const ICONS = {
+          type: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
+          etat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 7l3 3-9 9H5v-3z"/><path d="M13 8l3 3"/></svg>',
+          annee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>',
+          etage: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20V4M6 10l6-6 6 6"/></svg>',
+          sol: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+          bain: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4z"/><path d="M6 12V6a2 2 0 012-2"/></svg>'
+        };
+
+        const specItems = [];
+        if (l.type_bien) specItems.push(['type', 'Type', l.type_bien]);
+        if (l.etat) specItems.push(['etat', 'État', l.etat]);
+        if (l.etage) specItems.push(['etage', 'Étage', l.etage]);
+        if (l.annee) specItems.push(['annee', 'Ancienneté', l.annee]);
+        if (l.type_sol) specItems.push(['sol', 'Sol', l.type_sol]);
+        if (l.salle_bain) specItems.push(['bain', 'Sdb', l.salle_bain]);
+
+        const specsGrid = specItems.length
+          ? `<div class="specs-grid">${specItems.map(([icon, label, value]) => `
+              <div class="spec-item">
+                <span class="spec-icon">${ICONS[icon]}</span>
+                <span class="spec-text">
+                  <div class="spec-label">${label}</div>
+                  <div class="spec-value">${value}</div>
+                </span>
+              </div>
+            `).join('')}</div>`
+          : '';
 
         const tags = [];
         if (l.gaine_extraction) tags.push('<span class="tag ok">Gaine extraction</span>');
@@ -490,7 +534,7 @@
               <span class="stat-value">${l.prix ? l.prix.toLocaleString('fr-FR') : '—'}<span class="stat-unit"> DH</span></span>
               <span class="stat-value">${l.surface || '—'}<span class="stat-unit"> m²</span></span>
             </div>
-            ${specs.length ? `<div class="specs">${specs.join(' · ')}</div>` : ''}
+            ${specsGrid}
             ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
             <a class="btn" href="${l.lien}" target="_blank" rel="noopener">Voir l'annonce</a>
           </div>
