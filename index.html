@@ -1,176 +1,587 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Locaux commerciaux — Casablanca</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Localia — Locaux commerciaux Casablanca</title>
 <style>
-  body { font-family: -apple-system, Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 16px; }
-  h1 { font-size: 1.3rem; margin-bottom: 4px; }
-  .count { color: #777; font-size: 0.85rem; margin-bottom: 12px; }
-  .filters { background: white; border-radius: 10px; padding: 14px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-  .filter-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
-  .filter-row label { font-size: 0.8rem; color: #555; display: block; margin-bottom: 3px; }
-  .filter-group { flex: 1; min-width: 130px; }
-  select, input { padding: 7px; border-radius: 6px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; font-size: 0.9rem; }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip { padding: 5px 10px; border-radius: 16px; border: 1px solid #ccc; background: #fafafa; font-size: 0.8rem; cursor: pointer; user-select: none; }
-  .chip.active { background: #1a56db; color: white; border-color: #1a56db; }
-  .reset { font-size: 0.8rem; color: #1a56db; background: none; border: none; cursor: pointer; padding: 0; }
-  .card { background: white; border-radius: 10px; padding: 14px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-  .card h3 { margin: 0 0 6px 0; font-size: 1rem; }
-  .meta { color: #555; font-size: 0.9rem; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-bottom: 6px; margin-right: 4px; }
-  .quartier-tag { background: #e8f0fe; color: #1a56db; }
-  .match-ideal { background: #e6f4ea; color: #1e7e34; }
-  .match-consider { background: #fff4e5; color: #b25000; }
-  a.btn { display: inline-block; margin-top: 8px; color: white; background: #1a56db; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; }
+:root{
+  --bg:#f7f8fc;
+  --panel:#ffffff;
+  --sidebar:#101126;
+  --sidebar2:#151638;
+  --purple:#6548e8;
+  --purple2:#7c5cf0;
+  --purple-soft:#f0ecff;
+  --text:#171a25;
+  --muted:#7b8190;
+  --line:#e8eaf0;
+  --green:#4aa76a;
+  --green-bg:#eaf7ed;
+  --red:#ce5555;
+  --red-bg:#fdeeee;
+  --orange:#e0a23b;
+  --orange-bg:#fff5df;
+  --blue:#4776dd;
+  --blue-bg:#eaf0ff;
+  --shadow:0 8px 30px rgba(24,28,45,.07);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.app{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:216px minmax(0,1fr);
+}
+.sidebar{
+  background:linear-gradient(180deg,var(--sidebar),var(--sidebar2));
+  color:white;
+  padding:28px 18px;
+  position:sticky;
+  top:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  padding:0 10px 26px;
+}
+.brandIcon{
+  width:38px;height:38px;border-radius:10px;
+  background:linear-gradient(135deg,#765cf3,#5a3bd8);
+  display:grid;place-items:center;font-size:20px;
+  box-shadow:0 8px 20px rgba(101,72,232,.35);
+}
+.brandTitle{font-size:20px;font-weight:800;line-height:1}
+.brandSub{font-size:11px;color:#b9bbcb;margin-top:5px}
+.nav{display:flex;flex-direction:column;gap:8px}
+.navItem{
+  border:0;background:transparent;color:#d4d6e2;
+  padding:12px 14px;border-radius:10px;text-align:left;
+  display:flex;align-items:center;gap:12px;font-weight:600;
+}
+.navItem:hover{background:rgba(255,255,255,.06);color:white}
+.navItem.active{background:linear-gradient(90deg,#5f42d8,#744ff0);color:white}
+.sidebarSpacer{flex:1}
+.account{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;padding:12px;margin-top:16px;
+  display:flex;align-items:center;gap:10px;
+}
+.avatar{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,#7b5af1,#5a3bd8);
+  display:grid;place-items:center;font-weight:800;font-size:12px;
+}
+.accountName{font-size:13px;font-weight:700}
+.accountSub{font-size:11px;color:#b8bbcb;margin-top:2px}
+
+.main{
+  min-width:0;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 0;
+  transition:grid-template-columns .25s ease;
+}
+.main.detail-open{grid-template-columns:minmax(0,1fr) 510px}
+
+.workspace{min-width:0;padding:26px 26px 40px}
+.topbar{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+  margin-bottom:22px;
+}
+.topbar h1{margin:0;font-size:28px;letter-spacing:-.03em}
+.topbar p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.topActions{display:flex;gap:10px}
+.iconBtn,.btn{
+  border:1px solid var(--line);background:white;border-radius:10px;
+  padding:10px 13px;color:var(--text);font-weight:700;
+}
+.btn.primary{background:linear-gradient(135deg,var(--purple),var(--purple2));color:white;border-color:transparent}
+.searchFilters{
+  display:grid;
+  grid-template-columns:minmax(260px,1.4fr) 125px 140px 125px 155px 85px;
+  gap:10px;margin-bottom:18px;
+}
+.control{
+  background:white;border:1px solid var(--line);border-radius:10px;
+  display:flex;align-items:center;min-height:42px;padding:0 12px;
+}
+.control input,.control select{
+  width:100%;border:0;outline:0;background:transparent;color:var(--text)
+}
+.control.search span{color:#9aa0ad;margin-right:8px}
+.stats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px
+}
+.stat{
+  border:1px solid var(--line);background:white;border-radius:12px;padding:15px 16px;
+  display:flex;align-items:center;gap:12px;
+}
+.statIcon{
+  width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:17px
+}
+.stat:nth-child(1) .statIcon{background:var(--purple-soft);color:var(--purple)}
+.stat:nth-child(2) .statIcon{background:var(--green-bg);color:var(--green)}
+.stat:nth-child(3) .statIcon{background:var(--orange-bg);color:var(--orange)}
+.stat:nth-child(4) .statIcon{background:var(--blue-bg);color:var(--blue)}
+.statValue{font-size:22px;font-weight:800;line-height:1}
+.statLabel{font-size:11px;color:var(--muted);margin-top:4px}
+.listToolbar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 14px
+}
+.sortWrap{display:flex;align-items:center;gap:8px;font-size:13px;color:#505665}
+.sortWrap select{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 34px 9px 11px}
+.viewToggle{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:white}
+.viewToggle button{border:0;background:white;padding:9px 13px;color:#667}
+.viewToggle button.active{background:var(--purple);color:white}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px
+}
+.grid.listMode{grid-template-columns:1fr}
+.card{
+  background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  box-shadow:0 2px 10px rgba(24,28,45,.035);
+  transition:.18s transform,.18s box-shadow;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.cardMedia{
+  height:172px;background:linear-gradient(135deg,#dfe5ef,#f4f6f9);
+  position:relative;overflow:hidden;
+}
+.cardMedia img{width:100%;height:100%;object-fit:cover;display:block}
+.placeholder{
+  width:100%;height:100%;display:grid;place-items:center;color:#9ca5b3;font-size:42px
+}
+.badgeTop{
+  position:absolute;left:10px;top:10px;
+  background:var(--green);color:white;font-size:10px;font-weight:800;
+  padding:5px 8px;border-radius:6px;text-transform:uppercase
+}
+.badgeTop.purple{background:var(--purple)}
+.favoriteBtn{
+  position:absolute;right:9px;top:9px;width:32px;height:32px;border-radius:50%;
+  border:0;background:rgba(24,28,45,.68);color:white;font-size:17px;display:grid;place-items:center
+}
+.favoriteBtn.active{background:#fff;color:#e54f63}
+.cardBody{padding:14px}
+.cardTitle{font-size:15px;font-weight:800;line-height:1.35;min-height:40px}
+.location{font-size:12px;color:#6f7684;margin-top:7px}
+.price{font-size:19px;font-weight:850;color:#6045d8;margin-top:13px}
+.price small{font-size:11px;color:#7c8290;font-weight:500}
+.quickInfo{display:flex;gap:14px;margin-top:11px;font-size:12px;color:#4e5563}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.tag{padding:5px 8px;border-radius:7px;font-size:10px}
+.tag.good{background:var(--green-bg);color:#318652}
+.tag.bad{background:var(--red-bg);color:#b24343}
+.tag.warn{background:var(--orange-bg);color:#a87520}
+.cardFooter{border-top:1px solid var(--line);margin-top:12px;padding-top:11px;display:flex;justify-content:space-between;font-size:11px;color:#8a909c}
+.openLink{color:#5e45d2;font-weight:700;cursor:pointer}
+.grid.listMode .card{display:grid;grid-template-columns:230px 1fr}
+.grid.listMode .cardMedia{height:100%;min-height:180px}
+
+.detailPanel{
+  position:sticky;top:0;height:100vh;background:white;border-left:1px solid var(--line);
+  transform:translateX(100%);transition:transform .25s ease;overflow:auto;z-index:20
+}
+.main.detail-open .detailPanel{transform:translateX(0)}
+.detailInner{padding:18px}
+.detailTop{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.backBtn{border:0;background:transparent;font-weight:700;color:#444}
+.detailActions{display:flex;gap:8px}
+.detailHero{
+  height:210px;border-radius:11px;background:#edf1f5;overflow:hidden;position:relative
+}
+.detailHero img{width:100%;height:100%;object-fit:cover}
+.thumbRow{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:8px}
+.thumb{height:50px;border-radius:7px;background:#edf1f5;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.detailTitle{font-size:19px;font-weight:850;margin:18px 0 6px}
+.detailPrice{font-size:21px;font-weight:900;color:#6045d8;margin-top:14px}
+.detailPrice small{font-size:11px;color:#7d8390;font-weight:500}
+.detailMetrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
+.metric{text-align:center}
+.metricVal{font-size:13px;font-weight:800}
+.metricLabel{font-size:10px;color:#858b98;margin-top:3px}
+.section{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}
+.section h3{font-size:13px;margin:0 0 10px}
+.description{font-size:12px;line-height:1.65;color:#59606d}
+.twoCols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.infoBox{background:#fafbfc;border:1px solid var(--line);border-radius:11px;padding:12px}
+.infoBox h4{margin:0 0 10px;font-size:12px}
+.infoRow{display:flex;justify-content:space-between;gap:10px;font-size:10px;margin:8px 0;color:#6f7683}
+.infoRow b{color:#2e3340}
+.important{display:flex;gap:7px;align-items:flex-start;font-size:10px;margin:8px 0;color:#58606c}
+.important .check{color:#37a35f}
+.bottomActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 8px}
+.bottomActions a,.bottomActions button{
+  text-decoration:none;text-align:center;border-radius:10px;padding:12px;font-weight:800;font-size:12px
+}
+.outline{border:1px solid var(--purple);background:white;color:var(--purple)}
+.filled{border:1px solid var(--purple);background:linear-gradient(135deg,var(--purple),var(--purple2));color:white}
+.empty{
+  grid-column:1/-1;background:white;border:1px dashed #d8dce5;border-radius:12px;
+  padding:50px;text-align:center;color:#7d8390
+}
+@media(max-width:1280px){
+  .main.detail-open{grid-template-columns:minmax(0,1fr) 430px}
+  .searchFilters{grid-template-columns:minmax(220px,1.5fr) repeat(4,minmax(105px,1fr))}
+  .searchFilters .control:last-child{display:none}
+}
+@media(max-width:1050px){
+  .app{grid-template-columns:78px minmax(0,1fr)}
+  .brandText,.navItem span,.accountMeta{display:none}
+  .brand{justify-content:center;padding-left:0;padding-right:0}
+  .navItem{justify-content:center}
+  .main.detail-open{grid-template-columns:1fr}
+  .detailPanel{position:fixed;right:0;top:0;width:min(510px,100vw)}
+}
+@media(max-width:760px){
+  .app{grid-template-columns:1fr}
+  .sidebar{display:none}
+  .workspace{padding:18px 14px 30px}
+  .topbar{flex-direction:column}
+  .searchFilters{grid-template-columns:1fr 1fr}
+  .searchFilters .control.search{grid-column:1/-1}
+  .stats{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-  <h1>🏪 Locaux commerciaux — Casablanca</h1>
-  <div class="count" id="count"></div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brandIcon">🏢</div>
+      <div class="brandText">
+        <div class="brandTitle">Localia</div>
+        <div class="brandSub">Locaux commerciaux</div>
+      </div>
+    </div>
 
-  <div class="filters">
-    <div class="filter-row">
-      <div class="filter-group">
-        <label>Prix min (DH)</label>
-        <input id="prixMin" type="number" placeholder="0">
-      </div>
-      <div class="filter-group">
-        <label>Prix max (DH)</label>
-        <input id="prixMax" type="number" placeholder="Illimité">
-      </div>
-    </div>
-    <div class="filter-row">
-      <div class="filter-group">
-        <label>Surface min (m²)</label>
-        <input id="surfaceMin" type="number" placeholder="0">
-      </div>
-      <div class="filter-group">
-        <label>Surface max (m²)</label>
-        <input id="surfaceMax" type="number" placeholder="Illimité">
+    <nav class="nav">
+      <button class="navItem active" data-section="annonces"><b>⌂</b><span>Annonces</span></button>
+      <button class="navItem" data-section="favoris"><b>♡</b><span>Favoris</span></button>
+    </nav>
+
+    <div class="sidebarSpacer"></div>
+    <div class="account">
+      <div class="avatar">TB</div>
+      <div class="accountMeta">
+        <div class="accountName">Taous B.</div>
+        <div class="accountSub">Compte</div>
       </div>
     </div>
-    <div class="filter-row">
-      <div class="filter-group" style="flex:2">
-        <label>Quartiers</label>
-        <div class="chips" id="quartierChips"></div>
-      </div>
-    </div>
-    <div class="filter-row">
-      <div class="filter-group">
-        <label>Extraction</label>
-        <div class="chips">
-          <div class="chip" data-extraction="all">Toutes</div>
-          <div class="chip" data-extraction="yes">Avec gaine ✅</div>
-          <div class="chip" data-extraction="maybe">Restauration mentionnée ⚠️</div>
+  </aside>
+
+  <div class="main" id="main">
+    <main class="workspace">
+      <div class="topbar">
+        <div>
+          <h1>Annonces</h1>
+          <p>Trouvez le local commercial idéal à Casablanca</p>
+        </div>
+        <div class="topActions">
+          <button class="iconBtn">🔔</button>
+          <button class="btn primary" id="importBtn">↥ Importer le dernier JSON</button>
+          <input type="file" id="fileInput" accept=".json,.txt" hidden>
         </div>
       </div>
-    </div>
-    <button class="reset" id="resetBtn">↺ Réinitialiser les filtres</button>
+
+      <div class="searchFilters">
+        <div class="control search"><span>⌕</span><input id="search" placeholder="Rechercher un quartier, une rue..." /></div>
+        <div class="control"><select id="city"><option>Casablanca</option></select></div>
+        <div class="control"><select id="quartier"><option value="">Tous quartiers</option></select></div>
+        <div class="control"><select id="surfacePreset"><option value="80-120">80 – 120 m²</option><option value="55-145">55 – 145 m²</option><option value="all">Toutes surfaces</option></select></div>
+        <div class="control"><select id="pricePreset"><option value="25000">Prix max 25 000 DH</option><option value="40000">Prix max 40 000 DH</option><option value="all">Tous les prix</option></select></div>
+        <button class="control" id="resetFilters">☷ Filtres</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="statIcon">🏢</div><div><div class="statValue" id="countStat">0</div><div class="statLabel">annonces trouvées</div></div></div>
+        <div class="stat"><div class="statIcon">✤</div><div><div class="statValue" id="extractStat">0</div><div class="statLabel">avec extraction possible</div></div></div>
+        <div class="stat"><div class="statIcon">🍴</div><div><div class="statValue" id="foodStat">0</div><div class="statLabel">avec restauration possible</div></div></div>
+        <div class="stat"><div class="statIcon">♡</div><div><div class="statValue" id="favStat">0</div><div class="statLabel">favoris</div></div></div>
+      </div>
+
+      <div class="listToolbar">
+        <div class="sortWrap">
+          <span>Trier par :</span>
+          <select id="sort">
+            <option value="relevance">Pertinence</option>
+            <option value="priceAsc">Prix croissant</option>
+            <option value="priceDesc">Prix décroissant</option>
+            <option value="surfaceAsc">Surface croissante</option>
+          </select>
+        </div>
+        <div class="viewToggle">
+          <button id="gridBtn" class="active">▦ Grille</button>
+          <button id="listBtn">☷ Liste</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </main>
+
+    <aside class="detailPanel" id="detailPanel">
+      <div class="detailInner" id="detailInner"></div>
+    </aside>
   </div>
+</div>
 
-  <div id="list">Chargement…</div>
+<script>
+const EMBEDDED_LISTINGS = [{"id": "8268807", "quartier": "gauthier", "titre": "Local commercial à louer à Gauthier. Surface de 260 m². Port...", "description": "", "prix": 30000, "surface": 260, "lien": "https://www.mubawab.ma/fr/a/8268807/local-commercial-%C3%A0-louer-%C3%A0-gauthier-surface-de-260-m%C2%B2-porte-blind%C3%A9e-et-r%C3%A9sidence-s%C3%A9curis%C3%A9e", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8257647", "quartier": "gauthier", "titre": "Superbe local commercial à louer à Gauthier", "description": "À louer à GAUTHIER un local commercial de 40 m² idéalement situé en plein cœur du quartier Gauthier, l’un des secteurs les plus recherchés de la ville. Ce local bénéficie d’une excellente visibilité grâce à sa façade sur rue passante, offrant un flux important de piétons et de véhicules tout au long de la journée. Caractéristiques : • Superficie : 40 m² bien agencés (sur sol) • Grande vitrine offrant une exposition optimale • Espace lumineux...", "prix": 12000, "surface": 40, "lien": "https://www.mubawab.ma/fr/a/8257647/superbe-local-commercial-%C3%A0-louer-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8391352", "quartier": "gauthier", "titre": "Commerce à louer 250 m² Gauthier Casablanca", "description": "", "prix": 35000, "surface": 250, "lien": "https://www.mubawab.ma/fr/a/8391352/commerce-%C3%A0-louer-250-m%C2%B2-gauthier-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8206070", "quartier": "gauthier", "titre": "Local commercial Prime 131 M² En Plein Gauthier", "description": "", "prix": 45000, "surface": 131, "lien": "https://www.mubawab.ma/fr/a/8206070/local-commercial-prime-131-m%C2%B2-en-plein-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8150741", "quartier": "gauthier", "titre": "Local commercial Prime 223 M² Boulevard D'Anfa", "description": "", "prix": 80000, "surface": 223, "lien": "https://www.mubawab.ma/fr/a/8150741/local-commercial-prime-223-m%C2%B2-boulevard-d-anfa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8356633", "quartier": "gauthier", "titre": "Local commercial à louer à GAUTHIER", "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités, il est aménagé avec une superficie de 252 m2 environ dont 180 m2 de plancher et 72 m2 de souspente Loyer : 35000 MAD Reference : LCL-LCV 00094 Honoraires : 1 mois de loyer HT", "prix": 35000, "surface": 252, "lien": "https://www.mubawab.ma/fr/a/8356633/local-commercial-%C3%A0-louer-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8191479", "quartier": "gauthier", "titre": "Local commercial à louer à Gauthier. Surface totale 97 m²...", "description": "", "prix": 45000, "surface": 97, "lien": "https://www.mubawab.ma/fr/a/8191479/local-commercial-%C3%A0-louer-%C3%A0-gauthier-surface-totale-97-m%C2%B2-climatisation", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8314756", "quartier": "gauthier", "titre": "Local commercial gauthier 145 m²", "description": "", "prix": 23000, "surface": 145, "lien": "https://www.mubawab.ma/fr/a/8314756/local-commercial-gauthier-145-m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8311443", "quartier": "gauthier", "titre": "Local commercial emplacement premium à louer", "description": "189m² mezzanine de 84m²", "prix": 48000, "surface": 273, "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8341160", "quartier": "gauthier", "titre": "Local commercial à louer à Gauthier 11000 dh", "description": "Situé sur la rue Théophile Gautier, au cœur d’un quartier chic, dynamique et très fréquenté, ce local sur deux niveaux bénéficie d’un excellent potentiel pour une activité dans le domaine de la beauté. Idéal pour salon de coiffure, institut esthétique ou onglerie, ce bien offre une belle visibilité ainsi qu’un cadre propice au développement d’une clientèle fidèle. Proposé en contrat de gérance libre, il représente une opportunité intéressante pou...", "prix": 11000, "surface": 28, "lien": "https://www.mubawab.ma/fr/a/8341160/local-commercial-%C3%A0-louer-%C3%A0-gauthier-11000-dh", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8373479", "quartier": "gauthier", "titre": "Local commercial premium à Louer", "description": "", "prix": 55000, "surface": 197, "lien": "https://www.mubawab.ma/fr/a/8373479/local-commercial-premium-%C3%A0-louer", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7072544", "quartier": "gauthier", "titre": "Local commercial LLC 78 de 820m² a gauthier", "description": "", "prix": 75000, "surface": 820, "lien": "https://www.mubawab.ma/fr/a/7072544/local-commercial-llc-78-de-820m%C2%B2-a-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368183", "quartier": "gauthier", "titre": "Local commercial à Louer de 273.0 m² à Casablanca, Gauthier", "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Gauthier. Cette propriété spacieuse offre une surface de 273.0m². Prix attractif de 52000 Dhs", "prix": 52000, "surface": 273, "lien": "https://www.mubawab.ma/fr/a/8368183/local-commercial-%C3%A0-louer-de-273-0-m%C2%B2-%C3%A0-casablanca-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368242", "quartier": "gauthier", "titre": "Local commercial à Louer de 52.0 m² à Casablanca, Gauthier", "description": "", "prix": 14000, "surface": 52, "lien": "https://www.mubawab.ma/fr/a/8368242/local-commercial-%C3%A0-louer-de-52-0-m%C2%B2-%C3%A0-casablanca-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8278939", "quartier": "gauthier", "titre": "Local commercial à louer sur Boulevard d'ANFA", "description": "", "prix": 50000, "surface": 449, "lien": "https://www.mubawab.ma/fr/a/8278939/local-commercial-%C3%A0-louer-sur-boulevard-d-anfa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7922376", "quartier": "gauthier", "titre": "Location Local à gauthier", "description": "Je mets en location un magnifique espace en rez de chaussée de 131 m² au cœur du quartier Gauthier. Il dispose d'une grande vitrine et d'un puits de lumière. Cet espace convient parfaitement par exemple à un salon de thé, un café, une pâtisserie-glacier (activités ne nécessitant pas d'extraction d'air) ou encore un showroom commercial. Le prix du loyer est en TTC. N'hésitez plus ! Contactez moi pour visiter cet espace et pour en savoir plus. ...", "prix": 34600, "surface": 131, "lien": "https://www.mubawab.ma/fr/a/7922376/location-local-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": true, "extraction_status": "non", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8353387", "quartier": "gauthier", "titre": "A louer, un Local commercial à Gauthier. Superficie 131 m²", "description": "Century 21 Anfa vous propose a la location un magnifique local commercial totalement aménagé de 131M2 situé sur le prestigieux quartier Gauthier dans une ruelle très passante, le local est idéal pour toutes activités commerciales, pour plus d’informations veuillez nous contacter", "prix": 34600, "surface": 131, "lien": "https://www.mubawab.ma/fr/a/8353387/a-louer-un-local-commercial-%C3%A0-gauthier-superficie-131-m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8146908", "quartier": "gauthier", "titre": "Local commercial à louer sur Bd d'ANFA", "description": "Ce local commercial idéalement situé à GAUTHIER sur le Boulevard d'Anfa, Gaine disponible, offre une flexibilité exceptionnelle pour diverses activités commerciales, avec 133 m2 au plancher et 71 m2 en Mezzanine le local totalise 204 .m2 Etat : Semi-Fini Loyer : 50000 Mad HT Reference : LCL 00769 Honoraires locataire : 1 mois de loyer HT", "prix": 50000, "surface": 204, "lien": "https://www.mubawab.ma/fr/a/8146908/local-commercial-%C3%A0-louer-sur-bd-d-anfa", "gaine_extraction": true, "extraction_interdite": false, "extraction_status": "oui", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7856689", "quartier": "gauthier", "titre": "A louer local commercial 120m2 Gauthier", "description": "", "prix": 30000, "surface": 120, "lien": "https://www.mubawab.ma/fr/a/7856689/a-louer-local-commercial-120m2-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8301315", "quartier": "gauthier", "titre": "Location Local à gauthier", "description": "", "prix": 150000, "surface": 389, "lien": "https://www.mubawab.ma/fr/a/8301315/location-local-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8318697", "quartier": "gauthier", "titre": "Local commercial de 200m2 à la location Gauthier – Très bonn...", "description": "Capital Foncier vous propose un local commercial de 197m2 à location composé de 128m2 au rez-de-chaussée et 69m2 en mezzanine en plein avenue Moussa Ibn Noussair à Gauthier, idéal pour toute activité. Pour plus d'infos contactez Mourad Capital Foncier vous propose un local commercial de 197m2 à location composé de 128m2 au rez-de-chaussée et 69m2 en mezzanine en plein avenue Moussa Ibn Noussair à Gauthier, idéal pour toute activité. Pour plus d'i...", "prix": 45000, "surface": 200, "lien": "https://www.mubawab.ma/fr/a/8318697/local-commercial-de-200m2-%C3%A0-la-location-gauthier-%E2%80%93-tr%C3%A8s-bonne-visibilit%C3%A9", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8237259", "quartier": "gauthier", "titre": "Beau local commercial en location à Gauthier. Surface totale...", "description": "", "prix": 20000, "surface": 80, "lien": "https://www.mubawab.ma/fr/a/8237259/beau-local-commercial-en-location-%C3%A0-gauthier-surface-totale-80-m%C2%B2-r%C3%A9sidence-avec-concierge", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8310210", "quartier": "gauthier", "titre": "Salon de beauté bien équipé a louer casablanca", "description": "", "prix": null, "surface": 45, "lien": "https://www.mubawab.ma/fr/a/8310210/salon-de-beaut%C3%A9-bien-%C3%A9quip%C3%A9-a-louer-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7235558", "quartier": "gauthier", "titre": "Restaurant Snack en gérance belle situation", "description": "", "prix": 50000, "surface": 201, "lien": "https://www.mubawab.ma/fr/a/7235558/restaurant-snack-en-g%C3%A9rance-belle-situation", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": true, "restauration_interdite": false}, {"id": "8275115", "quartier": "gauthier", "titre": "Zerktouni Emplacement N1 Local 500m2 à louet", "description": "", "prix": 165000, "surface": 500, "lien": "https://www.mubawab.ma/fr/a/8275115/zerktouni-emplacement-n1-local-500m2-%C3%A0-louet", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7968831", "quartier": "gauthier", "titre": "Local commercial de 140m2 à la location Rue d’Alger", "description": "Capital Foncier vous propose à la location un local commercial de 140m2 sur la Rue d'Alger, composé de 80m2 au rdc et 60m2 en mezzanine. Le bien est idéal pour toute activité et est dans un état parfait. Pour plus d'infos contactez Mourad au 06 65 18 50 96Capital Foncier vous propose à la location un local commercial de 140m2 sur la Rue d&#8217;Alger, composé de 80m2 au rdc et 60m2 en mezzanine. Le bien est idéal pour toute activité et est dans u...", "prix": 22000, "surface": 140, "lien": "https://www.mubawab.ma/fr/a/7968831/local-commercial-de-140m2-%C3%A0-la-location-rue-d%E2%80%99alger", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8293961", "quartier": "gauthier", "titre": "Local commercial à louer Gauthier", "description": "", "prix": 48000, "surface": 273, "lien": "https://www.mubawab.ma/fr/a/8293961/local-commercial-%C3%A0-louer-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8264312", "quartier": "gauthier", "titre": "Commerce à louer 355 m² Gauthier Casablanca", "description": "", "prix": 60000, "surface": 355, "lien": "https://www.mubawab.ma/fr/a/8264312/commerce-%C3%A0-louer-355-m%C2%B2-gauthier-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8255784", "quartier": "gauthier", "titre": "Local commercial à louer à GAUTHIER", "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités sauf Restauration , il est aménagé avec une superficie de 105 m2 dont 75m2 au plancher et 30m2 de Mezzanine Loyer : 20000 Mad TTC Reference : LCL 00813 Honoraires : 1 mois de loyer HT", "prix": 20000, "surface": 105, "lien": "https://www.mubawab.ma/fr/a/8255784/local-commercial-%C3%A0-louer-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": true}, {"id": "8259259", "quartier": "gauthier", "titre": "Local commercial à louer à GAUTHIER", "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités, il est aménagé avec une superficie de 210m2 dont 136m2 au plancher et 74m2 de Mezzanine Loyer : 75000 Mad Reference : LCL 00770 Honoraires : 1 mois de loyer HT Caractéristiques générales", "prix": 75000, "surface": 210, "lien": "https://www.mubawab.ma/fr/a/8259259/local-commercial-%C3%A0-louer-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7884302", "quartier": "gauthier", "titre": "Local Commercial au cœur de GAUTHIER", "description": "", "prix": 30000, "surface": 163, "lien": "https://www.mubawab.ma/fr/a/7884302/local-commercial-au-c%C5%93ur-de-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8245194", "quartier": "gauthier", "titre": "Local commercial à louer à GAUTHIER", "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités, il est aménagé avec une superficie de 225 m2 Loyer : 50000 MAD Reference : LCL 00802 Honoraires : 1 mois de loyer HT", "prix": 50000, "surface": 225, "lien": "https://www.mubawab.ma/fr/a/8245194/local-commercial-%C3%A0-louer-%C3%A0-gauthier", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8321525", "quartier": "maarif_extension", "titre": "Local 160m2 proche fourate et bir anzarane", "description": "", "prix": 19000, "surface": 157, "lien": "https://www.mubawab.ma/fr/a/8321525/local-160m2-proche-fourate-et-bir-anzarane", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7976163", "quartier": "maarif_extension", "titre": "Local commercial 305m² Bd Biiranzarane Racine", "description": "", "prix": 80000, "surface": 305, "lien": "https://www.mubawab.ma/fr/a/7976163/local-commercial-305m%C2%B2-bd-biiranzarane-racine", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8338324", "quartier": "maarif_extension", "titre": "Local commercial à louer sur MAARIF EXTENSION", "description": "Local commercial de 96m² en location dont 64m2 de plancher et 32m2 de mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 19000 MAD Reference : LCL 00891", "prix": 19000, "surface": 96, "lien": "https://www.mubawab.ma/fr/a/8338324/local-commercial-%C3%A0-louer-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8284194", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial en location de 213 m² de surface dont 141m2 de plancher et 72 m2 de mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION dans une Artère très animée. Ce local offre une visibilité , un volume intéressant et une polyvalence en terme d'activités commerciales, sauf restauration. Loyer : 31000 MAD TTC Reference : LCL 00840 Honoraires : 1 mois de loyer HT", "prix": 31000, "surface": 213, "lien": "https://www.mubawab.ma/fr/a/8284194/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": true}, {"id": "8367561", "quartier": "maarif_extension", "titre": "Boulevard Ghandi Louez le local idéal à Maârif Extension. Su...", "description": "Le bien proposé est un local commercial à louer situé sur le prestigieux Boulevard Ghandi, dans le quartier Maârif Extension de Casablanca, région de Casablanca-Settat. Avec une superficie totale de 218 m², ce local offre un espace spacieux idéal pour divers types d'activités commerciales. La propriété est au rez-de-chaussée, permettant un accès facile et une visibilité maximale. Le sol est principalement recouvert de carreaux, ce qui assure dur...", "prix": 45000, "surface": 218, "lien": "https://www.mubawab.ma/fr/a/8367561/boulevard-ghandi-louez-le-local-id%C3%A9al-%C3%A0-ma%C3%A2rif-extension-superficie-218-m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8349948", "quartier": "maarif_extension", "titre": "Magasin d'angle à louer à Maârif Extension", "description": "", "prix": 43000, "surface": 221, "lien": "https://www.mubawab.ma/fr/a/8349948/magasin-d-angle-%C3%A0-louer-%C3%A0-ma%C3%A2rif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8377295", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 64 m2 dont 43 m2 de placnher- 21 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 19200 MAD TTC Reference : LCL 00753 Honoraires : 1 mois de loyer HT", "prix": 19200, "surface": 64, "lien": "https://www.mubawab.ma/fr/a/8377295/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8371835", "quartier": "maarif_extension", "titre": "Local commercial à louer sur MAARIF EXTENSION", "description": "Local commercial de 250m² en location dont 160m2 de plancher et 90m2 de mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 42700 MAD Reference : LCL 00906", "prix": 42700, "surface": 250, "lien": "https://www.mubawab.ma/fr/a/8371835/local-commercial-%C3%A0-louer-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8371834", "quartier": "maarif_extension", "titre": "Local commercial à louer sur MAARIF EXTENSION", "description": "Local commercial de 157m² en location dont 108m2 de plancher et 49m2 de mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 20000 MAD HTSC Reference : LCL 00905", "prix": 20000, "surface": 157, "lien": "https://www.mubawab.ma/fr/a/8371834/local-commercial-%C3%A0-louer-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8371831", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 141m2 dont 93m2 de placnher- 48m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 18000 MAD HTSC Reference : LCL 00904 Honoraires : 1 mois de loyer HT", "prix": 18000, "surface": 141, "lien": "https://www.mubawab.ma/fr/a/8371831/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8371828", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 77 m2 dont 49 m2 de placnher- 28m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 10000 MAD HTSC Reference : LCL 00902 Honoraires : 1 mois de loyer HT", "prix": 10000, "surface": 77, "lien": "https://www.mubawab.ma/fr/a/8371828/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8371826", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 644m2 dont 500m2 de placnher- 114m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 100000 MAD Reference : LCL-LCV 00048 Honoraires : 1 mois de loyer HT", "prix": 100000, "surface": 644, "lien": "https://www.mubawab.ma/fr/a/8371826/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8280628", "quartier": "maarif_extension", "titre": "Local commercial 60 m² Maarif extension", "description": "", "prix": 20000, "surface": 60, "lien": "https://www.mubawab.ma/fr/a/8280628/local-commercial-60-m%C2%B2-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8361157", "quartier": "maarif_extension", "titre": "Local Commercial à louer sur Route El Jadida", "description": "", "prix": 40000, "surface": 93, "lien": "https://www.mubawab.ma/fr/a/8361157/local-commercial-%C3%A0-louer-sur-route-el-jadida", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8361179", "quartier": "maarif_extension", "titre": "Local Commercial à louer sur Route El Jadida", "description": "", "prix": 150000, "surface": 375, "lien": "https://www.mubawab.ma/fr/a/8361179/local-commercial-%C3%A0-louer-sur-route-el-jadida", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8333636", "quartier": "maarif_extension", "titre": "LOCAL COMMERCIAL spacieux sur route el jadida", "description": "Nous proposons à la location un local commercial bénéficiant d’une excellente visibilité, situé au rez-de-chaussée d’un immeuble professionnel sur la route d’El Jadida à Casablanca. Le local développe une surface totale répartie comme suit : Rez-de-chaussée : 375 m² Mezzanine : 215 m² Grâce à sa configuration, ce bien offre un espace idéal pour accueillir une activité commerciale nécessitant à la fois surface d’exposition et espace comp...", "prix": 150000, "surface": 375, "lien": "https://www.mubawab.ma/fr/a/8333636/local-commercial-spacieux-sur-route-el-jadida", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8330388", "quartier": "maarif_extension", "titre": "Spacieux plateau de bureaux a louer", "description": "", "prix": 72300, "surface": 482, "lien": "https://www.mubawab.ma/fr/a/8330388/spacieux-plateau-de-bureaux-a-louer", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8367482", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 96m2 dont 61m2 de placnher- 35m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 22000 MAD Reference : LCL 00480 Honoraires : 1 mois de loyer HT", "prix": 22000, "surface": 96, "lien": "https://www.mubawab.ma/fr/a/8367482/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8133598", "quartier": "maarif_extension", "titre": "Beau local commercial en location à Maârif Extension. Superf...", "description": "Salon de coiffure en état vide à la location Proche du stade mohamed5 Contrat 3/6/9 bail commercial Superficie 22m2 au sol15m2 mezzanine 2 sdb Pour plus d’informations :", "prix": 10000, "surface": 22, "lien": "https://www.mubawab.ma/fr/a/8133598/beau-local-commercial-en-location-%C3%A0-ma%C3%A2rif-extension-superficie-22-m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8212677", "quartier": "maarif_extension", "titre": "Local commercial à louer à MAARIF EXTENTION", "description": "Un local commercial aménage en location à MAARIF EXTENTION, POUR Un loyer de 12000 MAD. avec une superficie de 46 m2 Référence : LCL-LCV 00151", "prix": 12000, "surface": 46, "lien": "https://www.mubawab.ma/fr/a/8212677/local-commercial-%C3%A0-louer-%C3%A0-maarif-extention", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8115478", "quartier": "maarif_extension", "titre": "Loue magasin equipe 390 m² premium maarif ext", "description": "", "prix": 45000, "surface": 390, "lien": "https://www.mubawab.ma/fr/a/8115478/loue-magasin-equipe-390-m%C2%B2-premium-maarif-ext", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334041", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Situé à MAARIF EXTENSION Avec une surface de 53m2, Ce local commercial est aménage et offre un emplacement idéal, la flexibilité et l'espace dont vous avez besoin pour réaliser vos projets commerciaux. Mezzanine : 20m2 plancher: 33m2 Loyer : 18000 Mad TTC Reference : LCL 00889 Honoraires locataire : 1 mois de loyer HT", "prix": 18000, "surface": 53, "lien": "https://www.mubawab.ma/fr/a/8334041/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8332772", "quartier": "maarif_extension", "titre": "Très BEAU LOCAL D'ANGLE à louer Bd Ghandi", "description": "", "prix": 80000, "surface": 748, "lien": "https://www.mubawab.ma/fr/a/8332772/tr%C3%A8s-beau-local-d-angle-%C3%A0-louer-bd-ghandi", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8356417", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 915 m2 dont 400 m2 de placnher- 400m2 de souspente et 115 m2 de sous-sol en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 85000 MAD Reference : LCL 00896 Honoraires : 1 mois de loyer HT", "prix": 85000, "surface": 915, "lien": "https://www.mubawab.ma/fr/a/8356417/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8353175", "quartier": "maarif_extension", "titre": "Local commercial à louer", "description": "", "prix": 170000, "surface": 945, "lien": "https://www.mubawab.ma/fr/a/8353175/local-commercial-%C3%A0-louer", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8174965", "quartier": "maarif_extension", "titre": "Local en location ghandi bien placé", "description": "", "prix": 16500, "surface": 50, "lien": "https://www.mubawab.ma/fr/a/8174965/local-en-location-ghandi-bien-plac%C3%A9", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8329633", "quartier": "maarif_extension", "titre": "Local en location maarif extension", "description": "", "prix": 12000, "surface": 30, "lien": "https://www.mubawab.ma/fr/a/8329633/local-en-location-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8338321", "quartier": "maarif_extension", "titre": "Local commercial en location sur MAARIF EXTENSION", "description": "Local commercial de 210 m2 dont 140 m2 de placnher- 70 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 35000 MAD HT Reference : LCL 00890 Honoraires : 1 mois de loyer HT", "prix": 35000, "surface": 210, "lien": "https://www.mubawab.ma/fr/a/8338321/local-commercial-en-location-sur-maarif-extension", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334039", "quartier": "maarif_extension", "titre": "Local commercial à louer sur bd YACOUB EL MANSOUR", "description": "Local commercial en location de 427m² de surface dont 286m2 au plancher et 141 m2 en Mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION dans une Artère très animée Ce local offre une visibilité , un volume intéressant et une polyvalence en terme d'activités commerciales. Loyer : 65000 DHS HT TSC TVA Reference : LCL 00888 Honoraires : 1 mois de loyer HT", "prix": 65000, "surface": 427, "lien": "https://www.mubawab.ma/fr/a/8334039/local-commercial-%C3%A0-louer-sur-bd-yacoub-el-mansour", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334035", "quartier": "maarif_extension", "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR", "description": "Local commercial de 202m² en location dont 138 m2 de plancher et 64 m2 de mezzanine, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 45000 MAD HT TSC TVA Reference : LCL 00887 Honoraires : 1 mois de loyer HT", "prix": 45000, "surface": 202, "lien": "https://www.mubawab.ma/fr/a/8334035/local-commercial-en-location-sur-bd-yacoub-el-mansour", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334031", "quartier": "maarif_extension", "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR", "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT", "prix": 30000, "surface": 91, "lien": "https://www.mubawab.ma/fr/a/8334031/local-commercial-en-location-sur-bd-yacoub-el-mansour", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8375255", "quartier": "cfc", "titre": "En Location Gérance: Magnifique Café Restaurant entièrement...", "description": "", "prix": 27000, "surface": 150, "lien": "https://www.mubawab.ma/fr/a/8375255/en-location-g%C3%A9rance-magnifique-caf%C3%A9-restaurant-enti%C3%A8rement-%C3%A9quip%C3%A9-dans-une-zone-%C3%A0-fort-achalandage-%C3%A0-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": true, "restauration_interdite": false}, {"id": "8288904", "quartier": "cfc", "titre": "Local commercial à louer 94 m2", "description": "", "prix": 28350, "surface": 94, "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-94-m2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8327780", "quartier": "cfc", "titre": "En Location: Magnifique Locaux commerciaux de 60 à 540 m à C...", "description": "", "prix": null, "surface": 60, "lien": "https://www.mubawab.ma/fr/a/8327780/en-location-magnifique-locaux-commerciaux-de-60-%C3%A0-540-m-%C3%A0-casa-finance-city-cfc-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8130311", "quartier": "cfc", "titre": "Local Commercial 270 m² Proximité CFC", "description": "- CONTRACTORS REAL ESTATE - Opportunité à saisir offre de location Local commercial de standing. Caractéristiques: - Emplacement: Proximité immédiate CFC; - Surface au sol: 155 m²; - Surface mezzanine: 115 m²; - 2 rideaux; Loyer mensuel: 40.000,00 dhs TTC / mois. Conditions de location: 2 mois de caution 1er mois de loyer d'avance Frais d'agence 1 mois de loyer TVA. Merci de nous contacter pour toute information complémentaire", "prix": 40000, "surface": 270, "lien": "https://www.mubawab.ma/fr/a/8130311/local-commercial-270-m%C2%B2-proximit%C3%A9-cfc", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8129390", "quartier": "cfc", "titre": "Local commercial 270m² top emplacement", "description": "", "prix": 45000, "surface": 270, "lien": "https://www.mubawab.ma/fr/a/8129390/local-commercial-270m%C2%B2-top-emplacement", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8367354", "quartier": "cfc", "titre": "ROOFTOP Prime 620 M² En Location CFC", "description": "", "prix": 217000, "surface": 620, "lien": "https://www.mubawab.ma/fr/a/8367354/rooftop-prime-620-m%C2%B2-en-location-cfc", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8367343", "quartier": "cfc", "titre": "Local commercial Prime 566 M² CFC", "description": "", "prix": 242000, "surface": 566, "lien": "https://www.mubawab.ma/fr/a/8367343/local-commercial-prime-566-m%C2%B2-cfc", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8206053", "quartier": "cfc", "titre": "Local commercial Prime 440 M² CFC", "description": "", "prix": 162800, "surface": 440, "lien": "https://www.mubawab.ma/fr/a/8206053/local-commercial-prime-440-m%C2%B2-cfc", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "6890163", "quartier": "cfc", "titre": "DL. 594: Local commercial de 1190 m², Hay Hassani", "description": "", "prix": 115000, "surface": 1190, "lien": "https://www.mubawab.ma/fr/a/6890163/dl-594-local-commercial-de-1190-m%C2%B2-hay-hassani", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8245993", "quartier": "cfc", "titre": "DL. 991: Superbe magasin au boulevard Oum Rabii", "description": "", "prix": 40000, "surface": 270, "lien": "https://www.mubawab.ma/fr/a/8245993/dl-991-superbe-magasin-au-boulevard-oum-rabii", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7750677", "quartier": "cfc", "titre": "Local de 250 m² large vitrine en face CFC", "description": "Local commercial de 250 m² (155 m² en rdc et 105 m² en sous pente), avec double vitrine, autorisé pour tous les commerces, sur le bd Oum Rabii, en face des immeubles de CFC", "prix": 40000, "surface": 250, "lien": "https://www.mubawab.ma/fr/a/7750677/local-de-250-m%C2%B2-large-vitrine-en-face-cfc", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8373931", "quartier": "cfc", "titre": "Location studio Pilates clé en main 120m2 à 5 min de CFC, Ca...", "description": "A louer un studio Pilates équipé : - Surface : 120m2 - Le studio est situé à 5 min du quartier CFC - Le stationnement est disponible dans le quartier - Loyer mensuel HT : 30 000 DH - Honoraires d'agence : 1 mois de loyer", "prix": 30000, "surface": 120, "lien": "https://www.mubawab.ma/fr/a/8373931/location-studio-pilates-cl%C3%A9-en-main-120m2-%C3%A0-5-min-de-cfc-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368147", "quartier": "cfc", "titre": "Local commercial à Louer de 189.0 m² à Casablanca, Casablanc...", "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier CFC. Cette propriété spacieuse offre une surface de 189.0m². Prix attractif de 40000 Dhs", "prix": 40000, "surface": 189, "lien": "https://www.mubawab.ma/fr/a/8368147/local-commercial-%C3%A0-louer-de-189-0-m%C2%B2-%C3%A0-casablanca-casablanca-finance-city", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368116", "quartier": "cfc", "titre": "Local commercial à Louer de 273.0 m² à Casablanca, Casablanc...", "description": "À louer, local commercial de 273 m² situé dans le quartier prisé de Casablanca Finance City. Profitez d'un emplacement stratégique pour développer votre activité. Loyer mensuel : 34 000 Dhs. Ne manquez pas cette opportunité !", "prix": 34000, "surface": 273, "lien": "https://www.mubawab.ma/fr/a/8368116/local-commercial-%C3%A0-louer-de-273-0-m%C2%B2-%C3%A0-casablanca-casablanca-finance-city", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8288905", "quartier": "cfc", "titre": "Local commercial à louer 166 m2", "description": "", "prix": 47600, "surface": 166, "lien": "https://www.mubawab.ma/fr/a/8288905/local-commercial-%C3%A0-louer-166-m2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8291216", "quartier": "cfc", "titre": "A louer Local 380m2 CFC MAIN STREET", "description": "", "prix": 120000, "surface": 380, "lien": "https://www.mubawab.ma/fr/a/8291216/a-louer-local-380m2-cfc-main-street", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8120551", "quartier": "cfc", "titre": "Local commercial premium de 752 m2 quartier CFC a la locatio...", "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...", "prix": 188000, "surface": 752, "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7873982", "quartier": "cfc", "titre": "Local commercial 277m2 à la location Bd Oum Rabiî", "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...", "prix": 39000, "surface": 277, "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8375066", "quartier": "bourgogne_ouest", "titre": "Salon de beauté Bourgogne", "description": "", "prix": 16000, "surface": 60, "lien": "https://www.mubawab.ma/fr/a/8375066/salon-de-beaut%C3%A9-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8269488", "quartier": "bourgogne_ouest", "titre": "Local Commercial 332 m² Rond Point des Sports", "description": "- CONTRACTORS REAL ESTATE - Opportunité à saisir offre de location Local commercial de très haut standing. Caractéristiques: - Emplacement: Rond Point des Sports; - Surface au sol: 224 m²; - Surface Mezzanine: 108 m²; Loyer mensuel: 80.000,00 dhs/mois H.T Conditions de location: 2 mois de caution 1er mois de loyer d'avance Frais d'agence 1 mois de loyer plus T.V.A. Merci de nous contacter pour toute information complémentaire", "prix": 80000, "surface": 332, "lien": "https://www.mubawab.ma/fr/a/8269488/local-commercial-332-m%C2%B2-rond-point-des-sports", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8311062", "quartier": "bourgogne_ouest", "titre": "Local commercial de 120m à bourgogne", "description": "", "prix": 15000, "surface": 120, "lien": "https://www.mubawab.ma/fr/a/8311062/local-commercial-de-120m-%C3%A0-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7843464", "quartier": "bourgogne_ouest", "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...", "description": "", "prix": 33000, "surface": 120, "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8392444", "quartier": "bourgogne_ouest", "titre": "Local commercial 106m2 mezzanine, Bourgogne, Casa", "description": "À louer, magnifique local commercial de 106 m², entièrement refait à neuf, situé dans le quartier recherché de Bourgogne à Casablanca. Le local se compose d'un vaste espace ouvert au rez-de-chaussée, d'une mezzanine offrant un espace supplémentaire ainsi que d'un grand bureau fermé sur la mezzanine, idéal pour un espace de direction, des bureaux administratifs ou une salle de réunion. Caractéristiques : Surface totale : 106 m² Entièrement r...", "prix": 17500, "surface": 106, "lien": "https://www.mubawab.ma/fr/a/8392444/local-commercial-106m2-mezzanine-bourgogne-casa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8303261", "quartier": "bourgogne_ouest", "titre": "Local snack ou autre, terrasse 25m proche Tan Tan", "description": "Propose à la location Local commercial idéal pour snack ou autres activités. 54m2, 35m2 plus 19m2 en haut Terrasse de 25m2 grande façade de 8m de long Situé à Bourgone rue parallèle à Tan Tan 10k DERNIER PRIX", "prix": 10000, "surface": 54, "lien": "https://www.mubawab.ma/fr/a/8303261/local-snack-ou-autre-terrasse-25m-proche-tan-tan", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": true, "restauration_interdite": false}, {"id": "8289714", "quartier": "bourgogne_ouest", "titre": "Local Commercial à Louer Bd de la Corniche", "description": "", "prix": 21000, "surface": 39, "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8381036", "quartier": "bourgogne_ouest", "titre": "À louer – Local commercial aménagé au bourgogne / rond point...", "description": "Idéalement situé dans l’un des axes les plus recherché à proximité de la Clinique Badr, ce local commercial bénéficie d’un emplacement stratégique sur un boulevard à forte visibilité. Superficie totale : 125 m² Mezzanine : 70 m² Local entièrement aménagé, prêt à accueillir votre activité. Ce bien convient à de nombreuses activités : restaurant, showroom, boutique, cabinet, agence, bureau, concept store, salon, ou toute autre activité comme...", "prix": 36000, "surface": 195, "lien": "https://www.mubawab.ma/fr/a/8381036/%C3%A0-louer-%E2%80%93-local-commercial-am%C3%A9nag%C3%A9-au-bourgogne-rond-point-sport", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": true, "restauration_interdite": false}, {"id": "8382731", "quartier": "bourgogne_ouest", "titre": "Local Premium to rent in Bourgogne", "description": "", "prix": 40000, "surface": 213, "lien": "https://www.mubawab.ma/fr/a/8382731/local-premium-to-rent-in-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8375009", "quartier": "bourgogne_ouest", "titre": "Louez ce local commercial à Bourgogne Ouest. Surface totale...", "description": "", "prix": 21000, "surface": 79, "lien": "https://www.mubawab.ma/fr/a/8375009/louez-ce-local-commercial-%C3%A0-bourgogne-ouest-surface-totale-79-m%C2%B2-double-vitrage-et-porte-blind%C3%A9e", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8373179", "quartier": "bourgogne_ouest", "titre": "Magasin a côté bealieu lycée lyautey", "description": "", "prix": 9800, "surface": 37, "lien": "https://www.mubawab.ma/fr/a/8373179/magasin-a-c%C3%B4t%C3%A9-bealieu-lyc%C3%A9e-lyautey", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368121", "quartier": "bourgogne_ouest", "titre": "Local commercial à Louer de 154.0 m² à Casablanca, Bourgogne...", "description": "", "prix": 40000, "surface": 154, "lien": "https://www.mubawab.ma/fr/a/8368121/local-commercial-%C3%A0-louer-de-154-0-m%C2%B2-%C3%A0-casablanca-bourgogne-anfa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368245", "quartier": "bourgogne_ouest", "titre": "Local commercial à Louer de 418.0 m² à Casablanca, Bourgogne...", "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Bourgogne. Cette propriété spacieuse offre une surface de 418.0m². Prix attractif de 150000 Dhs", "prix": 150000, "surface": 418, "lien": "https://www.mubawab.ma/fr/a/8368245/local-commercial-%C3%A0-louer-de-418-0-m%C2%B2-%C3%A0-casablanca-bourgogne-anfa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8250807", "quartier": "bourgogne_ouest", "titre": "Local commercial Corniche Bourgogne Casablanca", "description": "", "prix": 28000, "surface": 50, "lien": "https://www.mubawab.ma/fr/a/8250807/local-commercial-corniche-bourgogne-casablanca", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8359441", "quartier": "bourgogne_ouest", "titre": "Emplacement local commercial Bd Bordeaux", "description": "Local commercial de 400 m² * 250 m² de surface principale 150 m² de mezzanine * Belle hauteur sous plafond de 5,20 m * Potentiel d’exploitation supplémentaire en mezzanine * Disponibilité immédiate Location : 45 000 DH/mois (2 mois de franchise pour travaux) Vente : 7 200 000 DH", "prix": 45000, "surface": 400, "lien": "https://www.mubawab.ma/fr/a/8359441/emplacement-local-commercial-bd-bordeaux", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8354268", "quartier": "bourgogne_ouest", "titre": "Magasin à louer à quelques metres du BD Zerktouni", "description": "À louer : local rénové avec soin, idéalement situé à proximité immédiate du boulevard Zerktouni, au cœur du quartier Bourgogne. Superficie : • 119 m² au rez-de-chaussée • 80 m² supplémentaires en sous-pente (hauteur 1,80 m), réalisés en charpente et pouvant être retirés selon vos besoins afin de retrouver une belle hauteur sous plafond d’environ 4 m. Emplacement : Situé dans une ruelle calme (Rue Ibn Ayoub), à seulement quelques mètres d...", "prix": 16000, "surface": 119, "lien": "https://www.mubawab.ma/fr/a/8354268/magasin-%C3%A0-louer-%C3%A0-quelques-metres-du-bd-zerktouni", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8332049", "quartier": "bourgogne_ouest", "titre": "Location Local à bourgogne", "description": "", "prix": 70000, "surface": 318, "lien": "https://www.mubawab.ma/fr/a/8332049/location-local-%C3%A0-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8335823", "quartier": "bourgogne_ouest", "titre": "Locals commercial a 40 m 2", "description": "", "prix": 9500, "surface": 40, "lien": "https://www.mubawab.ma/fr/a/8335823/locals-commercial-a-40-m-2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334010", "quartier": "bourgogne_ouest", "titre": "Local commercial à louer à BOURGOGNE", "description": "Situé a BOURGOGNE. Avec une surface de 220m2 , Ce local commercial est aménagé et offre un emplacement idéal , une flexibilité et l'espace dont vous avez besoin pour réaliser vos projets commerciaux. Convient pour tout commerce sauf restauration RDC: 160m² Mezzanine : 60 m² Loyer : 25000 Mad Reference : LCL 00083 Honoraires : 1 mois de loyer HT", "prix": 25000, "surface": 220, "lien": "https://www.mubawab.ma/fr/a/8334010/local-commercial-%C3%A0-louer-%C3%A0-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": true}, {"id": "8083963", "quartier": "bourgogne_ouest", "titre": "Local commercial à louer à Bourgogne Ouest", "description": "", "prix": 30000, "surface": 307, "lien": "https://www.mubawab.ma/fr/a/8083963/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ouest", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8199558", "quartier": "bourgogne_ouest", "titre": "Loue boutique bd Bourgogne 46m2", "description": "", "prix": 3630, "surface": 46, "lien": "https://www.mubawab.ma/fr/a/8199558/loue-boutique-bd-bourgogne-46m2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8142995", "quartier": "bourgogne_ouest", "titre": "Villa commerciale 456 m², sur boulevard passant", "description": "", "prix": 140000, "surface": 456, "lien": "https://www.mubawab.ma/fr/a/8142995/villa-commerciale-456-m%C2%B2-sur-boulevard-passant", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8237851", "quartier": "bourgogne_ouest", "titre": "Louez ce local commercial à Bourgogne Ouest. Surface totale...", "description": "", "prix": 65000, "surface": 420, "lien": "https://www.mubawab.ma/fr/a/8237851/louez-ce-local-commercial-%C3%A0-bourgogne-ouest-surface-totale-420-m%C2%B2-porte-blind%C3%A9e-et-syst%C3%A8me-de-double-vitrage", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8179228", "quartier": "bourgogne_ouest", "titre": "Local commercial à louer Bd d'ANFA", "description": "Emplacement Premium sur le Bd d'Anfa avec une surface de 183 m2 dont 114m2 au plancher et 69m2 en Mezzanine , Ce local a louer offre un emplacement idéal ,une flexibilité et espace adequat pour réaliser vos projets commerciaux toutes activites confondues. RDC : 114 m² Mezzanine : 69 m² brut Loyer : 79500 MAD toutes taxes (TSC & TVA incluse) Reference : LCL 00629 Honoraires locataire : 1 mois de loyer HT", "prix": 79500, "surface": 183, "lien": "https://www.mubawab.ma/fr/a/8179228/local-commercial-%C3%A0-louer-bd-d-anfa", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7608623", "quartier": "bourgogne_ouest", "titre": "Local commercial en location sur le Bd d'ANFA", "description": "Doté d'une très belle et grande façade sur LE Bd d'ANFA le local conviendrait assurément a toute activité Café-Restauration ou autres la surface est de 572m2 Dont 325m2 au plancher et 247m2 el Mezzanine , la gaine d'extraction est disponible Loyer : 146000 Mad TSC & TVA comprise", "prix": 146000, "surface": 572, "lien": "https://www.mubawab.ma/fr/a/7608623/local-commercial-en-location-sur-le-bd-d-anfa", "gaine_extraction": true, "extraction_interdite": false, "extraction_status": "oui", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8212701", "quartier": "bourgogne_ouest", "titre": "Local commercial à louer à BOURGOGNE OUEST", "description": "Situé sur le quartier BOURGOGNE OUEST juste derriere le lycée Lyautey , Avec une surface de 126m2, Ce local commercial est aménage et offre un emplacement idéal ainsi que la flexibilité et l'espace dont vous avez besoin pour réaliser vos projets commerciaux. Loyer : 25000 MAD Reference : LCL 00394 Honoraires locataire : 1 mois de loyer HT", "prix": 25000, "surface": 126, "lien": "https://www.mubawab.ma/fr/a/8212701/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ouest", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7921905", "quartier": "bourgogne_ouest", "titre": "Local commercial à louer sur BOURGOGNE", "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT", "prix": 80000, "surface": 564, "lien": "https://www.mubawab.ma/fr/a/7921905/local-commercial-%C3%A0-louer-sur-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8353734", "quartier": "bourgogne_est", "titre": "Magasin Commercial à louer – Bourgogne", "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite", "prix": 19000, "surface": 100, "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8368253", "quartier": "bourgogne_est", "titre": "Local commercial à Louer de 258.0 m² à Casablanca, Bourgogne...", "description": "", "prix": 25000, "surface": 258, "lien": "https://www.mubawab.ma/fr/a/8368253/local-commercial-%C3%A0-louer-de-258-0-m%C2%B2-%C3%A0-casablanca-bourgogne-sidi-belyout", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8337180", "quartier": "bourgogne_est", "titre": "Local à coté du lycée Lyautey 34m²", "description": "", "prix": 11000, "surface": 34, "lien": "https://www.mubawab.ma/fr/a/8337180/local-%C3%A0-cot%C3%A9-du-lyc%C3%A9e-lyautey-34m%C2%B2", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8235709", "quartier": "bourgogne_est", "titre": "Local commercial à louer Bd d'Anfa rue", "description": "", "prix": 35000, "surface": 58, "lien": "https://www.mubawab.ma/fr/a/8235709/local-commercial-%C3%A0-louer-bd-d-anfa-rue", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8334013", "quartier": "bourgogne_est", "titre": "Local commercial à louer au quartier Bd D'EL HANK", "description": "Local commercial à louer sur BOURGOGNE TSF, offre une flexibilité exceptionnelle pour diverses activités, il est avec une superficie de 190 m2 environ dont 120 m2 de plancher et 70 m2 de souspente Loyer : 14000 MAD Reference : LCL 00174 Honoraires : 1 mois de loyer HT", "prix": 14000, "surface": 190, "lien": "https://www.mubawab.ma/fr/a/8334013/local-commercial-%C3%A0-louer-au-quartier-bd-d-el-hank", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8326468", "quartier": "bourgogne_est", "titre": "Local commercial à louer à Bourgogne ahmed charci", "description": "", "prix": 16000, "surface": 70, "lien": "https://www.mubawab.ma/fr/a/8326468/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ahmed-charci", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "8251665", "quartier": "bourgogne_est", "titre": "Magasin à louer", "description": "", "prix": 7000, "surface": 40, "lien": "https://www.mubawab.ma/fr/a/8251665/magasin-%C3%A0-louer", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7887454", "quartier": "bourgogne_est", "titre": "Local commercial de 90m2 à la location Bourgogne", "description": "Capital foncier vous propose un local commercial de 90m2 composé de 65m2 au rdc et 25m2 en mezzanine. Le bien dispose d'une bonne visibilité pas loin de la clinique Badr. Pour plus d'infos contactez Mourad au 06 65 18 50 96Capital foncier vous propose un local commercial de 90m2 composé de 65m2 au rdc et 25m2 en mezzanine. Le bien dispose d&#8217;une bonne visibilité pas loin de la clinique Badr. Pour plus d&#8217;infos contactez Mourad au 06 65", "prix": 20000, "surface": 90, "lien": "https://www.mubawab.ma/fr/a/7887454/local-commercial-de-90m2-%C3%A0-la-location-bourgogne", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7848764", "quartier": "bourgogne_est", "titre": "Local commercial 720m2 à la location Avenue Tantan", "description": "", "prix": 180000, "surface": 720, "lien": "https://www.mubawab.ma/fr/a/7848764/local-commercial-720m2-%C3%A0-la-location-avenue-tantan", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7716218", "quartier": "bourgogne_est", "titre": "Local commercial de 135m2 à la local rue Ahmed Charci", "description": "Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l'état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d'informations contactez Mourad au 06 65 18 50 96Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l&#8217;état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d&#...", "prix": null, "surface": 135, "lien": "https://www.mubawab.ma/fr/a/7716218/local-commercial-de-135m2-%C3%A0-la-local-rue-ahmed-charci", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7658318", "quartier": "bourgogne_est", "titre": "Local commercial aménagé 284m2 à la location en plein Bd Mas...", "description": "", "prix": 100000, "surface": 284, "lien": "https://www.mubawab.ma/fr/a/7658318/local-commercial-am%C3%A9nag%C3%A9-284m2-%C3%A0-la-location-en-plein-bd-massira", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": false, "restauration_interdite": false}, {"id": "7351092", "quartier": "bourgogne_est", "titre": "Restaurant aménagé et équipé de 314 m2 quartier bourgogne a...", "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...", "prix": 40000, "surface": 314, "lien": "https://www.mubawab.ma/fr/a/7351092/restaurant-am%C3%A9nag%C3%A9-et-%C3%A9quip%C3%A9-de-314-m2-quartier-bourgogne-a-la-location", "gaine_extraction": false, "extraction_interdite": false, "extraction_status": "inconnue", "restauration_mentionnee": true, "restauration_interdite": false}];
 
-  <script>
-    let allListings = [];
-    let activeQuartiers = new Set(); // vide = tous
-    let extractionFilter = 'all';
+let listings = JSON.parse(localStorage.getItem('localia_listings') || 'null') || EMBEDDED_LISTINGS;
+let favorites = new Set(JSON.parse(localStorage.getItem('localia_favorites') || '[]'));
+let activeSection = 'annonces';
+let viewMode = 'grid';
+let selectedId = null;
 
-    async function load() {
-      const res = await fetch('listings.json');
-      allListings = await res.json();
+const el = id => document.getElementById(id);
 
-      const quartiers = [...new Set(allListings.map(l => l.quartier))];
-      const chipsContainer = document.getElementById('quartierChips');
-      quartiers.forEach(q => {
-        const chip = document.createElement('div');
-        chip.className = 'chip';
-        chip.textContent = q.replace('_', ' ');
-        chip.dataset.quartier = q;
-        chip.addEventListener('click', () => {
-          if (activeQuartiers.has(q)) activeQuartiers.delete(q);
-          else activeQuartiers.add(q);
-          chip.classList.toggle('active');
-          render();
-        });
-        chipsContainer.appendChild(chip);
-      });
+function esc(v=''){
+  return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function normQuartier(q=''){ return q.replaceAll('_',' ').replace(/\b\w/g,m=>m.toUpperCase()); }
+function fmtPrice(v){ return v ? Number(v).toLocaleString('fr-FR')+' DH' : 'Prix à consulter'; }
+function getImage(l){
+  return l.image || l.image_url || l.photo || (Array.isArray(l.images) && l.images[0]) || null;
+}
+function getImages(l){
+  if(Array.isArray(l.images) && l.images.length) return l.images.filter(Boolean);
+  const img = getImage(l); return img ? [img] : [];
+}
+function extractionState(l){
+  if(l.extraction_status==='oui' || l.gaine_extraction) return 'yes';
+  if(l.extraction_status==='non' || l.extraction_interdite) return 'no';
+  return 'maybe';
+}
+function foodState(l){
+  if(l.restauration_interdite) return 'no';
+  if(l.restauration_mentionnee) return 'yes';
+  return 'maybe';
+}
+function isNewLike(l){
+  return l.id && String(l.id).slice(-1)%3===0;
+}
+function scoreListing(l){
+  let s=0;
+  if(l.surface>=80&&l.surface<=120)s+=4;
+  if(l.prix&&l.prix<=25000)s+=4;
+  if(extractionState(l)==='yes')s+=3;
+  if(foodState(l)==='yes')s+=2;
+  if(l.restauration_interdite)s-=3;
+  return s;
+}
+function inferFeatures(l){
+  if(Array.isArray(l.caracteristiques)&&l.caracteristiques.length) return l.caracteristiques;
+  const t=((l.titre||'')+' '+(l.description||'')).toLowerCase();
+  const out=[];
+  const map=[
+    ['climatisation','Climatisation'],
+    ['mezzanine','Mezzanine'],
+    ['vitrine','Grande vitrine'],
+    ['rez-de-chaussée','RDC'],
+    ['rez de chaussée','RDC'],
+    ['concierge','Concierge'],
+    ['sécurité','Sécurité'],
+    ['garage','Garage'],
+    ['ascenseur','Ascenseur'],
+    ['porte blindée','Porte blindée']
+  ];
+  map.forEach(([k,v])=>{if(t.includes(k)&&!out.includes(v))out.push(v)});
+  return out.slice(0,8);
+}
 
-      document.querySelectorAll('[data-extraction]').forEach(chip => {
-        chip.addEventListener('click', () => {
-          document.querySelectorAll('[data-extraction]').forEach(c => c.classList.remove('active'));
-          chip.classList.add('active');
-          extractionFilter = chip.dataset.extraction;
-          render();
-        });
-      });
-      document.querySelector('[data-extraction="all"]').classList.add('active');
+function populateQuartiers(){
+  const q=el('quartier'), current=q.value;
+  q.innerHTML='<option value="">Tous quartiers</option>';
+  [...new Set(listings.map(l=>l.quartier).filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=normQuartier(v);q.appendChild(o);
+  });
+  q.value=current;
+}
 
-      ['prixMin', 'prixMax', 'surfaceMin', 'surfaceMax'].forEach(id => {
-        document.getElementById(id).addEventListener('input', render);
-      });
+function getFilters(){
+  const surf=el('surfacePreset').value;
+  let smin=0,smax=Infinity;
+  if(surf==='80-120'){smin=80;smax=120}
+  if(surf==='55-145'){smin=55;smax=145}
+  const p=el('pricePreset').value==='all'?Infinity:Number(el('pricePreset').value);
+  return {q:el('search').value.trim().toLowerCase(),quartier:el('quartier').value,smin,smax,p};
+}
+function filteredListings(){
+  const f=getFilters();
+  let arr=listings.filter(l=>{
+    if(activeSection==='favoris' && !favorites.has(String(l.id))) return false;
+    if(f.q && !((l.titre||'')+' '+(l.description||'')+' '+(l.quartier||'')).toLowerCase().includes(f.q)) return false;
+    if(f.quartier && l.quartier!==f.quartier)return false;
+    if(l.surface && (l.surface<f.smin||l.surface>f.smax))return false;
+    if(l.prix && l.prix>f.p)return false;
+    return true;
+  });
+  const sort=el('sort').value;
+  if(sort==='priceAsc')arr.sort((a,b)=>(a.prix||999999)-(b.prix||999999));
+  else if(sort==='priceDesc')arr.sort((a,b)=>(b.prix||0)-(a.prix||0));
+  else if(sort==='surfaceAsc')arr.sort((a,b)=>(a.surface||999999)-(b.surface||999999));
+  else arr.sort((a,b)=>scoreListing(b)-scoreListing(a));
+  return arr;
+}
 
-      document.getElementById('resetBtn').addEventListener('click', () => {
-        ['prixMin', 'prixMax', 'surfaceMin', 'surfaceMax'].forEach(id => document.getElementById(id).value = '');
-        activeQuartiers.clear();
-        document.querySelectorAll('[data-quartier]').forEach(c => c.classList.remove('active'));
-        extractionFilter = 'all';
-        document.querySelectorAll('[data-extraction]').forEach(c => c.classList.remove('active'));
-        document.querySelector('[data-extraction="all"]').classList.add('active');
-        render();
-      });
+function render(){
+  populateQuartiers();
+  const arr=filteredListings();
+  el('countStat').textContent=arr.length;
+  el('extractStat').textContent=arr.filter(l=>extractionState(l)==='yes').length;
+  el('foodStat').textContent=arr.filter(l=>foodState(l)==='yes').length;
+  el('favStat').textContent=favorites.size;
 
-      render();
-    }
-
-    function render() {
-      const prixMin = document.getElementById('prixMin').value;
-      const prixMax = document.getElementById('prixMax').value;
-      const surfaceMin = document.getElementById('surfaceMin').value;
-      const surfaceMax = document.getElementById('surfaceMax').value;
-
-      let filtered = allListings.filter(l => {
-        if (prixMin && l.prix && l.prix < Number(prixMin)) return false;
-        if (prixMax && l.prix && l.prix > Number(prixMax)) return false;
-        if (surfaceMin && l.surface && l.surface < Number(surfaceMin)) return false;
-        if (surfaceMax && l.surface && l.surface > Number(surfaceMax)) return false;
-        if (activeQuartiers.size > 0 && !activeQuartiers.has(l.quartier)) return false;
-        if (extractionFilter === 'yes' && !l.gaine_extraction) return false;
-        if (extractionFilter === 'maybe' && !l.gaine_extraction && !l.restauration_mentionnee) return false;
-        return true;
-      });
-
-      document.getElementById('count').textContent = `${filtered.length} annonce(s) sur ${allListings.length}`;
-
-      const list = document.getElementById('list');
-      if (filtered.length === 0) {
-        list.innerHTML = '<p>Aucune annonce ne correspond à ces filtres.</p>';
-        return;
-      }
-
-      list.innerHTML = filtered.map(l => {
-        let matchBadge = '';
-        if (l.gaine_extraction) matchBadge = '<span class="badge match-ideal">✅ gaine extraction</span>';
-        else if (l.restauration_mentionnee) matchBadge = '<span class="badge match-consider">⚠️ extraction à confirmer</span>';
-
-        return `
-        <div class="card">
-          <span class="badge quartier-tag">${l.quartier.replace('_', ' ')}</span>
-          ${matchBadge}
-          <h3>${l.titre}</h3>
-          <div class="meta">
-            💰 ${l.prix ? l.prix + ' DH' : 'Prix non précisé'} ·
-            📐 ${l.surface ? l.surface + ' m²' : 'Surface non précisée'}
-          </div>
-          <a class="btn" href="${l.lien}" target="_blank">Voir l'annonce</a>
+  const grid=el('grid');
+  grid.classList.toggle('listMode',viewMode==='list');
+  if(!arr.length){grid.innerHTML='<div class="empty">Aucune annonce ne correspond à ces critères.</div>';return}
+  grid.innerHTML=arr.map(l=>{
+    const img=getImage(l), ext=extractionState(l), food=foodState(l), fav=favorites.has(String(l.id));
+    const topClass = scoreListing(l)>=8 ? 'purple' : '';
+    const topText = scoreListing(l)>=8 ? 'TOP EMPLACEMENT' : isNewLike(l) ? 'NOUVEAU' : ext==='yes' ? 'EXTRACTION POSSIBLE' : 'À ÉTUDIER';
+    return `
+    <article class="card">
+      <div class="cardMedia" onclick="openDetail('${esc(l.id)}')">
+        ${img?`<img src="${esc(img)}" alt="">`:`<div class="placeholder">🏢</div>`}
+        <span class="badgeTop ${topClass}">${topText}</span>
+        <button class="favoriteBtn ${fav?'active':''}" onclick="event.stopPropagation();toggleFavorite('${esc(l.id)}')">${fav?'♥':'♡'}</button>
+      </div>
+      <div class="cardBody">
+        <div class="cardTitle" onclick="openDetail('${esc(l.id)}')">${esc(l.titre||'Local commercial')}</div>
+        <div class="location">⌖ ${esc(normQuartier(l.quartier||''))}, Casablanca</div>
+        <div class="price">${fmtPrice(l.prix)} <small>/ mois</small></div>
+        <div class="quickInfo">
+          <span>⛶ ${l.surface?l.surface+' m²':'—'}</span>
+          <span>▣ ${inferFeatures(l).includes('RDC')?'RDC':'—'}</span>
         </div>
-      `;
-      }).join('');
-    }
+        <div class="tags">
+          <span class="tag ${ext==='yes'?'good':ext==='no'?'bad':'warn'}">Extraction : ${ext==='yes'?'Oui':ext==='no'?'Non':'À confirmer'}</span>
+          <span class="tag ${food==='yes'?'good':food==='no'?'bad':'warn'}">Restauration : ${food==='yes'?'Oui':food==='no'?'Non':'À confirmer'}</span>
+        </div>
+        <div class="cardFooter">
+          <span>Mise à jour auto</span>
+          <span class="openLink" onclick="openDetail('${esc(l.id)}')">↗</span>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
 
-    load();
-  </script>
+function toggleFavorite(id){
+  id=String(id);
+  if(favorites.has(id))favorites.delete(id); else favorites.add(id);
+  localStorage.setItem('localia_favorites',JSON.stringify([...favorites]));
+  if(selectedId===id) renderDetail(listings.find(l=>String(l.id)===id));
+  render();
+}
+
+function openDetail(id){
+  const l=listings.find(x=>String(x.id)===String(id)); if(!l)return;
+  selectedId=String(id);
+  el('main').classList.add('detail-open');
+  renderDetail(l);
+}
+function closeDetail(){el('main').classList.remove('detail-open');selectedId=null}
+
+function renderDetail(l){
+  const imgs=getImages(l);
+  const ext=extractionState(l), food=foodState(l), fav=favorites.has(String(l.id));
+  const features=inferFeatures(l);
+  const hero=imgs[0];
+  const thumbs=(imgs.length?imgs.slice(0,5):[]);
+
+  el('detailInner').innerHTML=`
+    <div class="detailTop">
+      <button class="backBtn" onclick="closeDetail()">← Retour</button>
+      <div class="detailActions">
+        <button class="iconBtn" onclick="toggleFavorite('${esc(l.id)}')">${fav?'♥':'♡'}</button>
+        <button class="iconBtn">⇧</button>
+      </div>
+    </div>
+
+    <div class="detailHero">${hero?`<img src="${esc(hero)}" alt="">`:`<div class="placeholder">🏢</div>`}</div>
+    ${thumbs.length?`<div class="thumbRow">${thumbs.map(x=>`<div class="thumb"><img src="${esc(x)}"></div>`).join('')}</div>`:''}
+
+    <div class="detailTitle">${esc(l.titre||'Local commercial à louer')}</div>
+    <div class="location">⌖ ${esc(normQuartier(l.quartier||''))}, Casablanca</div>
+    <div class="detailPrice">${fmtPrice(l.prix)} <small>/ mois</small></div>
+
+    <div class="detailMetrics">
+      <div class="metric"><div class="metricVal">${l.surface?l.surface+' m²':'—'}</div><div class="metricLabel">Surface totale</div></div>
+      <div class="metric"><div class="metricVal">${features.includes('RDC')?'RDC':'—'}</div><div class="metricLabel">Étage</div></div>
+      <div class="metric"><div class="metricVal">—</div><div class="metricLabel">Façade</div></div>
+      <div class="metric"><div class="metricVal">${ext==='yes'?'Oui':ext==='no'?'Non':'?'}</div><div class="metricLabel">Gaine d’extraction</div></div>
+    </div>
+
+    <div class="tags">
+      <span class="tag ${food==='yes'?'good':food==='no'?'bad':'warn'}">Restauration : ${food==='yes'?'Oui':food==='no'?'Non':'À confirmer'}</span>
+      ${features.includes('Climatisation')?'<span class="tag good">Climatisation : Oui</span>':''}
+    </div>
+
+    <div class="section">
+      <h3>Description</h3>
+      <div class="description">${esc(l.description||'Description complète non disponible dans le flux actuel. Ouvrez l’annonce Mubawab pour voir tous les détails.')}</div>
+    </div>
+
+    <div class="section twoCols">
+      <div class="infoBox">
+        <h4>Caractéristiques générales</h4>
+        <div class="infoRow"><span>Type de bien</span><b>Local commercial</b></div>
+        <div class="infoRow"><span>Surface totale</span><b>${l.surface?l.surface+' m²':'—'}</b></div>
+        <div class="infoRow"><span>Étage</span><b>${features.includes('RDC')?'RDC':'—'}</b></div>
+        <div class="infoRow"><span>État</span><b>À vérifier</b></div>
+        ${features.slice(0,5).map(f=>`<div class="infoRow"><span>${esc(f)}</span><b>Oui</b></div>`).join('')}
+      </div>
+      <div class="infoBox">
+        <h4>Informations importantes</h4>
+        <div class="important"><span class="check">${ext==='yes'?'✓':'•'}</span><span>${ext==='yes'?'Gaine d’extraction existante':ext==='no'?'Extraction absente / interdite':'Extraction à confirmer'}</span></div>
+        <div class="important"><span class="check">${food==='yes'?'✓':'•'}</span><span>${food==='yes'?'Convient potentiellement à la restauration':food==='no'?'Restauration interdite':'Restauration à confirmer'}</span></div>
+        <div class="important"><span class="check">•</span><span>Bail et autorisations à vérifier</span></div>
+        <div class="important"><span class="check">•</span><span>Charges et conditions à confirmer</span></div>
+      </div>
+    </div>
+
+    <div class="bottomActions">
+      <a class="outline" href="${esc(l.lien||'#')}" target="_blank">Voir sur Mubawab ↗</a>
+      <button class="filled" onclick="toggleFavorite('${esc(l.id)}')">${fav?'♥ Retirer des favoris':'♡ Ajouter aux favoris'}</button>
+    </div>`;
+}
+
+el('importBtn').onclick=()=>el('fileInput').click();
+el('fileInput').addEventListener('change',async e=>{
+  const f=e.target.files[0];if(!f)return;
+  try{
+    const data=JSON.parse(await f.text());
+    if(!Array.isArray(data))throw new Error();
+    listings=data;localStorage.setItem('localia_listings',JSON.stringify(data));
+    render();alert(data.length+' annonces importées.');
+  }catch{alert('Fichier JSON invalide.')}
+  e.target.value='';
+});
+
+['search','quartier','surfacePreset','pricePreset','sort'].forEach(id=>el(id).addEventListener(id==='search'?'input':'change',render));
+el('resetFilters').onclick=()=>{
+  el('search').value='';el('quartier').value='';el('surfacePreset').value='80-120';el('pricePreset').value='25000';render();
+};
+el('gridBtn').onclick=()=>{viewMode='grid';el('gridBtn').classList.add('active');el('listBtn').classList.remove('active');render()};
+el('listBtn').onclick=()=>{viewMode='list';el('listBtn').classList.add('active');el('gridBtn').classList.remove('active');render()};
+
+document.querySelectorAll('.navItem').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.navItem').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+    activeSection=btn.dataset.section;
+    render();
+  });
+});
+
+render();
+</script>
 </body>
 </html>
