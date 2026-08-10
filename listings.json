@@ -660,6 +660,129 @@
     "restauration_interdite": false
   },
   {
+    "id": "8270673",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial à louer top emplacement",
+    "description": "",
+    "prix": 19500,
+    "surface": 198,
+    "image": "https://www.mubawab-media.com/ad/8/270/673F/h/photo_00_81615895.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8270673/local-commercial-%C3%A0-louer-top-emplacement",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "8208638",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Immeuble professionnel avec revenu locatif",
+    "description": "",
+    "prix": null,
+    "surface": 720,
+    "image": null,
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8208638/immeuble-professionnel-avec-revenu-locatif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "8208627",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial d'angle premium à louer Racine",
+    "description": "",
+    "prix": 33000,
+    "surface": 147,
+    "image": "https://www.mubawab-media.com/ad/8/208/627F/h/FILALI%20BROKER%20%2872%29_80949411.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8208627/local-commercial-d-angle-premium-%C3%A0-louer-racine",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "8206580",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Plateaux bureaux neufs à louer",
+    "description": "",
+    "prix": 8300,
+    "surface": 58,
+    "image": "https://www.mubawab-media.com/ad/8/206/580F/h/FILALI%20BROKER%20-%202025-07-02T101930.649_80926445.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Climatisation",
+      "Sécurité",
+      "Cuisine équipée",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8206580/plateaux-bureaux-neufs-%C3%A0-louer",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "8206578",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Immeubles professionnels en location",
+    "description": "",
+    "prix": 700000,
+    "surface": 2000,
+    "image": null,
+    "caracteristiques": [
+      "7 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8206578/immeubles-professionnels-en-location",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
     "id": "8321525",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1298,26 +1421,6 @@
     "restauration_interdite": false
   },
   {
-    "id": "8288904",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local commercial à louer 94 m2",
-    "description": "",
-    "prix": 28350,
-    "surface": 94,
-    "image": "https://www.mubawab-media.com/ad/8/288/904F/h/Image%20Local%20Commercial_81810862.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-94-m2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false
-  },
-  {
     "id": "8327780",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -1325,7 +1428,7 @@
     "description": "",
     "prix": null,
     "surface": 60,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/327/780F/h/photo_0_82224478.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -1339,6 +1442,26 @@
       "Porte blindée"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8327780/en-location-magnifique-locaux-commerciaux-de-60-%C3%A0-540-m-%C3%A0-casa-finance-city-cfc-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "8288904",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "Local commercial à louer 94 m2",
+    "description": "",
+    "prix": 28350,
+    "surface": 94,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-94-m2",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -1542,23 +1665,6 @@
     "restauration_interdite": false
   },
   {
-    "id": "8373931",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Location studio Pilates clé en main 120m2 à 5 min de CFC, Ca...",
-    "description": "A louer un studio Pilates équipé : - Surface : 120m2 - Le studio est situé à 5 min du quartier CFC - Le stationnement est disponible dans le quartier - Loyer mensuel HT : 30 000 DH - Honoraires d'agence : 1 mois de loyer",
-    "prix": 30000,
-    "surface": 120,
-    "image": null,
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8373931/location-studio-pilates-cl%C3%A9-en-main-120m2-%C3%A0-5-min-de-cfc-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false
-  },
-  {
     "id": "8368147",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -1625,7 +1731,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...",
     "prix": 188000,
     "surface": 752,
-    "image": "https://www.mubawab-media.com/ad/8/120/551F/h/local-commercial_80051731.avif",
+    "image": null,
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location",
     "gaine_extraction": false,
@@ -1642,7 +1748,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -2411,7 +2517,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -2432,7 +2538,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
