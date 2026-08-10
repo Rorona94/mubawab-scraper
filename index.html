@@ -2,24 +2,24 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Repérage — Chicken Street Casablanca</title>
+<title>Repérage locaux — Casablanca</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #16130F;
-    --surface: #211B14;
-    --surface-2: #2A2318;
-    --line: #3B301F;
-    --text: #F3ECDD;
-    --text-muted: #9C8F79;
-    --paprika: #D24E1E;
-    --paprika-deep: #7A2E13;
-    --turmeric: #E0A233;
-    --sage: #8CA06B;
-    --sage-deep: #3A4429;
+    --bg: #171310;
+    --surface: #221B14;
+    --surface-2: #2C2318;
+    --line: #4A3B27;
+    --text: #FBF3E6;
+    --text-muted: #B3A18A;
+    --paprika: #FF5A24;
+    --paprika-deep: #5C2410;
+    --turmeric: #FFBB2E;
+    --sage: #A9CC7B;
+    --sage-deep: #33421F;
   }
 
   * { box-sizing: border-box; }
@@ -29,7 +29,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'IBM Plex Sans', sans-serif;
-    padding: 20px 16px 60px;
+    padding: 16px 12px 50px;
   }
 
   .eyebrow {
@@ -38,13 +38,14 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--paprika);
-    margin: 0 0 6px;
+    margin: 0 0 4px;
+    font-weight: 600;
   }
 
   h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     margin: 0 0 4px;
@@ -52,19 +53,18 @@
   }
 
   .subhead {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--text-muted);
-    margin: 0 0 20px;
+    margin: 0 0 16px;
   }
-
-  .subhead span { color: var(--turmeric); font-weight: 500; }
+  .subhead b { color: var(--turmeric); font-weight: 600; }
 
   .panel {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
-    padding: 16px;
-    margin-bottom: 20px;
+    padding: 14px;
+    margin-bottom: 16px;
   }
 
   .panel-label {
@@ -78,7 +78,6 @@
     align-items: center;
     gap: 6px;
   }
-
   .panel-label::before {
     content: '';
     width: 6px;
@@ -87,7 +86,7 @@
     display: inline-block;
   }
 
-  .row { display: flex; gap: 8px; margin-bottom: 10px; }
+  .row { display: flex; gap: 8px; margin-bottom: 9px; }
   .row:last-child { margin-bottom: 0; }
   .field { flex: 1; min-width: 0; }
 
@@ -108,17 +107,17 @@
     color: var(--text);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 13px;
-    padding: 8px;
+    padding: 7px 8px;
   }
   input[type="number"]:focus { outline: none; border-color: var(--paprika); }
-  input[type="number"]::placeholder { color: #574A34; }
+  input[type="number"]::placeholder { color: #6B5A3E; }
 
   .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 
   .chip {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
-    padding: 6px 11px;
+    padding: 6px 10px;
     border: 1px solid var(--line);
     border-radius: 3px;
     color: var(--text-muted);
@@ -127,17 +126,18 @@
     background: var(--bg);
   }
   .chip.active {
-    background: var(--paprika-deep);
+    background: var(--paprika);
     border-color: var(--paprika);
-    color: #FBDAC9;
+    color: #2B0E00;
+    font-weight: 600;
   }
 
   .reset-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 14px;
-    padding-top: 12px;
+    margin-top: 12px;
+    padding-top: 10px;
     border-top: 1px solid var(--line);
   }
 
@@ -162,131 +162,126 @@
 
   .card {
     position: relative;
+    display: flex;
+    gap: 10px;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 
   .card-photo {
-    width: 100%;
-    aspect-ratio: 16 / 10;
+    flex: 0 0 92px;
+    width: 92px;
+    height: 92px;
+    border-radius: 3px;
     background: var(--surface-2) center/cover no-repeat;
     position: relative;
   }
-  .card-photo.no-image {
+  .card-photo.no-image::after {
+    content: '—';
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .card-photo.no-image::after {
-    content: 'PAS DE VISUEL';
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.1em;
     color: #574A34;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+  }
+
+  .card-main { flex: 1; min-width: 0; }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 4px;
   }
 
   .quartier-tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(22, 19, 15, 0.85);
-    border: 1px solid var(--line);
-    color: var(--turmeric);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 3px;
+    color: var(--turmeric);
+    font-weight: 600;
   }
 
   .stamp {
-    position: absolute;
-    top: 8px;
-    right: 8px;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 11px;
-    letter-spacing: 0.06em;
+    font-size: 10px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 5px 10px;
-    border: 2px solid;
+    padding: 3px 7px;
+    border: 1.5px solid;
     border-radius: 3px;
-    transform: rotate(4deg);
-    background: rgba(22, 19, 15, 0.75);
+    transform: rotate(3deg);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .stamp.ideal { color: var(--sage); border-color: var(--sage); }
   .stamp.consider { color: var(--turmeric); border-color: var(--turmeric); }
 
-  .card-body { padding: 14px; }
-
   .card-title {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.3;
-    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0 0 6px;
   }
 
-  .stats {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 10px;
-  }
-
-  .stat-label {
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-muted);
-    margin-bottom: 2px;
-  }
-
+  .stats { display: flex; gap: 14px; margin-bottom: 6px; }
   .stat-value {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--text);
   }
+  .stat-unit { font-size: 10px; color: var(--text-muted); font-weight: 500; }
 
-  .tags {
+  .specs {
     display: flex;
-    gap: 6px;
     flex-wrap: wrap;
-    margin-bottom: 12px;
+    gap: 3px 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
   }
+  .specs b { color: var(--text); font-weight: 500; }
 
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
   .tag {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    padding: 3px 8px;
+    font-size: 9px;
+    padding: 2px 6px;
     border-radius: 3px;
     border: 1px solid;
   }
-  .tag.ok { color: var(--sage); border-color: var(--sage-deep); background: rgba(140, 160, 107, 0.08); }
-  .tag.warn { color: var(--turmeric); border-color: #5C4620; background: rgba(224, 162, 51, 0.08); }
+  .tag.ok { color: var(--sage); border-color: var(--sage-deep); background: rgba(169, 204, 123, 0.1); }
+  .tag.warn { color: var(--turmeric); border-color: #5C4620; background: rgba(255, 187, 46, 0.08); }
+  .tag.eq { color: var(--text-muted); border-color: var(--line); }
 
   .btn {
-    display: block;
-    text-align: center;
+    display: inline-block;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.04em;
+    font-size: 11px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--bg);
     background: var(--paprika);
-    padding: 10px;
+    padding: 6px 12px;
     border-radius: 3px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .empty {
     text-align: center;
-    padding: 40px 20px;
+    padding: 36px 20px;
     color: var(--text-muted);
     font-size: 13px;
   }
@@ -302,9 +297,9 @@
 </head>
 <body>
 
-  <p class="eyebrow">Dossier de repérage · Casablanca</p>
-  <h1>Chicken Street</h1>
-  <p class="subhead">Locaux commerciaux suivis en continu — <span id="lastUpdate">chargement…</span></p>
+  <p class="eyebrow">Casablanca · locaux commerciaux</p>
+  <h1>Repérage locaux</h1>
+  <p class="subhead"><b id="lastUpdate">chargement…</b> — suivi automatique en continu</p>
 
   <div class="panel">
     <p class="panel-label">Filtrer</p>
@@ -367,18 +362,17 @@
     let CFG = CONFIG_DEFAULTS;
 
     function evaluateListing(l) {
-      const reasons = [];
       let strict = true;
       if (l.prix != null) {
         if (l.prix > CFG.budget_max_hard) return null;
-        if (l.prix > CFG.budget_max) { strict = false; reasons.push('Loyer au-dessus du plafond idéal'); }
+        if (l.prix > CFG.budget_max) strict = false;
       }
       if (l.surface != null) {
         if (l.surface < CFG.surface_min - CFG.surface_tolerance || l.surface > CFG.surface_max + CFG.surface_tolerance) return null;
-        if (l.surface < CFG.surface_min || l.surface > CFG.surface_max) { strict = false; reasons.push('Surface hors cible 80-120 m²'); }
+        if (l.surface < CFG.surface_min || l.surface > CFG.surface_max) strict = false;
       }
       if (!l.gaine_extraction) strict = false;
-      return { strict, reasons };
+      return { strict };
     }
 
     async function load() {
@@ -461,35 +455,42 @@
         const evalR = evaluateListing(l);
         const stamp = evalR
           ? (evalR.strict
-              ? '<div class="stamp ideal">Match idéal</div>'
-              : '<div class="stamp consider">À confirmer</div>')
+              ? '<span class="stamp ideal">Idéal</span>'
+              : '<span class="stamp consider">À confirmer</span>')
           : '';
+
+        const specs = [];
+        if (l.type_bien) specs.push(`<b>${l.type_bien}</b>`);
+        if (l.etat) specs.push(l.etat);
+        if (l.etage) specs.push(l.etage);
+        if (l.annee) specs.push(l.annee);
+        if (l.type_sol) specs.push(`Sol : ${l.type_sol}`);
+        if (l.salle_bain) specs.push(`${l.salle_bain} SdB`);
 
         const tags = [];
         if (l.gaine_extraction) tags.push('<span class="tag ok">Gaine extraction</span>');
         else if (l.restauration_mentionnee) tags.push('<span class="tag warn">Extraction à confirmer</span>');
+        (l.caracteristiques || []).slice(0, 4).forEach(c => {
+          if (!/salle.*bain/i.test(c)) tags.push(`<span class="tag eq">${c}</span>`);
+        });
 
         const photoStyle = l.image ? `style="background-image:url('${l.image}')"` : '';
         const photoClass = l.image ? 'card-photo' : 'card-photo no-image';
 
         return `
         <div class="card">
-          <div class="${photoClass}" ${photoStyle}>
-            <span class="quartier-tag">${l.quartier.replace(/_/g, ' ')}</span>
-            ${stamp}
-          </div>
-          <div class="card-body">
+          <div class="${photoClass}" ${photoStyle}></div>
+          <div class="card-main">
+            <div class="top-row">
+              <span class="quartier-tag">${l.quartier.replace(/_/g, ' ')}</span>
+              ${stamp}
+            </div>
             <h3 class="card-title">${l.titre}</h3>
             <div class="stats">
-              <div>
-                <div class="stat-label">Loyer</div>
-                <div class="stat-value">${l.prix ? l.prix.toLocaleString('fr-FR') + ' DH' : '—'}</div>
-              </div>
-              <div>
-                <div class="stat-label">Surface</div>
-                <div class="stat-value">${l.surface ? l.surface + ' m²' : '—'}</div>
-              </div>
+              <span class="stat-value">${l.prix ? l.prix.toLocaleString('fr-FR') : '—'}<span class="stat-unit"> DH</span></span>
+              <span class="stat-value">${l.surface || '—'}<span class="stat-unit"> m²</span></span>
             </div>
+            ${specs.length ? `<div class="specs">${specs.join(' · ')}</div>` : ''}
             ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
             <a class="btn" href="${l.lien}" target="_blank" rel="noopener">Voir l'annonce</a>
           </div>
