@@ -348,6 +348,18 @@ def scrape_quartier(page, quartier, url):
             if re.search(r"\b(?:à vendre|a vendre|vente)\b", sale_text) and not re.search(r"\b(?:à louer|a louer|location)\b", sale_text):
                 continue
 
+            # Exclut le résidentiel (appart/villa/studio) qui remonte parfois via des encarts
+            # sponsorisés/recommandés hors catégorie "locaux commerciaux"
+            residential_keywords = ["appartement", "duplex", "studio", "villa", "riad", "chambre à louer", "chambre a louer"]
+            commercial_keywords = [
+                "local", "commerce", "commercial", "magasin", "bureau", "boutique",
+                "restaurant", "snack", "café", "cafe", "showroom", "dépôt", "depot",
+                "entrepôt", "entrepot", "rideau", "fonds de commerce"
+            ]
+            type_text = sale_text
+            if any(k in type_text for k in residential_keywords) and not any(k in type_text for k in commercial_keywords):
+                continue
+
             prix = None
             prix_el = card.query_selector("[class*='price'], .priceTag")
             if prix_el:
