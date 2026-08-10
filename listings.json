@@ -2351,26 +2351,6 @@
     "restauration_interdite": false
   },
   {
-    "id": "8251665",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Magasin à louer",
-    "description": "",
-    "prix": 7000,
-    "surface": 40,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8251665/magasin-%C3%A0-louer",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false
-  },
-  {
     "id": "7887454",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
