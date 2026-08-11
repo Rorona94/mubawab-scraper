@@ -690,7 +690,7 @@
     "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités, il est aménagé avec une superficie de 210m2 dont 136m2 au plancher et 74m2 de Mezzanine Loyer : 75000 Mad Reference : LCL 00770 Honoraires : 1 mois de loyer HT Caractéristiques générales",
     "prix": 75000,
     "surface": 210,
-    "image": "https://www.mubawab-media.com/ad/8/259/259F/h/WhatsApp%20Image%202025-05-14%20at%2009.24.16_800x600%20-%20Copie_81480121.avif",
+    "image": "https://www.mubawab-media.com/ad/8/259/259F/h/WhatsApp%20Image%202025-05-14%20at%2009.24.17%20%281%29_800x600_81480124.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -711,7 +711,7 @@
     "description": "",
     "prix": 30000,
     "surface": 163,
-    "image": "https://www.mubawab-media.com/ad/7/884/302F/h/IMG20250303135005_01_79881762.avif",
+    "image": "https://www.mubawab-media.com/ad/7/884/302F/h/IMG20250303135019_79881761.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Ascenseur",
@@ -2117,7 +2117,7 @@
     "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
     "prix": 30000,
     "surface": 91,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/334/031F/h/WhatsApp%20Image%202026-04-09%20at%2014.54.31%20%284%29_800x600_82290701.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2497,7 +2497,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...",
     "prix": 188000,
     "surface": 752,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/120/551F/h/local-commercial_80051731.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location",
     "gaine_extraction": false,
@@ -2515,7 +2515,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -2524,6 +2524,33 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial"
+  },
+  {
+    "id": "7843464",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
+    "description": "",
+    "prix": 33000,
+    "surface": 120,
+    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_9_80035640.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8303261",
@@ -2555,7 +2582,7 @@
     "description": "- CONTRACTORS REAL ESTATE - Opportunité à saisir offre de location Local commercial de très haut standing. Caractéristiques: - Emplacement: Rond Point des Sports; - Surface au sol: 224 m²; - Surface Mezzanine: 108 m²; Loyer mensuel: 80.000,00 dhs/mois H.T Conditions de location: 2 mois de caution 1er mois de loyer d'avance Frais d'agence 1 mois de loyer plus T.V.A. Merci de nous contacter pour toute information complémentaire",
     "prix": 80000,
     "surface": 332,
-    "image": "https://www.mubawab-media.com/ad/8/269/488F/h/WhatsApp%20Image%202025-01-07%20%C3%A0%2016.58.20_1ea223be_81603475.avif",
+    "image": "https://www.mubawab-media.com/ad/8/269/488F/h/WhatsApp%20Image%202025-01-07%20%C3%A0%2016.59.22_1967d886_81603469.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2591,33 +2618,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "7843464",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
-    "description": "",
-    "prix": 33000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_0_80035631.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8392444",
