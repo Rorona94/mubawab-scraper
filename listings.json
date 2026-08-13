@@ -2416,6 +2416,32 @@
     "salle_bain": "1"
   },
   {
+    "id": "8111845",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local commercial 75 m² 36 de sous pente, Ziraoui",
+    "description": "",
+    "prix": 30000,
+    "surface": 111,
+    "image": "https://www.mubawab-media.com/ad/8/111/845F/h/20250225_115724_79962951.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8111845/local-commercial-75-m%C2%B2-36-de-sous-pente-ziraoui",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8353734",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -2466,7 +2492,7 @@
     "description": "",
     "prix": 11000,
     "surface": 34,
-    "image": "https://www.mubawab-media.com/ad/8/337/180F/h/Image16_82322331.avif",
+    "image": "https://www.mubawab-media.com/ad/8/337/180F/h/Image18_82322328.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
