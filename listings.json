@@ -76,6 +76,30 @@
     "salle_bain": "1"
   },
   {
+    "id": "8391352",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Commerce à louer 250 m² Gauthier Casablanca",
+    "description": "",
+    "prix": 35000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/8/391/352F/h/annonce-agenz-20260724T164856852Z-1784911733206_82956310.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Chambre rangement",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8391352/commerce-%C3%A0-louer-250-m%C2%B2-gauthier-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8206070",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -699,27 +723,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8245194/local-commercial-%C3%A0-louer-%C3%A0-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8005145",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial à louer BD MOULAY YOUSSEF",
-    "description": "Local commercial à louer SUR GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités dont la RESTAURATION avec une superficie de 131 m2 Loyer : 34500 MAD Reference : LCL 00708 Honoraires : 1 mois de loyer HT",
-    "prix": 34500,
-    "surface": 131,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8005145/local-commercial-%C3%A0-louer-bd-moulay-youssef",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -1395,7 +1398,7 @@
     "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
     "prix": 30000,
     "surface": 91,
-    "image": "https://www.mubawab-media.com/ad/8/334/031F/h/WhatsApp%20Image%202026-04-09%20at%2014.54.31%20%284%29_800x600_82290701.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
