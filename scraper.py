@@ -262,10 +262,35 @@ def send_whatsapp_alert(listing, evaluation):
     tag = "MATCH IDEAL" if evaluation["strict_match"] else "A CONSIDERER"
     reasons_txt = " | ".join(evaluation["reasons"]) if evaluation["reasons"] else ""
 
+    # Caractéristiques générales (type, état, étage, année, sol, salle de bain)
+    specs = []
+    if listing.get("type_bien"):
+        specs.append(f"Type: {listing['type_bien']}")
+    if listing.get("etat"):
+        specs.append(f"Etat: {listing['etat']}")
+    if listing.get("etage"):
+        specs.append(f"Etage: {listing['etage']}")
+    if listing.get("annee"):
+        specs.append(f"Anciennete: {listing['annee']}")
+    if listing.get("type_sol"):
+        specs.append(f"Sol: {listing['type_sol']}")
+    if listing.get("salle_bain"):
+        specs.append(f"{listing['salle_bain']} salle(s) de bain")
+    specs_txt = " | ".join(specs) if specs else "Non precise"
+
+    equip_txt = ", ".join(listing.get("caracteristiques", [])) or "Non precise"
+
+    description = (listing.get("description") or "").strip()
+    if len(description) > 400:
+        description = description[:400].rsplit(" ", 1)[0] + "..."
+
     message = (
-        f"{tag} - {listing['quartier'].replace('_', ' ').capitalize()}\n"
+        f"{tag} - {listing['quartier'].replace('_', ' ').capitalize()}\n\n"
+        f"{listing['titre']}\n\n"
         f"Prix: {listing['prix'] or 'N/A'} DH | Surface: {listing['surface'] or 'N/A'} m2\n"
-        f"{listing['titre']}\n"
+        f"Caracteristiques: {specs_txt}\n"
+        f"Equipements: {equip_txt}\n\n"
+        f"{description}\n\n"
         f"{reasons_txt}\n"
         f"{listing['lien']}"
     )
@@ -472,6 +497,19 @@ def evaluate_listing(listing):
         reasons.append("❌ restauration explicitement interdite")
     elif listing.get("restauration_mentionnee"):
         reasons.append("✅ restauration mentionnée/possible")
+
+    # Fast food = besoin de vitrine/passage piéton -> exclut les étages (sauf rez-de-chaussée)
+    etage = (listing.get("etage") or "").lower()
+    if etage:
+        is_rdc = "rez" in etage
+        is_upper_floor = re.search(r"\d", etage) is not None
+        if is_upper_floor and not is_rdc:
+            return None  # en étage, inutilisable pour un commerce avec vitrine
+        if is_rdc:
+            reasons.append("✅ rez-de-chaussée")
+    else:
+        strict_match = False
+        reasons.append("❓ étage à confirmer (vitrine/passage requis pour fast food)")
 
     return {"strict_match": strict_match, "reasons": reasons}
 
