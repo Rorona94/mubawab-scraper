@@ -13,6 +13,7 @@ import os
 import re
 import time
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from playwright.sync_api import sync_playwright
@@ -260,39 +261,38 @@ def send_whatsapp_alert(listing, evaluation):
         return
 
     tag = "MATCH IDEAL" if evaluation["strict_match"] else "A CONSIDERER"
-    reasons_txt = " | ".join(evaluation["reasons"]) if evaluation["reasons"] else ""
+    reasons_txt = " | ".join(evaluation["reasons"]) if evaluation["reasons"] else "Aucune"
 
-    # Caractéristiques générales (type, état, étage, année, sol, salle de bain)
-    specs = []
-    if listing.get("type_bien"):
-        specs.append(f"Type: {listing['type_bien']}")
-    if listing.get("etat"):
-        specs.append(f"Etat: {listing['etat']}")
-    if listing.get("etage"):
-        specs.append(f"Etage: {listing['etage']}")
-    if listing.get("annee"):
-        specs.append(f"Anciennete: {listing['annee']}")
-    if listing.get("type_sol"):
-        specs.append(f"Sol: {listing['type_sol']}")
-    if listing.get("salle_bain"):
-        specs.append(f"{listing['salle_bain']} salle(s) de bain")
-    specs_txt = " | ".join(specs) if specs else "Non precise"
-
-    equip_txt = ", ".join(listing.get("caracteristiques", [])) or "Non precise"
+    quartier_txt = listing["quartier"].replace("_", " ").capitalize()
+    prix_txt = f"{listing['prix']} DH" if listing.get("prix") else "Non precise"
+    surface_txt = f"{listing['surface']} m2" if listing.get("surface") else "Non precise"
 
     description = (listing.get("description") or "").strip()
     if len(description) > 400:
         description = description[:400].rsplit(" ", 1)[0] + "..."
+    if not description:
+        description = "Non precisee"
+
+    # Caractéristiques générales — toujours affichées, avec "Non precise" pour les champs manquants
+    caracteristiques_lines = (
+        f"Type de bien: {listing.get('type_bien') or 'Non precise'}\n"
+        f"Etat: {listing.get('etat') or 'Non precise'}\n"
+        f"Etage: {listing.get('etage') or 'Non precise'}\n"
+        f"Anciennete: {listing.get('annee') or 'Non precise'}\n"
+        f"Type de sol: {listing.get('type_sol') or 'Non precise'}\n"
+        f"Salle(s) de bain: {listing.get('salle_bain') or 'Non precise'}\n"
+        f"Equipements: {', '.join(listing.get('caracteristiques', [])) or 'Non precise'}"
+    )
 
     message = (
-        f"{tag} - {listing['quartier'].replace('_', ' ').capitalize()}\n\n"
-        f"{listing['titre']}\n\n"
-        f"Prix: {listing['prix'] or 'N/A'} DH | Surface: {listing['surface'] or 'N/A'} m2\n"
-        f"Caracteristiques: {specs_txt}\n"
-        f"Equipements: {equip_txt}\n\n"
-        f"{description}\n\n"
-        f"{reasons_txt}\n"
-        f"{listing['lien']}"
+        f"{tag}\n\n"
+        f"📍 Localisation: {quartier_txt}\n"
+        f"💰 Prix: {prix_txt}\n"
+        f"📐 Surface: {surface_txt}\n\n"
+        f"📝 Description:\n{listing['titre']}\n{description}\n\n"
+        f"🏗️ Caracteristiques generales:\n{caracteristiques_lines}\n\n"
+        f"⚠️ Points a verifier: {reasons_txt}\n\n"
+        f"🔗 Voir l'annonce:\n{listing['lien']}"
     )
 
     url = "https://api.callmebot.com/whatsapp.php"
@@ -371,14 +371,18 @@ def scrape_quartier(page, quartier, url):
 
     for card in cards:
         try:
-            link_el = card.query_selector("a[href*='/a/']") or card.query_selector("a")
-            lien = link_el.get_attribute("href") if link_el else None
+            anchors = card.query_selector_all("a")
+            lien = None
+            for a_el in anchors:
+                href = a_el.get_attribute("href")
+                if href and re.search(r"/a/\d+/", href):
+                    lien = href
+                    break
             if not lien:
                 continue
-            if not lien.startswith("http"):
-                lien = "https://www.mubawab.ma" + lien
+            lien = urljoin(page.url, lien)
 
-            if "/a/" not in lien or lien in seen_urls:
+            if lien in seen_urls:
                 continue
             seen_urls.add(lien)
 
