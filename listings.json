@@ -2463,6 +2463,29 @@
     "salle_bain": "1"
   },
   {
+    "id": "8126292",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local com Salon de Beauté café snack ou autre 120 m² Bd Anfa",
+    "description": "",
+    "prix": 30000,
+    "surface": 120,
+    "image": "https://www.mubawab-media.com/ad/8/126/292F/h/20240906_191021_80110453.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8126292/local-com-salon-de-beaut%C3%A9-caf%C3%A9-snack-ou-autre-120-m%C2%B2-bd-anfa",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8368253",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -2470,7 +2493,7 @@
     "description": "",
     "prix": 25000,
     "surface": 258,
-    "image": "https://www.mubawab-media.com/ad/8/368/253F/h/image_83723604_82701656.avif",
+    "image": "https://www.mubawab-media.com/ad/8/368/253F/h/image_636379226_82701652.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage"
