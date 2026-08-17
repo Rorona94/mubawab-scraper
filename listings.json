@@ -1405,6 +1405,34 @@
     "salle_bain": "1"
   },
   {
+    "id": "8375255",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "En Location Gérance: Magnifique Café Restaurant entièrement...",
+    "description": "",
+    "prix": 27000,
+    "surface": 150,
+    "image": "https://www.mubawab-media.com/ad/8/375/255F/h/photo_3_82780897.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8375255/en-location-g%C3%A9rance-magnifique-caf%C3%A9-restaurant-enti%C3%A8rement-%C3%A9quip%C3%A9-dans-une-zone-%C3%A0-fort-achalandage-%C3%A0-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
+  },
+  {
     "id": "8327780",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -1432,34 +1460,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "salle_bain": "1"
-  },
-  {
-    "id": "8375255",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "En Location Gérance: Magnifique Café Restaurant entièrement...",
-    "description": "",
-    "prix": 27000,
-    "surface": 150,
-    "image": "https://www.mubawab-media.com/ad/8/375/255F/h/photo_3_82780897.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8375255/en-location-g%C3%A9rance-magnifique-caf%C3%A9-restaurant-enti%C3%A8rement-%C3%A9quip%C3%A9-dans-une-zone-%C3%A0-fort-achalandage-%C3%A0-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
-    "restauration_interdite": false,
-    "salle_bain": "2"
   },
   {
     "id": "8288904",
@@ -2104,28 +2104,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8354268",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Magasin à louer à quelques metres du BD Zerktouni",
-    "description": "À louer : local rénové avec soin, idéalement situé à proximité immédiate du boulevard Zerktouni, au cœur du quartier Bourgogne. Superficie : • 119 m² au rez-de-chaussée • 80 m² supplémentaires en sous-pente (hauteur 1,80 m), réalisés en charpente et pouvant être retirés selon vos besoins afin de retrouver une belle hauteur sous plafond d’environ 4 m. Emplacement : Situé dans une ruelle calme (Rue Ibn Ayoub), à seulement quelques mètres d...",
-    "prix": 16000,
-    "surface": 119,
-    "image": "https://www.mubawab-media.com/ad/8/354/268F/h/Exterieur_82509449.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8354268/magasin-%C3%A0-louer-%C3%A0-quelques-metres-du-bd-zerktouni",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "2"
   },
   {
     "id": "8332049",
