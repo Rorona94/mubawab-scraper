@@ -635,6 +635,28 @@
     "salle_bain": "1"
   },
   {
+    "id": "8264312",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Commerce à louer 355 m² Gauthier Casablanca",
+    "description": "",
+    "prix": 60000,
+    "surface": 355,
+    "image": "https://www.mubawab-media.com/ad/8/264/312F/h/annonce-agenz-2025-06-20T123726-174Z-20250515_093041_82644370.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8264312/commerce-%C3%A0-louer-355-m%C2%B2-gauthier-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8255784",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -703,27 +725,6 @@
     "type_bien": "Local commercial",
     "etat": "Neuf",
     "salle_bain": "2"
-  },
-  {
-    "id": "8245194",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial à louer à GAUTHIER",
-    "description": "Local commercial en location sur GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités, il est aménagé avec une superficie de 225 m2 Loyer : 50000 MAD Reference : LCL 00802 Honoraires : 1 mois de loyer HT",
-    "prix": 50000,
-    "surface": 225,
-    "image": "https://www.mubawab-media.com/ad/8/245/194F/h/WhatsApp%20Image%202025-10-12%20at%2018.24.00%20%286%29_800x600_81337279.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8245194/local-commercial-%C3%A0-louer-%C3%A0-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8115478",
