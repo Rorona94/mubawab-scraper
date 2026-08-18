@@ -94,6 +94,30 @@
     "salle_bain": "1"
   },
   {
+    "id": "8391352",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Commerce à louer 250 m² Gauthier Casablanca",
+    "description": "",
+    "prix": 35000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/8/391/352F/h/annonce-agenz-20260724T164856852Z-1784911733206_82956310.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Chambre rangement",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8391352/commerce-%C3%A0-louer-250-m%C2%B2-gauthier-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8206070",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -697,34 +721,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "7884302",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local Commercial au cœur de GAUTHIER",
-    "description": "",
-    "prix": 30000,
-    "surface": 163,
-    "image": "https://www.mubawab-media.com/ad/7/884/302F/h/IMG20250303135005_01_79881762.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Ascenseur",
-      "Concierge",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7884302/local-commercial-au-c%C5%93ur-de-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etat": "Neuf",
-    "salle_bain": "2"
   },
   {
     "id": "8115478",
