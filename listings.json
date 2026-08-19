@@ -752,6 +752,139 @@
     "salle_bain": "2"
   },
   {
+    "id": "8353728",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin Commercial à louer – Maârif",
+    "description": "",
+    "prix": 15000,
+    "surface": 60,
+    "image": "https://www.mubawab-media.com/ad/8/353/728F/h/6913f2ea-8b81-4a8b-87f1-28b6c9a619dd_82503305.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8353728/magasin-commercial-%C3%A0-louer-%E2%80%93-ma%C3%A2rif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8365933",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin à maarif pour location sur bd175m²",
+    "description": "",
+    "prix": 25000,
+    "surface": 175,
+    "image": "https://www.mubawab-media.com/ad/8/365/933F/h/ad696381-d49c-4510-aa70-214748aed3b4_82677685.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8365933/magasin-%C3%A0-maarif-pour-location-sur-bd175m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8365853",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin pour location Maarif",
+    "description": "",
+    "prix": 25000,
+    "surface": 100,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8365853/magasin-pour-location-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8365390",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin à louer – Boulevard Zerktouni",
+    "description": "",
+    "prix": 43000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/8/365/390F/h/1ae95f78-fc3c-49ea-bc93-bad9967dbfb0_82671013.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8365390/magasin-%C3%A0-louer-%E2%80%93-boulevard-zerktouni",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8351849",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin à louer sur Maârif",
+    "description": "",
+    "prix": 30000,
+    "surface": 66,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8351849/magasin-%C3%A0-louer-sur-ma%C3%A2rif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8373460",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial aménagé à louer – Maârif",
+    "description": "Serraj immobilier Vous propose:À louer, local commercial entièrement aménagé, bénéficiant d'un emplacement stratégique au Triangle d'Or – Maârif. Caractéristiques : Superficie totale : 154 m² Réparti sur 2 niveaux entièrement exploitables Aménagement réalisé avec des matériaux haut de gamme, en excellent état Local exploité dans le secteur du prêt-à-porter depuis plus de 20 ans Emplacement premium, idéal pour une enseigne de prêt-à-porter, un...",
+    "prix": 40000,
+    "surface": 154,
+    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/0eb2d6ec-b9f9-49ad-a6bb-da454bd9794c_82757991.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8373460/local-commercial-am%C3%A9nag%C3%A9-%C3%A0-louer-%E2%80%93-ma%C3%A2rif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "annee": "20 ans",
+    "salle_bain": "1"
+  },
+  {
     "id": "8305944",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -759,7 +892,7 @@
     "description": "Nous vous proposons à la location un local commercial premium situé sur le prestigieux Boulevard Ghandi, l’une des artères les plus dynamiques et stratégiques de Casablanca. Caractéristiques : - Surface totale : 298 m² (204 m² au rez-de-chaussée, 94 m² en mezzanine) - Local d’angle - Plusieurs vitrines offrant une excellente visibilité - Grande façade linéaire - Idéal pour enseigne nationale, showroom, franchise ou concept store Points forts : ...",
     "prix": 58000,
     "surface": 298,
-    "image": "https://www.mubawab-media.com/ad/8/305/944F/h/965e0-ChatGPT-Image-11-f--vr.-2026--10_21_10_81992616.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -781,7 +914,7 @@
     "description": "Nous vous proposons à la location un local commercial premium situé sur le prestigieux Boulevard Ghandi, l’une des artères les plus dynamiques et stratégiques de Casablanca. Caractéristiques : - Surface totale : 214 m² (141 m² au rez-de-chaussée, 73 m² en mezzanine) - Belle vitrine offrant une excellente visibilité - Grande façade - Idéal pour enseigne nationale, showroom, cabinet, franchise ou concept store Points forts : - Emplacement p...",
     "prix": 38000,
     "surface": 214,
-    "image": "https://www.mubawab-media.com/ad/8/311/551F/h/887c6-1_82051523.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -816,139 +949,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "2"
-  },
-  {
-    "id": "8373460",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial aménagé à louer – Maârif",
-    "description": "Serraj immobilier Vous propose:À louer, local commercial entièrement aménagé, bénéficiant d'un emplacement stratégique au Triangle d'Or – Maârif. Caractéristiques : Superficie totale : 154 m² Réparti sur 2 niveaux entièrement exploitables Aménagement réalisé avec des matériaux haut de gamme, en excellent état Local exploité dans le secteur du prêt-à-porter depuis plus de 20 ans Emplacement premium, idéal pour une enseigne de prêt-à-porter, un...",
-    "prix": 40000,
-    "surface": 154,
-    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/0eb2d6ec-b9f9-49ad-a6bb-da454bd9794c_82757991.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8373460/local-commercial-am%C3%A9nag%C3%A9-%C3%A0-louer-%E2%80%93-ma%C3%A2rif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "annee": "20 ans",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8351849",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin à louer sur Maârif",
-    "description": "",
-    "prix": 30000,
-    "surface": 66,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8351849/magasin-%C3%A0-louer-sur-ma%C3%A2rif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8365390",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin à louer – Boulevard Zerktouni",
-    "description": "",
-    "prix": 43000,
-    "surface": 250,
-    "image": "https://www.mubawab-media.com/ad/8/365/390F/h/1ae95f78-fc3c-49ea-bc93-bad9967dbfb0_82671013.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8365390/magasin-%C3%A0-louer-%E2%80%93-boulevard-zerktouni",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8365853",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin pour location Maarif",
-    "description": "",
-    "prix": 25000,
-    "surface": 100,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8365853/magasin-pour-location-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8365933",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin à maarif pour location sur bd175m²",
-    "description": "",
-    "prix": 25000,
-    "surface": 175,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8365933/magasin-%C3%A0-maarif-pour-location-sur-bd175m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8353728",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin Commercial à louer – Maârif",
-    "description": "",
-    "prix": 15000,
-    "surface": 60,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8353728/magasin-commercial-%C3%A0-louer-%E2%80%93-ma%C3%A2rif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
   },
   {
     "id": "8400293",
