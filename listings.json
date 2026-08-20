@@ -748,6 +748,28 @@
     "salle_bain": "2"
   },
   {
+    "id": "8310262",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Beau local commercial en location à Maârif Extension. Surfac...",
+    "description": "Prix 25 000 DH. 2 salles de bains, 132 m². RDC Moins de 5 ans. Revêtement: Carrelage",
+    "prix": 25000,
+    "surface": 132,
+    "image": "https://www.mubawab-media.com/ad/8/310/262F/h/photo_06_82037579.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8310262/beau-local-commercial-en-location-%C3%A0-ma%C3%A2rif-extension-surface-de-132-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "annee": "5 ans",
+    "salle_bain": "2"
+  },
+  {
     "id": "8353728",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -777,7 +799,7 @@
     "description": "",
     "prix": 25000,
     "surface": 175,
-    "image": "https://www.mubawab-media.com/ad/8/365/933F/h/ad696381-d49c-4510-aa70-214748aed3b4_82677685.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement"
@@ -1419,29 +1441,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8369998",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Beau local commercial en location à Maârif. 501 m²",
-    "description": "",
-    "prix": 160000,
-    "surface": 501,
-    "image": null,
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8369998/beau-local-commercial-en-location-%C3%A0-ma%C3%A2rif-501-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "2"
   },
   {
     "id": "8115478",
