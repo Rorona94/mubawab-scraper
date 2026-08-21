@@ -1329,6 +1329,27 @@
     "salle_bain": "2"
   },
   {
+    "id": "8379954",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Commerce à louer 100 m² Maârif Casablanca",
+    "description": "Découvrez ce commerce prêt à l'emploi de 100 m², situé au rez-de-chaussée dans le quartier dynamique du Maârif à Casablanca. Entièrement fonctionnel, ce bien offre un espace optimisé avec une configuration pensée pour une installation immédiate, sans contrainte ni travaux. L'environnement commercial de Maârif est idéal pour attirer une clientèle variée, ce qui fait de cet espace un choix parfait pour les entrepreneurs souhaitant se lancer rapid...",
+    "prix": 14000,
+    "surface": 100,
+    "image": "https://www.mubawab-media.com/ad/8/379/954F/h/annonce-agenz-20260707T091557525Z-20260706135051_82832904.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8379954/commerce-%C3%A0-louer-100-m%C2%B2-ma%C3%A2rif-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8379362",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1413,27 +1434,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8374597/local-commercial-%C3%A0-louer-%C3%A0-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8368244",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial à Louer de 288.0 m² à Casablanca, Maarif",
-    "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
-    "prix": 55000,
-    "surface": 288,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368244/local-commercial-%C3%A0-louer-de-288-0-m%C2%B2-%C3%A0-casablanca-maarif",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
