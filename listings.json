@@ -2120,28 +2120,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8288904",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local commercial à louer 94 m2",
-    "description": "",
-    "prix": 28350,
-    "surface": 94,
-    "image": "https://www.mubawab-media.com/ad/8/288/904F/h/Image%20Local%20Commercial_81810862.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-94-m2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8375255",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2168,6 +2146,28 @@
     "restauration_mentionnee": true,
     "restauration_interdite": false,
     "salle_bain": "2"
+  },
+  {
+    "id": "8288904",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "Local commercial à louer 94 m2",
+    "description": "",
+    "prix": 28350,
+    "surface": 94,
+    "image": "https://www.mubawab-media.com/ad/8/288/904F/h/Image%20Local%20Commercial_81810862.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-94-m2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8327780",
