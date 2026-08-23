@@ -749,6 +749,29 @@
     "salle_bain": "2"
   },
   {
+    "id": "8403499",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial choroum à louer à Maârif. Superficie 540 m²",
+    "description": "Situé dans le quartier animé de Maârif à Casablanca, ce local commercial spacieux de 540 m² est idéalement placé pour des entreprises cherchant à s'implanter dans une zone dynamique. Avec une façade moderne équipée de rideaux métalliques, la sécurité y est assurée tout en permettant une visibilité optimale de l'intérieur. Le sol en carrelage ajoute une touche de praticité et facilite l'entretien quotidien, un atout non négligeable pour les établi...",
+    "prix": 50000,
+    "surface": 540,
+    "image": "https://www.mubawab-media.com/ad/8/403/499F/h/photo_0_83087504.avif",
+    "caracteristiques": [
+      "4 salle(s) de bain",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8403499/local-commercial-choroum-%C3%A0-louer-%C3%A0-ma%C3%A2rif-superficie-540-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "type_sol": "Carrelage",
+    "salle_bain": "4"
+  },
+  {
     "id": "8373460",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -778,7 +801,7 @@
     "description": "",
     "prix": 30000,
     "surface": 66,
-    "image": "https://www.mubawab-media.com/ad/8/351/849F/h/8404fba7-5c5b-43ba-a157-ba48226fc4ef_82484126.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement"
@@ -1412,27 +1435,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8374597/local-commercial-%C3%A0-louer-%C3%A0-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8368244",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial à Louer de 288.0 m² à Casablanca, Maarif",
-    "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
-    "prix": 55000,
-    "surface": 288,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368244/local-commercial-%C3%A0-louer-de-288-0-m%C2%B2-%C3%A0-casablanca-maarif",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -3058,7 +3060,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
