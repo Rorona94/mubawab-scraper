@@ -18,6 +18,28 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8310216",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial – emplacement premium à gauthier",
+    "description": "",
+    "prix": 35000,
+    "surface": 150,
+    "image": "https://www.mubawab-media.com/ad/8/310/216F/h/photo_00_82037030.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8310216/local-commercial-%E2%80%93-emplacement-premium-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8401030",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -50,7 +72,7 @@
     "description": "",
     "prix": 30000,
     "surface": 260,
-    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_04_81595942.avif",
+    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_00_81595938.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -74,28 +96,6 @@
     "annee": "Moins d'un an",
     "type_sol": "Marbre",
     "salle_bain": "1"
-  },
-  {
-    "id": "8310216",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial – emplacement premium à gauthier",
-    "description": "",
-    "prix": 35000,
-    "surface": 150,
-    "image": null,
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8310216/local-commercial-%E2%80%93-emplacement-premium-%C3%A0-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
   },
   {
     "id": "8257647",
@@ -522,27 +522,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "6799366",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local à la location à maarif 200m2",
-    "description": "Local commercial à louer d'une superficie de 200m sur 3 niveaux : 80 au sol 80 au sous sol et 40 de mezzanine au maarif côté McDonald's et buger King entièrement aménagé Prix 25.000dh",
-    "prix": 25000,
-    "surface": 200,
-    "image": "https://www.mubawab-media.com/ad/6/799/366F/h/photo_00_79974307.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/6799366/local-%C3%A0-la-location-%C3%A0-maarif-200m2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
     "id": "8310210",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -721,6 +700,27 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8005145/local-commercial-%C3%A0-louer-bd-moulay-youssef",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8248771",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial à louer à GAUTHIER",
+    "description": "Local commercial aménage à louer de 200 m2 Situé sur GAUTHIER a proxmite du Bd Moulay youssef dans une rue tres achalandée Convient pour : tout commerce Loyer : 40000 MAD Reference : LCL-LCV 00009 Honoraires : 1 mois de loyer HT",
+    "prix": 40000,
+    "surface": 200,
+    "image": "https://www.mubawab-media.com/ad/8/248/771F/h/WhatsApp%20Image%202025-12-30%20at%2013.42.27%20%284%29_800x600_82390901.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8248771/local-commercial-%C3%A0-louer-%C3%A0-gauthier",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -1433,7 +1433,7 @@
     "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
     "prix": 55000,
     "surface": 288,
-    "image": "https://www.mubawab-media.com/ad/8/368/244F/h/image_508452298_82701571.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
