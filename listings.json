@@ -18,6 +18,28 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8314756",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial gauthier 145 m²",
+    "description": "",
+    "prix": 23000,
+    "surface": 145,
+    "image": "https://www.mubawab-media.com/ad/8/314/756F/h/WhatsApp%20Image%202025-07-18%20at%2009.59.44%20%281%29_82086992.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8314756/local-commercial-gauthier-145-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8310216",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -47,7 +69,7 @@
     "description": "",
     "prix": 25000,
     "surface": 200,
-    "image": "https://www.mubawab-media.com/ad/8/401/030F/h/WhatsApp%20Image%202026-07-17%20at%2011.19.27%20%281%29_83061975.avif",
+    "image": "https://www.mubawab-media.com/ad/8/401/030F/h/WhatsApp%20Image%202026-07-17%20at%2011.19.27_83061967.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -243,28 +265,6 @@
     "type_bien": "Local commercial",
     "annee": "20 ans",
     "salle_bain": "1"
-  },
-  {
-    "id": "8314756",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial gauthier 145 m²",
-    "description": "",
-    "prix": 23000,
-    "surface": 145,
-    "image": null,
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8314756/local-commercial-gauthier-145-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
   },
   {
     "id": "8311443",
@@ -756,6 +756,34 @@
     "salle_bain": "2"
   },
   {
+    "id": "8404408",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin neuf 70 m² – emplacement premium maarif",
+    "description": "",
+    "prix": 25000,
+    "surface": 70,
+    "image": "https://www.mubawab-media.com/ad/8/404/408F/h/photo_0_83097696.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8404408/magasin-neuf-70-m%C2%B2-%E2%80%93-emplacement-premium-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "etat": "Neuf",
+    "salle_bain": "1"
+  },
+  {
     "id": "8403499",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -786,7 +814,7 @@
     "description": "Serraj immobilier Vous propose:À louer, local commercial entièrement aménagé, bénéficiant d'un emplacement stratégique au Triangle d'Or – Maârif. Caractéristiques : Superficie totale : 154 m² Réparti sur 2 niveaux entièrement exploitables Aménagement réalisé avec des matériaux haut de gamme, en excellent état Local exploité dans le secteur du prêt-à-porter depuis plus de 20 ans Emplacement premium, idéal pour une enseigne de prêt-à-porter, un...",
     "prix": 40000,
     "surface": 154,
-    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/4913d0e5-9e33-4736-b176-94232ae70306_82757994.avif",
+    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/0eb2d6ec-b9f9-49ad-a6bb-da454bd9794c_82757991.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -1427,27 +1455,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8374597",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local Commercial à louer à MAARIF",
-    "description": "Superbe local commercial à louer de 140m2, Situé dans le quartier MAARIF Convient pour : Depot uniquement Loyer : 12000 Mad TTC Reference : LCL 00146 Honoraires locataire : 1 mois de loyer HT",
-    "prix": 12000,
-    "surface": 140,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8374597/local-commercial-%C3%A0-louer-%C3%A0-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
