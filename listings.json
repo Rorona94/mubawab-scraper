@@ -2520,6 +2520,28 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8313030",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local commercial Bourgone tan tan 100m2",
+    "description": "PARTOUCHE PROPERTIES vous propose en exclusivité ce local commercial d’une surface totale de 100 m², comprenant 60 m² au rez-de-chaussée et 40 m² de mezzanine, un toilette à l'étage Idéalement situé dans le quartier Bourgogne Ouest, à proximité de Venezia Ice et du boulevard de Tantan, ce local bénéficie d’un emplacement stratégique. Toute activité autorisée sauf restauration. Loyer : 15 000 MAD / mois Conditions : 2 mois de caution Pas de fr...",
+    "prix": 15000,
+    "surface": 100,
+    "image": "https://www.mubawab-media.com/ad/8/313/030F/h/WhatsApp%20Image%202026-03-05%20at%2020.19.31_82070091.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8313030/local-commercial-bourgone-tan-tan-100m2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": true,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "7843464",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2576,7 +2598,7 @@
     "description": "- CONTRACTORS REAL ESTATE - Opportunité à saisir offre de location Local commercial de très haut standing. Caractéristiques: - Emplacement: Rond Point des Sports; - Surface au sol: 224 m²; - Surface Mezzanine: 108 m²; Loyer mensuel: 80.000,00 dhs/mois H.T Conditions de location: 2 mois de caution 1er mois de loyer d'avance Frais d'agence 1 mois de loyer plus T.V.A. Merci de nous contacter pour toute information complémentaire",
     "prix": 80000,
     "surface": 332,
-    "image": "https://www.mubawab-media.com/ad/8/269/488F/h/WhatsApp%20Image%202025-01-07%20%C3%A0%2016.58.20_1ea223be_81603475.avif",
+    "image": "https://www.mubawab-media.com/ad/8/269/488F/h/WhatsApp%20Image%202025-01-07%20%C3%A0%2016.59.22_1967d886_81603469.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
