@@ -1,21 +1,36 @@
 [
   {
-    "id": "8399819",
+    "id": "8268807",
     "ville": "Casablanca",
     "quartier": "gauthier",
-    "titre": "Local proche bd anfa et proche place ollier",
-    "description": "GAUTHIER EXCLUSIVITE Local commercial a louer de 26M2 entierement renovée ( electricité , plomberie etc ) Comptoir en bajmat, petit rangement avec evier . COin salle d'eau avec wc et lave main. PAS D'EXTRACTION PAS DE GAINE POSSIBLE PAS DE RESTAURATION",
-    "prix": 8500,
-    "surface": 26,
-    "image": "https://www.mubawab-media.com/ad/8/399/819F/h/MONL5_83049956.avif",
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8399819/local-proche-bd-anfa-et-proche-place-ollier",
+    "titre": "Local commercial à louer à Gauthier. Surface de 260 m². Port...",
+    "description": "",
+    "prix": 30000,
+    "surface": 260,
+    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_04_81595942.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8268807/local-commercial-%C3%A0-louer-%C3%A0-gauthier-surface-de-260-m%C2%B2-porte-blind%C3%A9e-et-r%C3%A9sidence-s%C3%A9curis%C3%A9e",
     "gaine_extraction": false,
-    "extraction_interdite": true,
-    "extraction_status": "non",
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
     "restauration_mentionnee": false,
-    "restauration_interdite": true,
-    "type_bien": "Local commercial"
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "2ème étage",
+    "annee": "Moins d'un an",
+    "type_sol": "Marbre",
+    "salle_bain": "1"
   },
   {
     "id": "8314756",
@@ -85,39 +100,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8268807",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial à louer à Gauthier. Surface de 260 m². Port...",
-    "description": "",
-    "prix": 30000,
-    "surface": 260,
-    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_00_81595938.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8268807/local-commercial-%C3%A0-louer-%C3%A0-gauthier-surface-de-260-m%C2%B2-porte-blind%C3%A9e-et-r%C3%A9sidence-s%C3%A9curis%C3%A9e",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "2ème étage",
-    "annee": "Moins d'un an",
-    "type_sol": "Marbre",
-    "salle_bain": "1"
   },
   {
     "id": "8257647",
@@ -734,6 +716,27 @@
     "salle_bain": "2"
   },
   {
+    "id": "8005145",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial à louer BD MOULAY YOUSSEF",
+    "description": "Local commercial à louer SUR GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités dont la RESTAURATION avec une superficie de 131 m2 Loyer : 34500 MAD Reference : LCL 00708 Honoraires : 1 mois de loyer HT",
+    "prix": 34500,
+    "surface": 131,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8005145/local-commercial-%C3%A0-louer-bd-moulay-youssef",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "7892573",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -781,6 +784,27 @@
     "restauration_interdite": false,
     "type_bien": "Magasin",
     "etat": "Neuf",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8405491",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin à la location – Racine",
+    "description": "Emplacement stratégique en plein Racine, juste à côté du Boulevard El Massira. Superficie : 130 m² Idéal pour plusieurs types d’activités Restauration non autorisée Loyer : 30 000 DH / mois",
+    "prix": 30000,
+    "surface": 130,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8405491/magasin-%C3%A0-la-location-%E2%80%93-racine",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": true,
+    "type_bien": "Magasin",
     "salle_bain": "1"
   },
   {
@@ -1007,7 +1031,7 @@
     "ville": "Casablanca",
     "quartier": "maarif",
     "titre": "Top Affaire Loc Ccommercial 214m2 7 rideaux Maarif",
-    "description": "A louer local commercial exceptionnel, faisant angle, très passant, comprenant 7 rideaux situé au Maarif dans la zone du Twin Center Superficie : 214 m² plein pieds rez de chaussée, très grande façade Conditions : --CONTRAT de BAIL, --LOYER : 50000 DH par mois TTC --CAUTION : 3 mois de caution A la signature Caution 3 mois plus 3 mois de loyer puis paiement mensuel",
+    "description": "A louer local commercial exceptionnel, faisant angle, très passant, comprenant 7 rideaux situé au Maarif dans la zone du Twin Center Superficie : 214 m² plein pieds rez de chaussée, très grande façade Conditions : --CONTRAT de BAIL, --LOYER : 50000 DH par mois TSC 10.5% soit 55250 DH TTC (pas de TVA) --CAUTION : 3 mois de caution A la signature Caution 3 mois plus 3 mois de loyer puis paiement mensuel",
     "prix": 50000,
     "surface": 214,
     "image": null,
@@ -1425,32 +1449,6 @@
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false,
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8379362",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin à louer – Ghandi Mall",
-    "description": "",
-    "prix": 37000,
-    "surface": 74,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8379362/magasin-%C3%A0-louer-%E2%80%93-ghandi-mall",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
@@ -2555,6 +2553,34 @@
     "salle_bain": "1"
   },
   {
+    "id": "8405381",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local commercial aménagé 102 m², Bourgogne",
+    "description": "",
+    "prix": 20000,
+    "surface": 102,
+    "image": "https://www.mubawab-media.com/ad/8/405/381F/h/photo_5_83108394.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8405381/local-commercial-am%C3%A9nag%C3%A9-102-m%C2%B2-bourgogne",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "3"
+  },
+  {
     "id": "8289714",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2562,7 +2588,7 @@
     "description": "",
     "prix": 21000,
     "surface": 39,
-    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -3068,7 +3094,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
