@@ -2556,6 +2556,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8406566",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local commercial à Louer de 109.0 m² à Casablanca, Bourgogne...",
+    "description": "À louer, local commercial de 109 m² situé dans le quartier prisé de Bourgogne (Anfa), Casablanca. Idéal pour développer votre activité dans un environnement dynamique. Loyer mensuel de 22 000 Dhs. Ne manquez pas cette opportunité !",
+    "prix": 22000,
+    "surface": 109,
+    "image": "https://www.mubawab-media.com/ad/8/406/566F/h/image_879291062_83121725.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8406566/local-commercial-%C3%A0-louer-de-109-0-m%C2%B2-%C3%A0-casablanca-bourgogne-anfa",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8405381",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2563,7 +2584,7 @@
     "description": "",
     "prix": 20000,
     "surface": 102,
-    "image": "https://www.mubawab-media.com/ad/8/405/381F/h/photo_5_83108394.avif",
+    "image": "https://www.mubawab-media.com/ad/8/405/381F/h/photo_0_83108389.avif",
     "caracteristiques": [
       "3 salle(s) de bain",
       "Chambre rangement",
