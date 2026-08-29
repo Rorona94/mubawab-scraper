@@ -1195,7 +1195,7 @@
     "quartier": "maarif",
     "titre": "Local Commercial idéal pour Café Snack 113m2 Maarif",
     "description": "A louer local commercial tous commerces, finitions faites, très bien situé au coeur du quartier Maarif. Surface totale : 113m2 Rez de chaussée : 79m2 Soupente : 34m2 Très bien situé, carrelage au sol, peinture faite, électricité distribuée Idéal pour Restauration, café snack ou toute activité Conditions : Contrat de BAIL Loyer : 20000 DH/mois plus TVA 20% récupérable soit 24000 DH TTC/ mois Caution : 2 mois",
-    "prix": 20000,
+    "prix": 2000,
     "surface": 113,
     "image": "https://www.mubawab-media.com/ad/8/343/555F/h/20251204_154924_82391940.avif",
     "caracteristiques": [
@@ -1456,6 +1456,30 @@
     "salle_bain": "1"
   },
   {
+    "id": "8321525",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local 160m2 proche fourate et bir anzarane",
+    "description": "",
+    "prix": 18000,
+    "surface": 157,
+    "image": "https://www.mubawab-media.com/ad/8/321/525F/h/IMG20260325131143_82156772.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8321525/local-160m2-proche-fourate-et-bir-anzarane",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8115478",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1478,30 +1502,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8321525",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local 160m2 proche fourate et bir anzarane",
-    "description": "",
-    "prix": 18000,
-    "surface": 157,
-    "image": "https://www.mubawab-media.com/ad/8/321/525F/h/IMG20260325131143_82156772.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage",
-      "Ascenseur",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8321525/local-160m2-proche-fourate-et-bir-anzarane",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
@@ -2134,31 +2134,24 @@
     "salle_bain": "1"
   },
   {
-    "id": "8375255",
+    "id": "7750677",
     "ville": "Casablanca",
     "quartier": "cfc",
-    "titre": "En Location Gérance: Magnifique Café Restaurant entièrement...",
-    "description": "",
-    "prix": 27000,
-    "surface": 150,
-    "image": "https://www.mubawab-media.com/ad/8/375/255F/h/photo_3_82780897.avif",
+    "titre": "Local de 250 m² large vitrine en face CFC",
+    "description": "Local commercial de 250 m² (155 m² en rdc et 105 m² en sous pente), avec double vitrine, autorisé pour tous les commerces, sur le bd Oum Rabii, en face des immeubles de CFC",
+    "prix": 40000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/7/750/677F/h/20230801_095527_52784545.avif",
     "caracteristiques": [
-      "2 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée",
-      "Cuisine équipée"
+      "2 salle(s) de bain"
     ],
-    "lien": "https://www.mubawab.ma/fr/a/8375255/en-location-g%C3%A9rance-magnifique-caf%C3%A9-restaurant-enti%C3%A8rement-%C3%A9quip%C3%A9-dans-une-zone-%C3%A0-fort-achalandage-%C3%A0-casablanca",
+    "lien": "https://www.mubawab.ma/fr/a/7750677/local-de-250-m%C2%B2-large-vitrine-en-face-cfc",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
+    "restauration_mentionnee": false,
     "restauration_interdite": false,
+    "type_bien": "Local commercial",
     "salle_bain": "2"
   },
   {
@@ -2211,6 +2204,34 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "salle_bain": "1"
+  },
+  {
+    "id": "8375255",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "En Location Gérance: Magnifique Café Restaurant entièrement...",
+    "description": "",
+    "prix": 27000,
+    "surface": 150,
+    "image": "https://www.mubawab-media.com/ad/8/375/255F/h/photo_0_82780894.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8375255/en-location-g%C3%A9rance-magnifique-caf%C3%A9-restaurant-enti%C3%A8rement-%C3%A9quip%C3%A9-dans-une-zone-%C3%A0-fort-achalandage-%C3%A0-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
   },
   {
     "id": "8288905",
@@ -2404,27 +2425,6 @@
     "restauration_interdite": false,
     "type_bien": "Magasin",
     "etage": "Rez de chaussée",
-    "salle_bain": "2"
-  },
-  {
-    "id": "7750677",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local de 250 m² large vitrine en face CFC",
-    "description": "Local commercial de 250 m² (155 m² en rdc et 105 m² en sous pente), avec double vitrine, autorisé pour tous les commerces, sur le bd Oum Rabii, en face des immeubles de CFC",
-    "prix": 40000,
-    "surface": 250,
-    "image": "https://www.mubawab-media.com/ad/7/750/677F/h/20230801_095154_52784529.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7750677/local-de-250-m%C2%B2-large-vitrine-en-face-cfc",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "2"
   },
   {
@@ -3112,6 +3112,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8353734",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Magasin Commercial à louer – Bourgogne",
+    "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
+    "prix": 19000,
+    "surface": 100,
+    "image": "https://www.mubawab-media.com/ad/8/353/734F/h/c7492d3b-055a-4671-9038-a2455b0b439a_82503322.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
     "id": "8111845",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3135,27 +3156,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8353734",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Magasin Commercial à louer – Bourgogne",
-    "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
-    "prix": 19000,
-    "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/353/734F/h/c7492d3b-055a-4671-9038-a2455b0b439a_82503322.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
     "salle_bain": "1"
   },
   {
