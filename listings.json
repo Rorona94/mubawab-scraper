@@ -1195,7 +1195,7 @@
     "quartier": "maarif",
     "titre": "Local Commercial idéal pour Café Snack 113m2 Maarif",
     "description": "A louer local commercial tous commerces, finitions faites, très bien situé au coeur du quartier Maarif. Surface totale : 113m2 Rez de chaussée : 79m2 Soupente : 34m2 Très bien situé, carrelage au sol, peinture faite, électricité distribuée Idéal pour Restauration, café snack ou toute activité Conditions : Contrat de BAIL Loyer : 20000 DH/mois plus TVA 20% récupérable soit 24000 DH TTC/ mois Caution : 2 mois",
-    "prix": 2000,
+    "prix": 20000,
     "surface": 113,
     "image": "https://www.mubawab-media.com/ad/8/343/555F/h/20251204_154924_82391940.avif",
     "caracteristiques": [
@@ -2134,6 +2134,30 @@
     "salle_bain": "1"
   },
   {
+    "id": "8406649",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "CFC Local commercial avec statut CFC 551 m2 dont 227 m2 de t...",
+    "description": "",
+    "prix": 124000,
+    "surface": 551,
+    "image": "https://www.mubawab-media.com/ad/8/406/649F/h/photo_00_83122627.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Garage",
+      "Concierge",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8406649/cfc-local-commercial-avec-statut-cfc-551-m2-dont-227-m2-de-terrasses-id%C3%A9al-pour-restaurant-et-autres-activit%C3%A9s-commerciales",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "3"
+  },
+  {
     "id": "7750677",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2162,7 +2186,7 @@
     "description": "",
     "prix": 28350,
     "surface": 94,
-    "image": "https://www.mubawab-media.com/ad/8/288/904F/h/Image%20Local%20Commercial_81810862.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement"
