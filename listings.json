@@ -1405,6 +1405,27 @@
     "salle_bain": "2"
   },
   {
+    "id": "8379954",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Commerce à louer 100 m² Maârif Casablanca",
+    "description": "Découvrez ce commerce prêt à l'emploi de 100 m², situé au rez-de-chaussée dans le quartier dynamique du Maârif à Casablanca. Entièrement fonctionnel, ce bien offre un espace optimisé avec une configuration pensée pour une installation immédiate, sans contrainte ni travaux. L'environnement commercial de Maârif est idéal pour attirer une clientèle variée, ce qui fait de cet espace un choix parfait pour les entrepreneurs souhaitant se lancer rapid...",
+    "prix": 14000,
+    "surface": 100,
+    "image": "https://www.mubawab-media.com/ad/8/379/954F/h/annonce-agenz-20260707T091557525Z-20260706135051_82832904.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8379954/commerce-%C3%A0-louer-100-m%C2%B2-ma%C3%A2rif-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8379362",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1427,30 +1448,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Magasin",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8264602",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "DL. 998: Local commercial à la Rue Aziz Bellal",
-    "description": "",
-    "prix": 50000,
-    "surface": 283,
-    "image": "https://www.mubawab-media.com/ad/8/264/602F/h/1_81548448.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8264602/dl-998-local-commercial-%C3%A0-la-rue-aziz-bellal",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
