@@ -2581,6 +2581,51 @@
     "salle_bain": "1"
   },
   {
+    "id": "8289714",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local Commercial à Louer Bd de la Corniche",
+    "description": "",
+    "prix": 21000,
+    "surface": 39,
+    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8408187",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local commercial en location à Bourgogne Ouest. Surface tota...",
+    "description": "",
+    "prix": 8500,
+    "surface": 35,
+    "image": "https://www.mubawab-media.com/ad/8/408/187F/h/1000009445_83135811.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation",
+      "Chauffage central"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8408187/local-commercial-en-location-%C3%A0-bourgogne-ouest-surface-totale-35-m%C2%B2-syst%C3%A8me-de-climatisation",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8303261",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2588,7 +2633,7 @@
     "description": "Propose à la location Local commercial idéal pour snack ou autres activités. 54m2, 35m2 plus 19m2 en haut Terrasse de 25m2 grande façade de 8m de long Situé à Bourgone rue parallèle à Tan Tan 12k TTC DERNIER PRIX (pas de tva récupérable)",
     "prix": 12000,
     "surface": 54,
-    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.04.15_82317935.avif",
+    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.08.39_82317932.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Terrasse"
@@ -2610,7 +2655,7 @@
     "description": "PARTOUCHE PROPERTIES vous propose en exclusivité ce local commercial d’une surface totale de 100 m², comprenant 60 m² au rez-de-chaussée et 40 m² de mezzanine, un toilette à l'étage Idéalement situé dans le quartier Bourgogne Ouest, à proximité de Venezia Ice et du boulevard de Tantan, ce local bénéficie d’un emplacement stratégique. Toute activité autorisée sauf restauration. Loyer : 15 000 MAD / mois Conditions : 2 mois de caution Pas de fr...",
     "prix": 15000,
     "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/313/030F/h/WhatsApp%20Image%202026-03-05%20at%2020.19.31_82070091.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2672,28 +2717,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "3"
-  },
-  {
-    "id": "8289714",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local Commercial à Louer Bd de la Corniche",
-    "description": "",
-    "prix": 21000,
-    "surface": 39,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8269488",
@@ -3210,7 +3233,7 @@
     "quartier": "bourgogne_est",
     "titre": "Local com Salon de Beauté café snack ou autre 120 m² Bd Anfa",
     "description": "",
-    "prix": 30000,
+    "prix": 2500,
     "surface": 120,
     "image": "https://www.mubawab-media.com/ad/8/126/292F/h/20240906_191021_80110453.avif",
     "caracteristiques": [
