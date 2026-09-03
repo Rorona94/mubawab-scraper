@@ -788,6 +788,28 @@
     "salle_bain": "1"
   },
   {
+    "id": "8409267",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "A louer local commercial 150m2",
+    "description": "",
+    "prix": 30000,
+    "surface": 150,
+    "image": "https://www.mubawab-media.com/ad/8/409/267F/h/WhatsApp_Image_2026-09-03_at_17.56.36__1__83148544.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8409267/a-louer-local-commercial-150m2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8373460",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -795,7 +817,7 @@
     "description": "Serraj immobilier Vous propose:À louer, local commercial entièrement aménagé, bénéficiant d'un emplacement stratégique au Triangle d'Or – Maârif. Caractéristiques : Superficie totale : 154 m² Réparti sur 2 niveaux entièrement exploitables Aménagement réalisé avec des matériaux haut de gamme, en excellent état Local exploité dans le secteur du prêt-à-porter depuis plus de 20 ans Emplacement premium, idéal pour une enseigne de prêt-à-porter, un...",
     "prix": 40000,
     "surface": 154,
-    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/4913d0e5-9e33-4736-b176-94232ae70306_82757994.avif",
+    "image": "https://www.mubawab-media.com/ad/8/373/460F/h/0eb2d6ec-b9f9-49ad-a6bb-da454bd9794c_82757991.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -1432,30 +1454,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Magasin",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8264602",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "DL. 998: Local commercial à la Rue Aziz Bellal",
-    "description": "",
-    "prix": 50000,
-    "surface": 283,
-    "image": "https://www.mubawab-media.com/ad/8/264/602F/h/1_81548448.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8264602/dl-998-local-commercial-%C3%A0-la-rue-aziz-bellal",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
@@ -2124,7 +2122,7 @@
     "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
     "prix": 30000,
     "surface": 91,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/334/031F/h/WhatsApp%20Image%202026-04-09%20at%2014.54.31%20%284%29_800x600_82290701.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
