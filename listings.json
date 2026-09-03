@@ -788,6 +788,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8409354",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial de 140 m² à Casablanca",
+    "description": "",
+    "prix": 25000,
+    "surface": 140,
+    "image": "https://www.mubawab-media.com/ad/8/409/354F/h/thumbnail_2026_08_18_08_53_25_36_83149574.avif",
+    "caracteristiques": [
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8409354/local-commercial-de-140-m%C2%B2-%C3%A0-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée"
+  },
+  {
     "id": "8409267",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -795,7 +816,7 @@
     "description": "",
     "prix": 30000,
     "surface": 150,
-    "image": "https://www.mubawab-media.com/ad/8/409/267F/h/WhatsApp_Image_2026-09-03_at_17.56.36__1__83148544.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -890,28 +911,6 @@
       "Chambre rangement"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8365853/magasin-pour-location-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8365933",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin à maarif pour location sur bd175m²",
-    "description": "",
-    "prix": 25000,
-    "surface": 175,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8365933/magasin-%C3%A0-maarif-pour-location-sur-bd175m%C2%B2",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -2122,7 +2121,7 @@
     "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
     "prix": 30000,
     "surface": 91,
-    "image": "https://www.mubawab-media.com/ad/8/334/031F/h/WhatsApp%20Image%202026-04-09%20at%2014.54.31%20%284%29_800x600_82290701.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2605,29 +2604,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8408187",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local commercial en location à Bourgogne Ouest. Surface tota...",
-    "description": "",
-    "prix": 8500,
-    "surface": 35,
-    "image": "https://www.mubawab-media.com/ad/8/408/187F/h/1000009445_83135811.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Chauffage central"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8408187/local-commercial-en-location-%C3%A0-bourgogne-ouest-surface-totale-35-m%C2%B2-syst%C3%A8me-de-climatisation",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8303261",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2635,7 +2611,7 @@
     "description": "Propose à la location Local commercial idéal pour snack ou autres activités. 54m2, 35m2 plus 19m2 en haut Terrasse de 25m2 grande façade de 8m de long Situé à Bourgone rue parallèle à Tan Tan 12k TTC DERNIER PRIX (pas de tva récupérable)",
     "prix": 12000,
     "surface": 54,
-    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.08.39_82317932.avif",
+    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.04.15_82317935.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Terrasse"
