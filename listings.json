@@ -1457,6 +1457,29 @@
     "salle_bain": "1"
   },
   {
+    "id": "8409509",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "À louer superbe bureau en duplex bir anzarane",
+    "description": "",
+    "prix": 16000,
+    "surface": 160,
+    "image": "https://www.mubawab-media.com/ad/8/409/509F/h/thumb_159693_property_xlarge_83151404.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8409509/%C3%A0-louer-superbe-bureau-en-duplex-bir-anzarane",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
+    "etage": "9ème étage",
+    "salle_bain": "2"
+  },
+  {
     "id": "8321525",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1513,7 +1536,7 @@
     "description": "103m rdc 70m mezzanine Rue Socrate 40000 DHS HT / mois Frais d’agence 12% du loyer annuel TTC",
     "prix": 40000,
     "surface": 173,
-    "image": "https://www.mubawab-media.com/ad/8/399/733F/h/photo_8_83049167.avif",
+    "image": "https://www.mubawab-media.com/ad/8/399/733F/h/photo_0_83049159.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2114,27 +2137,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8334031",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR",
-    "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
-    "prix": 30000,
-    "surface": 91,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8334031/local-commercial-en-location-sur-bd-yacoub-el-mansour",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8368116",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2153,6 +2155,28 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8409505",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "Bureau à louer cfc",
+    "description": "",
+    "prix": 28600,
+    "surface": 130,
+    "image": "https://www.mubawab-media.com/ad/8/409/505F/h/thumb_159765_property_xlarge_83151331.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8409505/bureau-%C3%A0-louer-cfc",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
     "salle_bain": "1"
   },
   {
@@ -2192,7 +2216,7 @@
     "description": "",
     "prix": 35000,
     "surface": 270,
-    "image": "https://www.mubawab-media.com/ad/8/129/390F/h/20250314_162911_80141453.avif",
+    "image": "https://www.mubawab-media.com/ad/8/129/390F/h/20250314_163056_80141444.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
