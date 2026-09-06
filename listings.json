@@ -2329,29 +2329,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8288905",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local commercial à louer 166 m2",
-    "description": "",
-    "prix": 47600,
-    "surface": 166,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8288905/local-commercial-%C3%A0-louer-166-m2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8130311",
     "ville": "Casablanca",
     "quartier": "cfc",
