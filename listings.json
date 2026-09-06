@@ -789,6 +789,34 @@
     "salle_bain": "2"
   },
   {
+    "id": "8394376",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial de 250m sur bd zerktouni",
+    "description": "",
+    "prix": 30000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/8/394/376F/h/WhatsApp%20Image%202026-06-05%20at%2021.09.51_82992085.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Ascenseur",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8394376/local-commercial-de-250m-sur-bd-zerktouni",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez de chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8336625",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -796,7 +824,7 @@
     "description": "Situé sur l’un des boulevards les plus emblématiques de Casablanca, en face des Twin Center et à proximité immédiate de l’hôtel Kenzi Tower, ce local commercial bénéficie d’une visibilité premium et d’un emplacement stratégique à fort passage. Un cachet architectural unique Dès l’entrée, le lieu impressionne par son atmosphère hors du commun : * Un spectaculaire lustre central suspendu sous un sky-dome * Un faux plafond travaillé avec des déta...",
     "prix": 100000,
     "surface": 297,
-    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_015_82318938.avif",
+    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_00_82318923.avif",
     "caracteristiques": [
       "2 salle(s) de bain"
     ],
@@ -1083,34 +1111,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8352168/top-affaire-loc-ccommercial-214m2-7-rideaux-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez de chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8394376",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial de 250m sur bd zerktouni",
-    "description": "",
-    "prix": 30000,
-    "surface": 250,
-    "image": "https://www.mubawab-media.com/ad/8/394/376F/h/WhatsApp%20Image%202026-06-05%20at%2021.09.50%20%285%29_82992080.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Ascenseur",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8394376/local-commercial-de-250m-sur-bd-zerktouni",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
