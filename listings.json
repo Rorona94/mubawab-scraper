@@ -648,34 +648,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "7884302",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local Commercial au cœur de GAUTHIER",
-    "description": "",
-    "prix": 30000,
-    "surface": 163,
-    "image": "https://www.mubawab-media.com/ad/7/884/302F/h/IMG20250303135005_01_79881762.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Ascenseur",
-      "Concierge",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7884302/local-commercial-au-c%C5%93ur-de-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etat": "Neuf",
-    "salle_bain": "2"
-  },
-  {
     "id": "8005145",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -737,6 +709,32 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
+  },
+  {
+    "id": "7915548",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Superbe local commercial 131 m2 à Gauthier",
+    "description": "",
+    "prix": 34500,
+    "surface": 131,
+    "image": "https://www.mubawab-media.com/ad/7/915/548F/h/20240513_143615_82025751.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/7915548/superbe-local-commercial-131-m2-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8404408",
