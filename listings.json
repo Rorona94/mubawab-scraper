@@ -2510,6 +2510,33 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8083963",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local commercial à louer à Bourgogne Ouest",
+    "description": "",
+    "prix": 30000,
+    "surface": 307,
+    "image": "https://www.mubawab-media.com/ad/8/083/963F/h/photo_9_79691594.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8083963/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ouest",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8303261",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2561,7 +2588,7 @@
     "description": "",
     "prix": 21000,
     "surface": 39,
-    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -2863,33 +2890,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8083963",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local commercial à louer à Bourgogne Ouest",
-    "description": "",
-    "prix": 30000,
-    "surface": 307,
-    "image": "https://www.mubawab-media.com/ad/8/083/963F/h/photo_0_79691585.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8083963/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ouest",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
     "id": "8199558",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -3141,29 +3141,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8235709",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial à louer Bd d'Anfa rue",
-    "description": "",
-    "prix": 35000,
-    "surface": 58,
-    "image": "https://www.mubawab-media.com/ad/8/235/709F/h/photo_0_81238636.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Cuisine équipée",
-      "Terrasse"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8235709/local-commercial-%C3%A0-louer-bd-d-anfa-rue",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
   },
   {
     "id": "8334013",
