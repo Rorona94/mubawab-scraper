@@ -770,6 +770,29 @@
     "salle_bain": "2"
   },
   {
+    "id": "8111812",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "DV. 946: Local commercial à la rue Ibn Rochd",
+    "description": "",
+    "prix": null,
+    "surface": 272,
+    "image": "https://www.mubawab-media.com/ad/8/111/812F/h/My%20project-2%20%2820%29%20%281%29_79962587.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8111812/dv-946-local-commercial-%C3%A0-la-rue-ibn-rochd",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "2"
+  },
+  {
     "id": "7892573",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -799,7 +822,7 @@
     "description": "Situé sur l’un des boulevards les plus emblématiques de Casablanca, en face des Twin Center et à proximité immédiate de l’hôtel Kenzi Tower, ce local commercial bénéficie d’une visibilité premium et d’un emplacement stratégique à fort passage. Un cachet architectural unique Dès l’entrée, le lieu impressionne par son atmosphère hors du commun : * Un spectaculaire lustre central suspendu sous un sky-dome * Un faux plafond travaillé avec des déta...",
     "prix": 100000,
     "surface": 297,
-    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_015_82318938.avif",
+    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_00_82318923.avif",
     "caracteristiques": [
       "2 salle(s) de bain"
     ],
@@ -904,29 +927,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
-  },
-  {
-    "id": "8111812",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "DV. 946: Local commercial à la rue Ibn Rochd",
-    "description": "",
-    "prix": null,
-    "surface": 272,
-    "image": "https://www.mubawab-media.com/ad/8/111/812F/h/1_79962580.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8111812/dv-946-local-commercial-%C3%A0-la-rue-ibn-rochd",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "2"
   },
   {
     "id": "8394376",
@@ -1499,6 +1499,26 @@
     "salle_bain": "1"
   },
   {
+    "id": "8414421",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local 113 m² Maarif extension Forate",
+    "description": "Local de 113 m², avec rideau de 3 m environ, 4,5 m de hauteur sous plafond, situé dans la rue Forate (proche Carrefour et Marjane), état brut",
+    "prix": 16000,
+    "surface": 113,
+    "image": "https://www.mubawab-media.com/ad/8/414/421F/h/20260330_135921_83207366.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8414421/local-113-m%C2%B2-maarif-extension-forate",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "salle_bain": "1"
+  },
+  {
     "id": "8280628",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1529,7 +1549,7 @@
     "description": "",
     "prix": 45000,
     "surface": 390,
-    "image": "https://www.mubawab-media.com/ad/8/115/478F/h/nourreska_immobilier_casa_maroc_location_magasin_boutique_commerce_anfa%20%2811%29_79999479.avif",
+    "image": "https://www.mubawab-media.com/ad/8/115/478F/h/nourreska_immobilier_casa_maroc_location_magasin_boutique_commerce_anfa%20%282%29_79999469.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement",
@@ -2134,27 +2154,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8334035",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR",
-    "description": "Local commercial de 202m² en location dont 138 m2 de plancher et 64 m2 de mezzanine, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 45000 MAD HT TSC TVA Reference : LCL 00887 Honoraires : 1 mois de loyer HT",
-    "prix": 45000,
-    "surface": 202,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8334035/local-commercial-en-location-sur-bd-yacoub-el-mansour",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8288904",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2256,6 +2255,31 @@
     "salle_bain": "4"
   },
   {
+    "id": "6890163",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "DL. 594: Local commercial de 1190 m², Hay Hassani",
+    "description": "",
+    "prix": 115000,
+    "surface": 1190,
+    "image": "https://www.mubawab-media.com/ad/6/890/163F/h/10%20Fa%C3%A7ade_43172226.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/6890163/dl-594-local-commercial-de-1190-m%C2%B2-hay-hassani",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez de chaussé",
+    "salle_bain": "3"
+  },
+  {
     "id": "8327780",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2283,31 +2307,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "salle_bain": "1"
-  },
-  {
-    "id": "6890163",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "DL. 594: Local commercial de 1190 m², Hay Hassani",
-    "description": "",
-    "prix": 115000,
-    "surface": 1190,
-    "image": "https://www.mubawab-media.com/ad/6/890/163F/h/10%20Fa%C3%A7ade_43172226.avif",
-    "caracteristiques": [
-      "3 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/6890163/dl-594-local-commercial-de-1190-m%C2%B2-hay-hassani",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez de chaussé",
-    "salle_bain": "3"
   },
   {
     "id": "8129390",
