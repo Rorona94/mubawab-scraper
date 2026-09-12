@@ -770,6 +770,48 @@
     "salle_bain": "2"
   },
   {
+    "id": "8336625",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "À louer – local commercial d’exception – bd zerktouni, face...",
+    "description": "Situé sur l’un des boulevards les plus emblématiques de Casablanca, en face des Twin Center et à proximité immédiate de l’hôtel Kenzi Tower, ce local commercial bénéficie d’une visibilité premium et d’un emplacement stratégique à fort passage. Un cachet architectural unique Dès l’entrée, le lieu impressionne par son atmosphère hors du commun : * Un spectaculaire lustre central suspendu sous un sky-dome * Un faux plafond travaillé avec des déta...",
+    "prix": 100000,
+    "surface": 297,
+    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_015_82318938.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8336625/%C3%A0-louer-%E2%80%93-local-commercial-d%E2%80%99exception-%E2%80%93-bd-zerktouni-face-aux-twin-center",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
+    "id": "8414719",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Plateau de bureau à louer sur BD AL MASSIRA KHADRA",
+    "description": "Nous sommes ravis de vous proposer ce plateau de bureau au 02éme étage, situé à boulevard AL MASSIRA AL KHADRA au MAARIF. Avec une superficie de 89m², cet espace spacieux est idéal pour une entreprise à la recherche d'un emplacement pratique et fonctionnel. Plateau de bureau prêt à l'emploi. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Loyer : 20000 MAD Référence : ALPB 01592 Honoraires : 1 mois de loyer HT",
+    "prix": 20000,
+    "surface": 89,
+    "image": "https://www.mubawab-media.com/ad/8/414/719F/h/WhatsApp_Image_2026-09-03_at_15.42.10__1__800x600_83210490.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8414719/plateau-de-bureau-%C3%A0-louer-sur-bd-al-massira-khadra",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
+    "salle_bain": "1"
+  },
+  {
     "id": "8111812",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -777,7 +819,7 @@
     "description": "",
     "prix": null,
     "surface": 272,
-    "image": "https://www.mubawab-media.com/ad/8/111/812F/h/My%20project-2%20%2820%29%20%281%29_79962587.avif",
+    "image": "https://www.mubawab-media.com/ad/8/111/812F/h/1_79962580.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Chambre rangement"
@@ -800,33 +842,12 @@
     "description": "",
     "prix": 30000,
     "surface": 175,
-    "image": "https://www.mubawab-media.com/ad/7/892/573F/h/20240403_150025_72168114.avif",
+    "image": "https://www.mubawab-media.com/ad/7/892/573F/h/20240403_150013_72168111.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Chambre rangement"
     ],
     "lien": "https://www.mubawab.ma/fr/a/7892573/local-commercial-am%C3%A9nag%C3%A9-175-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
-    "id": "8336625",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "À louer – local commercial d’exception – bd zerktouni, face...",
-    "description": "Situé sur l’un des boulevards les plus emblématiques de Casablanca, en face des Twin Center et à proximité immédiate de l’hôtel Kenzi Tower, ce local commercial bénéficie d’une visibilité premium et d’un emplacement stratégique à fort passage. Un cachet architectural unique Dès l’entrée, le lieu impressionne par son atmosphère hors du commun : * Un spectaculaire lustre central suspendu sous un sky-dome * Un faux plafond travaillé avec des déta...",
-    "prix": 100000,
-    "surface": 297,
-    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_00_82318923.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8336625/%C3%A0-louer-%E2%80%93-local-commercial-d%E2%80%99exception-%E2%80%93-bd-zerktouni-face-aux-twin-center",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -1448,31 +1469,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "2"
-  },
-  {
-    "id": "8260232",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Louez le local idéal à Maârif. Surface de 44 m². Porte blind...",
-    "description": "",
-    "prix": 10000,
-    "surface": 44,
-    "image": "https://www.mubawab-media.com/ad/8/260/232F/h/photo_00_81490479.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8260232/louez-le-local-id%C3%A9al-%C3%A0-ma%C3%A2rif-surface-de-44-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "annee": "5 ans",
-    "salle_bain": "1"
   },
   {
     "id": "8321525",
@@ -3254,7 +3250,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -3277,7 +3273,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
