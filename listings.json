@@ -770,6 +770,32 @@
     "salle_bain": "2"
   },
   {
+    "id": "8414837",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Beau local commercial en location à Maârif. Surface totale...",
+    "description": "",
+    "prix": 25000,
+    "surface": 70,
+    "image": "https://www.mubawab-media.com/ad/8/414/837F/h/IMG_5789_83211721.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8414837/beau-local-commercial-en-location-%C3%A0-ma%C3%A2rif-surface-totale-70-m%C2%B2-syst%C3%A8me-de-climatisation",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "type_sol": "Parquet",
+    "salle_bain": "1"
+  },
+  {
     "id": "8336625",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -798,7 +824,7 @@
     "description": "Nous sommes ravis de vous proposer ce plateau de bureau au 02éme étage, situé à boulevard AL MASSIRA AL KHADRA au MAARIF. Avec une superficie de 89m², cet espace spacieux est idéal pour une entreprise à la recherche d'un emplacement pratique et fonctionnel. Plateau de bureau prêt à l'emploi. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Loyer : 20000 MAD Référence : ALPB 01592 Honoraires : 1 mois de loyer HT",
     "prix": 20000,
     "surface": 89,
-    "image": "https://www.mubawab-media.com/ad/8/414/719F/h/WhatsApp_Image_2026-09-03_at_15.42.10__1__800x600_83210490.avif",
+    "image": "https://www.mubawab-media.com/ad/8/414/719F/h/WhatsApp_Image_2026-09-03_at_15.42.11__9__800x600_83210486.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -1446,29 +1472,6 @@
     "type_bien": "Magasin",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
-  },
-  {
-    "id": "8369998",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Beau local commercial en location à Maârif. 501 m²",
-    "description": "",
-    "prix": 160000,
-    "surface": 501,
-    "image": null,
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8369998/beau-local-commercial-en-location-%C3%A0-ma%C3%A2rif-501-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "2"
   },
   {
     "id": "8321525",
@@ -3030,7 +3033,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -3250,7 +3253,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -3273,7 +3276,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
