@@ -655,27 +655,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8005145",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial à louer BD MOULAY YOUSSEF",
-    "description": "Local commercial à louer SUR GAUTHIER, offre une flexibilité exceptionnelle pour diverses activités dont la RESTAURATION avec une superficie de 131 m2 Loyer : 34500 MAD Reference : LCL 00708 Honoraires : 1 mois de loyer HT",
-    "prix": 34500,
-    "surface": 131,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8005145/local-commercial-%C3%A0-louer-bd-moulay-youssef",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8248771",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -742,6 +721,24 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
+  },
+  {
+    "id": "8163915",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial de 207m2 à la location en plein Avenue Mous...",
+    "description": "Local commercial à la location en plein boulevard Moussa ibn Noussair quartier Gauthier, le bien se compose de 107m2 au sol, 50m2 de terrase et 51m2 de mezzanine. Idéal pour toute activité (restauration, showroom etc. ) Pour plus d'infos",
+    "prix": 30000,
+    "surface": 207,
+    "image": "https://www.mubawab-media.com/ad/8/163/915F/h/IMG_20250612_122027-scaled_80499280.avif",
+    "caracteristiques": [],
+    "lien": "https://www.mubawab.ma/fr/a/8163915/local-commercial-de-207m2-%C3%A0-la-location-en-plein-avenue-moussa-ibn-noussair-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial"
   },
   {
     "id": "8413761",
@@ -1831,27 +1828,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8371826",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur MAARIF EXTENSION",
-    "description": "Local commercial de 644m2 dont 500m2 de placnher- 114m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 100000 MAD Reference : LCL-LCV 00048 Honoraires : 1 mois de loyer HT",
-    "prix": 100000,
-    "surface": 644,
-    "image": "https://www.mubawab-media.com/ad/8/371/826F/h/001_800x600%20-%20Copie_82740905.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8371826/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8361157",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1935,27 +1911,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8367485/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8367482",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur MAARIF EXTENSION",
-    "description": "Local commercial de 96m2 dont 61m2 de placnher- 35m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 22000 MAD Reference : LCL 00480 Honoraires : 1 mois de loyer HT",
-    "prix": 22000,
-    "surface": 96,
-    "image": "https://www.mubawab-media.com/ad/8/367/482F/h/681c86e7-39b3-4bf6-b6af-99be471bf260_800x600_82694479.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8367482/local-commercial-en-location-sur-maarif-extension",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -2050,27 +2005,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8356417",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur MAARIF EXTENSION",
-    "description": "Local commercial de 915 m2 dont 400 m2 de placnher- 400m2 de souspente et 115 m2 de sous-sol en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 85000 MAD Reference : LCL 00896 Honoraires : 1 mois de loyer HT",
-    "prix": 85000,
-    "surface": 915,
-    "image": "https://www.mubawab-media.com/ad/8/356/417F/h/WhatsApp%20Image%202026-05-19%20at%2012.31.07%20%286%29_82533261.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8356417/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8353175",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -2152,6 +2086,69 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8338321/local-commercial-en-location-sur-maarif-extension",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8334039",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial à louer sur bd YACOUB EL MANSOUR",
+    "description": "Local commercial en location de 427m² de surface dont 286m2 au plancher et 141 m2 en Mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION dans une Artère très animée Ce local offre une visibilité , un volume intéressant et une polyvalence en terme d'activités commerciales. Loyer : 65000 DHS HT TSC TVA Reference : LCL 00888 Honoraires : 1 mois de loyer HT",
+    "prix": 65000,
+    "surface": 427,
+    "image": "https://www.mubawab-media.com/ad/8/334/039F/h/WhatsApp%20Image%202026-04-09%20at%2014.56.17%20%282%29_800x600_82290745.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8334039/local-commercial-%C3%A0-louer-sur-bd-yacoub-el-mansour",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8334035",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR",
+    "description": "Local commercial de 202m² en location dont 138 m2 de plancher et 64 m2 de mezzanine, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 45000 MAD HT TSC TVA Reference : LCL 00887 Honoraires : 1 mois de loyer HT",
+    "prix": 45000,
+    "surface": 202,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8334035/local-commercial-en-location-sur-bd-yacoub-el-mansour",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8334031",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR",
+    "description": "Local commercial de 91m2 dont 63 m2 de placnher- 28 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 30000 MAD HT TSC TVA Reference : LCL 00886 Honoraires : 1 mois de loyer HT",
+    "prix": 30000,
+    "surface": 91,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8334031/local-commercial-en-location-sur-bd-yacoub-el-mansour",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -3013,27 +3010,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8212701",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local commercial à louer à BOURGOGNE OUEST",
-    "description": "Situé sur le quartier BOURGOGNE OUEST juste derriere le lycée Lyautey , Avec une surface de 126m2, Ce local commercial est aménage et offre un emplacement idéal ainsi que la flexibilité et l'espace dont vous avez besoin pour réaliser vos projets commerciaux. Loyer : 25000 MAD Reference : LCL 00394 Honoraires locataire : 1 mois de loyer HT",
-    "prix": 25000,
-    "surface": 126,
-    "image": "https://www.mubawab-media.com/ad/8/212/701F/h/WhatsApp%20Image%202021-01-18%20at%2009.44.19%20%2815%29_800x600_80991379.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8212701/local-commercial-%C3%A0-louer-%C3%A0-bourgogne-ouest",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "7921905",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -3140,27 +3116,6 @@
       "Concierge"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8337180/local-%C3%A0-cot%C3%A9-du-lyc%C3%A9e-lyautey-34m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8334013",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial à louer au quartier Bd D'EL HANK",
-    "description": "Local commercial à louer sur BOURGOGNE TSF, offre une flexibilité exceptionnelle pour diverses activités, il est avec une superficie de 190 m2 environ dont 120 m2 de plancher et 70 m2 de souspente Loyer : 14000 MAD Reference : LCL 00174 Honoraires : 1 mois de loyer HT",
-    "prix": 14000,
-    "surface": 190,
-    "image": "https://www.mubawab-media.com/ad/8/334/013F/h/11_82290647.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8334013/local-commercial-%C3%A0-louer-au-quartier-bd-d-el-hank",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
