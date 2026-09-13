@@ -2259,31 +2259,6 @@
     "salle_bain": "4"
   },
   {
-    "id": "6890163",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "DL. 594: Local commercial de 1190 m², Hay Hassani",
-    "description": "",
-    "prix": 115000,
-    "surface": 1190,
-    "image": "https://www.mubawab-media.com/ad/6/890/163F/h/10%20Fa%C3%A7ade_43172226.avif",
-    "caracteristiques": [
-      "3 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/6890163/dl-594-local-commercial-de-1190-m%C2%B2-hay-hassani",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez de chaussé",
-    "salle_bain": "3"
-  },
-  {
     "id": "8327780",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2311,6 +2286,31 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "salle_bain": "1"
+  },
+  {
+    "id": "6890163",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "DL. 594: Local commercial de 1190 m², Hay Hassani",
+    "description": "",
+    "prix": 115000,
+    "surface": 1190,
+    "image": "https://www.mubawab-media.com/ad/6/890/163F/h/10%20Fa%C3%A7ade_43172226.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/6890163/dl-594-local-commercial-de-1190-m%C2%B2-hay-hassani",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez de chaussé",
+    "salle_bain": "3"
   },
   {
     "id": "8129390",
