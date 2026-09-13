@@ -819,27 +819,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8414719",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Plateau de bureau à louer sur BD AL MASSIRA KHADRA",
-    "description": "Nous sommes ravis de vous proposer ce plateau de bureau au 02éme étage, situé à boulevard AL MASSIRA AL KHADRA au MAARIF. Avec une superficie de 89m², cet espace spacieux est idéal pour une entreprise à la recherche d'un emplacement pratique et fonctionnel. Plateau de bureau prêt à l'emploi. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Loyer : 20000 MAD Référence : ALPB 01592 Honoraires : 1 mois de loyer HT",
-    "prix": 20000,
-    "surface": 89,
-    "image": "https://www.mubawab-media.com/ad/8/414/719F/h/WhatsApp_Image_2026-09-03_at_15.42.11__9__800x600_83210486.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8414719/plateau-de-bureau-%C3%A0-louer-sur-bd-al-massira-khadra",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Bureau",
-    "salle_bain": "1"
-  },
-  {
     "id": "8111812",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1478,6 +1457,31 @@
     "salle_bain": "2"
   },
   {
+    "id": "8260232",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Louez le local idéal à Maârif. Surface de 44 m². Porte blind...",
+    "description": "",
+    "prix": 10000,
+    "surface": 44,
+    "image": "https://www.mubawab-media.com/ad/8/260/232F/h/photo_00_81490479.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Sécurité",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8260232/louez-le-local-id%C3%A9al-%C3%A0-ma%C3%A2rif-surface-de-44-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "annee": "5 ans",
+    "salle_bain": "1"
+  },
+  {
     "id": "8321525",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1919,6 +1923,27 @@
     "salle_bain": "4"
   },
   {
+    "id": "8367485",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial en location sur MAARIF EXTENSION",
+    "description": "Local commercial de 111 m2 dont 75 m2 de placnher- 36 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 15000 MAD HTSC Reference : LCL 00890 Honoraires : 1 mois de loyer HT",
+    "prix": 15000,
+    "surface": 111,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8367485/local-commercial-en-location-sur-maarif-extension",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8367482",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -2127,27 +2152,6 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8338321/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8334039",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial à louer sur bd YACOUB EL MANSOUR",
-    "description": "Local commercial en location de 427m² de surface dont 286m2 au plancher et 141 m2 en Mezzanine , situé dans un emplacement privilégié sur MAARIF EXTENSION dans une Artère très animée Ce local offre une visibilité , un volume intéressant et une polyvalence en terme d'activités commerciales. Loyer : 65000 DHS HT TSC TVA Reference : LCL 00888 Honoraires : 1 mois de loyer HT",
-    "prix": 65000,
-    "surface": 427,
-    "image": "https://www.mubawab-media.com/ad/8/334/039F/h/WhatsApp%20Image%202026-04-09%20at%2014.56.17%20%282%29_800x600_82290745.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8334039/local-commercial-%C3%A0-louer-sur-bd-yacoub-el-mansour",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
