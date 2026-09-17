@@ -51,6 +51,33 @@
     "salle_bain": "4"
   },
   {
+    "id": "8403506",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial 153 m² aménagé gaine – Gauthier",
+    "description": "",
+    "prix": 25000,
+    "surface": 153,
+    "image": "https://www.mubawab-media.com/ad/8/403/506F/h/1000349808_83225148.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8403506/local-commercial-153-m%C2%B2-am%C3%A9nag%C3%A9-gaine-%E2%80%93-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "3"
+  },
+  {
     "id": "8268807",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -58,7 +85,7 @@
     "description": "",
     "prix": 30000,
     "surface": 260,
-    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_04_81595942.avif",
+    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_00_81595938.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -125,33 +152,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8403506",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial 153 m² aménagé gaine – Gauthier",
-    "description": "",
-    "prix": 25000,
-    "surface": 153,
-    "image": "https://www.mubawab-media.com/ad/8/403/506F/h/1000349813_83225141.avif",
-    "caracteristiques": [
-      "3 salle(s) de bain",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8403506/local-commercial-153-m%C2%B2-am%C3%A9nag%C3%A9-gaine-%E2%80%93-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "3"
   },
   {
     "id": "8415565",
@@ -752,34 +752,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8413761",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Louez ce local commercial à Maârif. Surface totale 120 m². P...",
-    "description": "",
-    "prix": 30000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/8/413/761F/h/photo_0_83199916.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chauffage central",
-      "Sécurité",
-      "Porte blindée",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8413761/louez-ce-local-commercial-%C3%A0-ma%C3%A2rif-surface-totale-120-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "annee": "5 ans",
-    "type_sol": "Marbre",
-    "salle_bain": "2"
-  },
-  {
     "id": "7892573",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -802,6 +774,59 @@
     "salle_bain": "2"
   },
   {
+    "id": "8404408",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Magasin neuf 70 m² – emplacement premium maarif",
+    "description": "",
+    "prix": 25000,
+    "surface": 70,
+    "image": "https://www.mubawab-media.com/ad/8/404/408F/h/photo_0_83097696.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8404408/magasin-neuf-70-m%C2%B2-%E2%80%93-emplacement-premium-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "etat": "Neuf",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8381703",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial à louer – Emplacement premium sur le boulev...",
+    "description": "",
+    "prix": 80000,
+    "surface": 350,
+    "image": "https://www.mubawab-media.com/ad/8/381/703F/h/photo_6_82851553.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8381703/local-commercial-%C3%A0-louer-%E2%80%93-emplacement-premium-sur-le-boulevard-ghandi-%C3%A0-louer-un-local-commercial-b%C3%A9n%C3%A9ficiant-d%E2%80%99un-emplacement-strat%C3%A9gique-et-d%E2%80%99une-excellente-visibilit%C3%A9-sur-le-boulevard-ghandi-id%C3%A9al-pour-tout-type-d%E2%80%99activit%C3%A9-commerciale-ou-professionnelle-n%E2%80%99h%C3%A9sitez-pas-%C3%A0-nous-contacter-pour-plus-d%E2%80%99informations-ou-pour-organiser-une-visite",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "type_sol": "Carrelage",
+    "salle_bain": "1"
+  },
+  {
     "id": "8264602",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -809,7 +834,7 @@
     "description": "",
     "prix": 50000,
     "surface": 283,
-    "image": "https://www.mubawab-media.com/ad/8/264/602F/h/12_81548462.avif",
+    "image": "https://www.mubawab-media.com/ad/8/264/602F/h/1_81548448.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement",
@@ -1186,34 +1211,6 @@
     "type_bien": "Local commercial"
   },
   {
-    "id": "8404408",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Magasin neuf 70 m² – emplacement premium maarif",
-    "description": "",
-    "prix": 25000,
-    "surface": 70,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8404408/magasin-neuf-70-m%C2%B2-%E2%80%93-emplacement-premium-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "etat": "Neuf",
-    "salle_bain": "1"
-  },
-  {
     "id": "8403499",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1302,31 +1299,6 @@
     "type_bien": "Local commercial",
     "annee": "5 ans",
     "salle_bain": "2"
-  },
-  {
-    "id": "8381703",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial à louer – Emplacement premium sur le boulev...",
-    "description": "",
-    "prix": 80000,
-    "surface": 350,
-    "image": "https://www.mubawab-media.com/ad/8/381/703F/h/photo_0_82851547.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage",
-      "Ascenseur",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8381703/local-commercial-%C3%A0-louer-%E2%80%93-emplacement-premium-sur-le-boulevard-ghandi-%C3%A0-louer-un-local-commercial-b%C3%A9n%C3%A9ficiant-d%E2%80%99un-emplacement-strat%C3%A9gique-et-d%E2%80%99une-excellente-visibilit%C3%A9-sur-le-boulevard-ghandi-id%C3%A9al-pour-tout-type-d%E2%80%99activit%C3%A9-commerciale-ou-professionnelle-n%E2%80%99h%C3%A9sitez-pas-%C3%A0-nous-contacter-pour-plus-d%E2%80%99informations-ou-pour-organiser-une-visite",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "type_sol": "Carrelage",
-    "salle_bain": "1"
   },
   {
     "id": "8390090",
@@ -1487,6 +1459,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8368244",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial à Louer de 288.0 m² à Casablanca, Maarif",
+    "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
+    "prix": 55000,
+    "surface": 288,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8368244/local-commercial-%C3%A0-louer-de-288-0-m%C2%B2-%C3%A0-casablanca-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "7359026",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1519,6 +1512,48 @@
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false
+  },
+  {
+    "id": "7903193",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Terrain Industriel 604 m² à Ain Sebaa",
+    "description": "Terrain Industriel Ain Sebaa Superficie : 604 m² Façade : 20 m linéaires Prix : 3 700 000,00 Idéal pour des activités industrielles, ce terrain représente une occasion en or pour les investisseurs et entrepreneurs. N’hésitez pas à me solliciter pour toute autre demande ou précision",
+    "prix": null,
+    "surface": 604,
+    "image": null,
+    "caracteristiques": [],
+    "lien": "https://www.mubawab.ma/fr/a/7903193/terrain-industriel-604-m%C2%B2-%C3%A0-ain-sebaa",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
+    "id": "7940300",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Dépôt 1200 m² à Louer à ZI Sidi Bernoussi",
+    "description": "",
+    "prix": 62000,
+    "surface": 1200,
+    "image": "https://www.mubawab-media.com/ad/7/940/300F/h/WhatsApp%20Image%202024-06-22%20%C3%A0%2011.58.15_c046a534_77402268.avif",
+    "caracteristiques": [
+      "4 salle(s) de bain",
+      "Garage",
+      "Chambre rangement",
+      "Sécurité",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/7940300/d%C3%A9p%C3%B4t-1200-m%C2%B2-%C3%A0-louer-%C3%A0-zi-sidi-bernoussi",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Dépôt",
+    "salle_bain": "4"
   },
   {
     "id": "8288904",
@@ -2405,38 +2440,6 @@
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false,
-    "salle_bain": "4"
-  },
-  {
-    "id": "8237851",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Louez ce local commercial à Bourgogne Ouest. Surface totale...",
-    "description": "",
-    "prix": 65000,
-    "surface": 420,
-    "image": "https://www.mubawab-media.com/ad/8/237/851F/h/photo_0_81260341.avif",
-    "caracteristiques": [
-      "4 salle(s) de bain",
-      "Garage",
-      "Ascenseur",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8237851/louez-ce-local-commercial-%C3%A0-bourgogne-ouest-surface-totale-420-m%C2%B2-porte-blind%C3%A9e-et-syst%C3%A8me-de-double-vitrage",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "annee": "10 ans",
-    "type_sol": "Carrelage",
     "salle_bain": "4"
   },
   {
