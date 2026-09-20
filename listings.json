@@ -332,6 +332,30 @@
     "salle_bain": "2"
   },
   {
+    "id": "8391352",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Commerce à louer 250 m² Gauthier Casablanca",
+    "description": "",
+    "prix": 35000,
+    "surface": 250,
+    "image": "https://www.mubawab-media.com/ad/8/391/352F/h/annonce-agenz-20260724T164856852Z-1784911733206_82956310.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Chambre rangement",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8391352/commerce-%C3%A0-louer-250-m%C2%B2-gauthier-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8356633",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -705,28 +729,6 @@
     "type_bien": "Local commercial",
     "etat": "Neuf",
     "salle_bain": "1"
-  },
-  {
-    "id": "8264312",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Commerce à louer 355 m² Gauthier Casablanca",
-    "description": "",
-    "prix": 60000,
-    "surface": 355,
-    "image": "https://www.mubawab-media.com/ad/8/264/312F/h/annonce-agenz-2025-06-20T123726-174Z-20250515_093041_82644370.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8264312/commerce-%C3%A0-louer-355-m%C2%B2-gauthier-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
   },
   {
     "id": "8255784",
@@ -1459,24 +1461,24 @@
     "salle_bain": "1"
   },
   {
-    "id": "8379954",
+    "id": "8368244",
     "ville": "Casablanca",
     "quartier": "maarif",
-    "titre": "Commerce à louer 100 m² Maârif Casablanca",
-    "description": "Découvrez ce commerce prêt à l'emploi de 100 m², situé au rez-de-chaussée dans le quartier dynamique du Maârif à Casablanca. Entièrement fonctionnel, ce bien offre un espace optimisé avec une configuration pensée pour une installation immédiate, sans contrainte ni travaux. L'environnement commercial de Maârif est idéal pour attirer une clientèle variée, ce qui fait de cet espace un choix parfait pour les entrepreneurs souhaitant se lancer rapid...",
-    "prix": 14000,
-    "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/379/954F/h/annonce-agenz-20260707T091540034Z-20260706135153_82832919.avif",
+    "titre": "Local commercial à Louer de 288.0 m² à Casablanca, Maarif",
+    "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
+    "prix": 55000,
+    "surface": 288,
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
-    "lien": "https://www.mubawab.ma/fr/a/8379954/commerce-%C3%A0-louer-100-m%C2%B2-ma%C3%A2rif-casablanca",
+    "lien": "https://www.mubawab.ma/fr/a/8368244/local-commercial-%C3%A0-louer-de-288-0-m%C2%B2-%C3%A0-casablanca-maarif",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false,
-    "etage": "Rez-de-chaussée",
+    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
@@ -3315,7 +3317,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -3338,7 +3340,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
