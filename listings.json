@@ -802,6 +802,29 @@
     "salle_bain": "2"
   },
   {
+    "id": "8420146",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local Com 2 rideaux Gaine 230m2 Maarif",
+    "description": "",
+    "prix": 30000,
+    "surface": 230,
+    "image": "https://www.mubawab-media.com/ad/8/420/146F/h/20260921_135530_83270710.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8420146/local-com-2-rideaux-gaine-230m2-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez de chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8381703",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1458,27 +1481,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8368244",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial à Louer de 288.0 m² à Casablanca, Maarif",
-    "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 288.0m². Prix attractif de 55000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
-    "prix": 55000,
-    "surface": 288,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368244/local-commercial-%C3%A0-louer-de-288-0-m%C2%B2-%C3%A0-casablanca-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
@@ -2143,7 +2145,7 @@
     "description": "",
     "prix": 9000,
     "surface": 30,
-    "image": "https://www.mubawab-media.com/ad/8/300/377F/h/photo_06_81936186.avif",
+    "image": "https://www.mubawab-media.com/ad/8/300/377F/h/photo_00_81936180.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge",
