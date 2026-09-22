@@ -53,6 +53,33 @@
     "salle_bain": "2"
   },
   {
+    "id": "8403506",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial 153 m² aménagé gaine – Gauthier",
+    "description": "",
+    "prix": 25000,
+    "surface": 153,
+    "image": "https://www.mubawab-media.com/ad/8/403/506F/h/1000349813_83225141.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8403506/local-commercial-153-m%C2%B2-am%C3%A9nag%C3%A9-gaine-%E2%80%93-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "3"
+  },
+  {
     "id": "8311443",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -99,33 +126,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8403506",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial 153 m² aménagé gaine – Gauthier",
-    "description": "",
-    "prix": 25000,
-    "surface": 153,
-    "image": "https://www.mubawab-media.com/ad/8/403/506F/h/1000349813_83225141.avif",
-    "caracteristiques": [
-      "3 salle(s) de bain",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8403506/local-commercial-153-m%C2%B2-am%C3%A9nag%C3%A9-gaine-%E2%80%93-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "3"
   },
   {
     "id": "8268807",
@@ -1447,7 +1447,7 @@
     "description": "",
     "prix": 25500,
     "surface": 160,
-    "image": "https://www.mubawab-media.com/ad/8/014/079F/h/9c8cc423-ff62-412b-8a02-54f57b972060_79005152.avif",
+    "image": "https://www.mubawab-media.com/ad/8/014/079F/h/ab36e20c-1c64-4721-8525-a84e17fa6f1e_79005159.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Chambre rangement"
@@ -1469,7 +1469,7 @@
     "description": "",
     "prix": 13000,
     "surface": 59,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/367/191F/h/1000271588_82691356.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement"
@@ -2534,7 +2534,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...",
     "prix": 188000,
     "surface": 752,
-    "image": "https://www.mubawab-media.com/ad/8/120/551F/h/local-commercial_80051731.avif",
+    "image": null,
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location",
     "gaine_extraction": false,
@@ -2552,7 +2552,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -2570,7 +2570,7 @@
     "description": "",
     "prix": 19000,
     "surface": 172,
-    "image": "https://www.mubawab-media.com/ad/8/415/659F/h/photo_4_83220655.avif",
+    "image": "https://www.mubawab-media.com/ad/8/415/659F/h/photo_3_83220654.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -2586,6 +2586,28 @@
     "salle_bain": "2"
   },
   {
+    "id": "8289714",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local Commercial à Louer Bd de la Corniche",
+    "description": "",
+    "prix": 21000,
+    "surface": 39,
+    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8083963",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2593,7 +2615,7 @@
     "description": "",
     "prix": 30000,
     "surface": 307,
-    "image": "https://www.mubawab-media.com/ad/8/083/963F/h/photo_9_79691594.avif",
+    "image": "https://www.mubawab-media.com/ad/8/083/963F/h/photo_0_79691585.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Chambre rangement",
@@ -2611,28 +2633,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8289714",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local Commercial à Louer Bd de la Corniche",
-    "description": "",
-    "prix": 21000,
-    "surface": 39,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8303261",
