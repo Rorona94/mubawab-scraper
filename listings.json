@@ -1602,7 +1602,7 @@
     "description": "",
     "prix": 9000,
     "surface": 30,
-    "image": "https://www.mubawab-media.com/ad/8/300/377F/h/photo_06_81936186.avif",
+    "image": "https://www.mubawab-media.com/ad/8/300/377F/h/photo_00_81936180.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge",
@@ -1991,7 +1991,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...",
     "prix": 188000,
     "surface": 752,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/120/551F/h/local-commercial_80051731.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location",
     "gaine_extraction": false,
@@ -2009,7 +2009,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -2043,6 +2043,28 @@
     "salle_bain": "2"
   },
   {
+    "id": "8303261",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local snack ou autre, terrasse 25m proche Tan Tan",
+    "description": "Propose à la location Local commercial idéal pour snack ou autres activités. 54m2, 35m2 plus 19m2 en haut Terrasse de 25m2 grande façade de 8m de long Situé à Bourgone rue parallèle à Tan Tan 12k TTC DERNIER PRIX (pas de tva récupérable)",
+    "prix": 12000,
+    "surface": 54,
+    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.04.15_82317935.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8303261/local-snack-ou-autre-terrasse-25m-proche-tan-tan",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8289714",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2050,7 +2072,7 @@
     "description": "",
     "prix": 21000,
     "surface": 39,
-    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -2090,28 +2112,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8303261",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local snack ou autre, terrasse 25m proche Tan Tan",
-    "description": "Propose à la location Local commercial idéal pour snack ou autres activités. 54m2, 35m2 plus 19m2 en haut Terrasse de 25m2 grande façade de 8m de long Situé à Bourgone rue parallèle à Tan Tan 12k TTC DERNIER PRIX (pas de tva récupérable)",
-    "prix": 12000,
-    "surface": 54,
-    "image": "https://www.mubawab-media.com/ad/8/303/261F/h/WhatsApp%20Image%202026-04-21%20at%2015.08.39_82317932.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Terrasse"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8303261/local-snack-ou-autre-terrasse-25m-proche-tan-tan",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8313030",
@@ -2537,7 +2537,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2751,7 +2751,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -2774,7 +2774,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
