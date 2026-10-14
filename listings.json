@@ -707,7 +707,7 @@
     "description": "",
     "prix": null,
     "surface": 45,
-    "image": "https://www.mubawab-media.com/ad/8/310/210F/h/C2661T01_82036983.avif",
+    "image": "https://www.mubawab-media.com/ad/8/310/210F/h/C2660T01_82036991.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement",
@@ -731,7 +731,7 @@
     "description": "",
     "prix": 50000,
     "surface": 201,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/235/558F/h/photo_0_12209420.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Concierge",
@@ -816,6 +816,51 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
+  },
+  {
+    "id": "8420146",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local Com 2 rideaux Gaine 230m2 Maarif",
+    "description": "",
+    "prix": 30000,
+    "surface": 230,
+    "image": "https://www.mubawab-media.com/ad/8/420/146F/h/20260921_135530_83270710.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8420146/local-com-2-rideaux-gaine-230m2-maarif",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez de chaussée",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8305944",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local commercial d’angle à louer 298m2 – Forte visibilité Bd...",
+    "description": "Nous vous proposons à la location un local commercial premium situé sur le prestigieux Boulevard Ghandi, l’une des artères les plus dynamiques et stratégiques de Casablanca. Caractéristiques : - Surface totale : 298 m² (204 m² au rez-de-chaussée, 94 m² en mezzanine) - Local d’angle - Plusieurs vitrines offrant une excellente visibilité - Grande façade linéaire - Idéal pour enseigne nationale, showroom, franchise ou concept store Points forts : ...",
+    "prix": 58000,
+    "surface": 298,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8305944/local-commercial-d%E2%80%99angle-%C3%A0-louer-298m2-%E2%80%93-forte-visibilit%C3%A9-bd-ghandi-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
   },
   {
     "id": "8434001",
@@ -1408,28 +1453,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8305944",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local commercial d’angle à louer 298m2 – Forte visibilité Bd...",
-    "description": "Nous vous proposons à la location un local commercial premium situé sur le prestigieux Boulevard Ghandi, l’une des artères les plus dynamiques et stratégiques de Casablanca. Caractéristiques : - Surface totale : 298 m² (204 m² au rez-de-chaussée, 94 m² en mezzanine) - Local d’angle - Plusieurs vitrines offrant une excellente visibilité - Grande façade linéaire - Idéal pour enseigne nationale, showroom, franchise ou concept store Points forts : ...",
-    "prix": 58000,
-    "surface": 298,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8305944/local-commercial-d%E2%80%99angle-%C3%A0-louer-298m2-%E2%80%93-forte-visibilit%C3%A9-bd-ghandi-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
     "id": "8405491",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -1448,29 +1471,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": true,
     "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8420146",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local Com 2 rideaux Gaine 230m2 Maarif",
-    "description": "",
-    "prix": 30000,
-    "surface": 230,
-    "image": "https://www.mubawab-media.com/ad/8/420/146F/h/20260921_135530_83270710.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8420146/local-com-2-rideaux-gaine-230m2-maarif",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez de chaussée",
     "salle_bain": "1"
   },
   {
@@ -1496,6 +1496,57 @@
     "salle_bain": "1"
   },
   {
+    "id": "8434464",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Magasin commercial à louer Racine Casablanca",
+    "description": "",
+    "prix": 80000,
+    "surface": 265,
+    "image": "https://www.mubawab-media.com/ad/8/434/464F/h/Gemini_Generated_Image_uhubccuhubccuhub_83510263.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8434464/magasin-commercial-%C3%A0-louer-racine-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "2"
+  },
+  {
+    "id": "8434047",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial à louer Racine, Casablanca",
+    "description": "",
+    "prix": 100000,
+    "surface": 219,
+    "image": "https://www.mubawab-media.com/ad/8/434/047F/h/WhatsApp_Image_2026-10-14_at_11.25.46_83509007.avif",
+    "caracteristiques": [
+      "5 salle(s) de bain",
+      "Garage",
+      "Climatisation",
+      "Sécurité",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8434047/local-commercial-%C3%A0-louer-racine-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "5"
+  },
+  {
     "id": "8429542",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1503,7 +1554,7 @@
     "description": "Location d'un Local commercial / Showroom / Agence d'angle de 125 m² à Quartier Burger, Casablanca. Magnifique local commercial en angle de rue offrant une visibilité exceptionnelle avec plus de 20 mètres de façade, idéalement situé dans le quartier prisé Burger. Caractéristiques du bien : Superficie : 125 m² en Rez-de-Chaussée (RDC) Visibilité : Emplacement d'angle, très lumineux, avec plus de 20 mètres de linéaire de façade Agencement actuel...",
     "prix": 20000,
     "surface": 125,
-    "image": "https://www.mubawab-media.com/ad/8/429/542F/h/7c1850670df39b914afd_83375857.avif",
+    "image": "https://www.mubawab-media.com/ad/8/429/542F/h/4b0ce90cb6f15c6863a5_83375851.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/8429542/location-local-%C3%A0-ma%C3%A2rif-extension",
     "gaine_extraction": false,
@@ -1522,7 +1573,7 @@
     "description": "",
     "prix": 10000,
     "surface": 75,
-    "image": "https://www.mubawab-media.com/ad/8/427/698F/h/8d24f1f4-b25a-4fea-b31e-fd3c2b35f675_-_Copy_83355684.avif",
+    "image": "https://www.mubawab-media.com/ad/8/427/698F/h/eeadf51f-f750-4817-84df-e27d171db8c7_83355680.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -1604,26 +1655,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8414421",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local 113 m² Maarif extension Forate",
-    "description": "Local de 113 m², avec rideau de 3 m environ, 4,5 m de hauteur sous plafond, situé dans la rue Forate (proche Carrefour et Marjane), état brut",
-    "prix": 16000,
-    "surface": 113,
-    "image": "https://www.mubawab-media.com/ad/8/414/421F/h/20250106_121502_83207363.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8414421/local-113-m%C2%B2-maarif-extension-forate",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
     "salle_bain": "1"
   },
   {
@@ -2138,50 +2169,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8338321",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur MAARIF EXTENSION",
-    "description": "Local commercial de 210 m2 dont 140 m2 de placnher- 70 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 35000 MAD HT Reference : LCL 00890 Honoraires : 1 mois de loyer HT",
-    "prix": 35000,
-    "surface": 210,
-    "image": "https://www.mubawab-media.com/ad/8/338/321F/h/WhatsApp%20Image%202026-04-16%20at%2007.43.53%20%283%29_800x600_82334437.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8338321/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8428896",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Local commercial a louer sur racine",
-    "description": "",
-    "prix": 24000,
-    "surface": 88,
-    "image": "https://www.mubawab-media.com/ad/8/428/896F/h/photo_00_83368618.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8428896/local-commercial-a-louer-sur-racine",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
     "id": "8413203",
     "ville": "Casablanca",
     "quartier": "racine",
@@ -2200,6 +2187,30 @@
     "restauration_mentionnee": true,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8426119",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local commercial prime a louer sur racine",
+    "description": "",
+    "prix": 27000,
+    "surface": 145,
+    "image": "https://www.mubawab-media.com/ad/8/426/119F/h/WhatsApp_Image_2026-10-01_at_16.35.41_83341988.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Climatisation"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8426119/local-commercial-prime-a-louer-sur-racine",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
   {
@@ -2226,30 +2237,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "2"
-  },
-  {
-    "id": "8426119",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Local commercial prime a louer sur racine",
-    "description": "",
-    "prix": 27000,
-    "surface": 145,
-    "image": "https://www.mubawab-media.com/ad/8/426/119F/h/WhatsApp_Image_2026-10-01_at_16.35.40_83341983.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Climatisation"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8426119/local-commercial-prime-a-louer-sur-racine",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
   },
   {
     "id": "8426098",
@@ -2301,6 +2288,48 @@
     "etage": "Rez-de-chaussée",
     "annee": "20 ans",
     "salle_bain": "2"
+  },
+  {
+    "id": "8434399",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local premium à louer à Racine. Surface totale 176 m²",
+    "description": "LOCALE PREMIUM À LOUER OU À VENDRE – BD MASSIRA AL KHADRA, CASABLANCA Emplacement stratégique à proximité du boulevard Massira Al Khadra, dans un secteur recherché de Casablanca. Nous vous proposons un local commercial de 176 m², actuellement aménagé en galerie d’art, idéal pour une enseigne premium, un showroom, une galerie d’art ou toute autre activité commerciale de standing. Caractéristiques : * Superficie : 176 m² * Emplacement de choix...",
+    "prix": 35000,
+    "surface": 176,
+    "image": "https://www.mubawab-media.com/ad/8/434/399F/h/photo_00_83509551.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8434399/local-premium-%C3%A0-louer-%C3%A0-racine-surface-totale-176-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8120816",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local a commercial 140 m² racine",
+    "description": "- CONTRACTORS REAL ESTATE - Opportunité à saisir – offre de location Local commercial de haut standing, belle prestation. Caractéristiques: - Emplacement: Quartier Racine; - Surface: 100 m² 40 m² Mezzanine; - Espace Accueil; - Bureau isolé en mezzanine; - 1 vitrine - Bel agencement - Très belle luminosité Loyer mensuel : 28.000,00 dhs H.T/mois; Conditions de location : 2 mois de caution 1er mois de loyer d'avance Frais d'agence : 1 mois...",
+    "prix": 28000,
+    "surface": 140,
+    "image": "https://www.mubawab-media.com/ad/8/120/816F/h/WhatsApp%20Image%202024-02-07%20%C3%A0%2010.27.21_ca0cd958_80054357.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8120816/local-a-commercial-140-m%C2%B2-racine",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8076225",
@@ -2397,30 +2426,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "3"
-  },
-  {
-    "id": "8343077",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Louez le local idéal à Ghautier ex le Rossignol resto. Surfa...",
-    "description": "",
-    "prix": 40000,
-    "surface": 130,
-    "image": "https://www.mubawab-media.com/ad/8/343/077F/h/photo_00_82387023.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8343077/louez-le-local-id%C3%A9al-%C3%A0-ghautier-ex-le-rossignol-resto-surface-totale-130-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etat": "À rénover",
-    "annee": "20 ans",
-    "salle_bain": "1"
   },
   {
     "id": "8430456",
@@ -3255,24 +3260,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8120551",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local commercial premium de 752 m2 quartier CFC a la locatio...",
-    "description": "Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d une surface de 752 m2 aménagé se composant comme suit : 503 m2 en RDC 249 m2 en mezzanine avec une grande façade ( Bonne Visibilité ) , idéal pour tout type d activité : restauration , showroom , laboratoire ....etc . Pour plus d’info, n’hésitez ...Capital Foncier vous propose à la location un local commercial premium en plein quartier CFC d...",
-    "prix": 188000,
-    "surface": 752,
-    "image": null,
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8120551/local-commercial-premium-de-752-m2-quartier-cfc-a-la-location",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial"
-  },
-  {
     "id": "7873982",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -3705,28 +3692,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8332049",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Location Local à bourgogne",
-    "description": "",
-    "prix": 70000,
-    "surface": 318,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8332049/location-local-%C3%A0-bourgogne",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8325872",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -3873,6 +3838,29 @@
     "salle_bain": "1"
   },
   {
+    "id": "8126292",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local com Salon de Beauté café snack ou autre 120 m² Bd Anfa",
+    "description": "",
+    "prix": 30000,
+    "surface": 120,
+    "image": "https://www.mubawab-media.com/ad/8/126/292F/h/20240906_191021_80110453.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8126292/local-com-salon-de-beaut%C3%A9-caf%C3%A9-snack-ou-autre-120-m%C2%B2-bd-anfa",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8433909",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3924,7 +3912,7 @@
     "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
     "prix": 19000,
     "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/353/734F/h/c7492d3b-055a-4671-9038-a2455b0b439a_82503322.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -4003,29 +3991,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial"
-  },
-  {
-    "id": "8126292",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local com Salon de Beauté café snack ou autre 120 m² Bd Anfa",
-    "description": "",
-    "prix": 30000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/8/126/292F/h/20240906_190754_80110448.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8126292/local-com-salon-de-beaut%C3%A9-caf%C3%A9-snack-ou-autre-120-m%C2%B2-bd-anfa",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "7887454",
