@@ -53,6 +53,27 @@
     "salle_bain": "3"
   },
   {
+    "id": "8311443",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial emplacement premium à louer",
+    "description": "189m² mezzanine de 84m²",
+    "prix": 48000,
+    "surface": 273,
+    "image": "https://www.mubawab-media.com/ad/8/311/443F/h/WhatsApp%20Image%202026-03-01%20at%2017.58.51%20%281%29_82050351.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "7937055",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -60,7 +81,7 @@
     "description": "",
     "prix": 21000,
     "surface": 370,
-    "image": "https://www.mubawab-media.com/ad/7/937/055F/h/IMG_20240610_163850_77170230.avif",
+    "image": "https://www.mubawab-media.com/ad/7/937/055F/h/IMG_20240610_164012_77170227.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -74,27 +95,6 @@
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false,
-    "salle_bain": "2"
-  },
-  {
-    "id": "8311443",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial emplacement premium à louer",
-    "description": "189m² mezzanine de 84m²",
-    "prix": 48000,
-    "surface": 273,
-    "image": "https://www.mubawab-media.com/ad/8/311/443F/h/WhatsApp%20Image%202026-03-01%20at%2017.58.49%20%282%29_82050348.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "2"
   },
   {
@@ -2214,6 +2214,28 @@
     "salle_bain": "1"
   },
   {
+    "id": "8435568",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "Local commercial à louer – Casablanca Finance City CFC",
+    "description": "Situé au cœur de Casablanca Finance City, ce local commercial offre une surface totale de 94 m², répartie entre 68 m² au rez-de-chaussée et 26 m² de mezzanine. Caractéristiques : * Surface totale : 94 m² * Rez-de-chaussée : 68 m² * Mezzanine : 26 m² Conditions financières : * Loyer mensuel : 28 350 DH HT/HC * TSC mensuelle : 2 976,75 DH * Loyer mensuel TTC : 37 592,10 DH * Dépôt de garantie : 4 mois TTC, soit 150 368,40 DH * Honoraire d’agen...",
+    "prix": 37593,
+    "surface": 94,
+    "image": "https://www.mubawab-media.com/ad/8/435/568F/h/photo_0_83527222.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8435568/local-commercial-%C3%A0-louer-%E2%80%93-casablanca-finance-city-cfc",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8327780",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2221,7 +2243,7 @@
     "description": "",
     "prix": null,
     "surface": 60,
-    "image": "https://www.mubawab-media.com/ad/8/327/780F/h/photo_0_82224478.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -2539,7 +2561,7 @@
     "description": "Local commercial en location sur Boulevard a proximite de Casablanca Finance City avec une superficie totale de 233 m² dont 158 m² de plancher et 75 m² de Soupente. 51851",
     "prix": 40000,
     "surface": 233,
-    "image": "https://www.mubawab-media.com/ad/7/382/567F/h/IMG_8211_800x600_19321267.avif",
+    "image": "https://www.mubawab-media.com/ad/7/382/567F/h/IMG_8189_800x600_19321266.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2560,7 +2582,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
