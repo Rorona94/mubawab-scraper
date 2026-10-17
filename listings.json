@@ -776,30 +776,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8426525",
-    "ville": "Casablanca",
-    "quartier": "maarif",
-    "titre": "Local Commercial d'Exception sur Grand Boulevard",
-    "description": "",
-    "prix": 75000,
-    "surface": 421,
-    "image": "https://www.mubawab-media.com/ad/8/426/525F/h/7_83341096.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8426525/local-commercial-d-exception-sur-grand-boulevard",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
     "id": "8336625",
     "ville": "Casablanca",
     "quartier": "maarif",
@@ -807,7 +783,7 @@
     "description": "Situé sur l’un des boulevards les plus emblématiques de Casablanca, en face des Twin Center et à proximité immédiate de l’hôtel Kenzi Tower, ce local commercial bénéficie d’une visibilité premium et d’un emplacement stratégique à fort passage. Un cachet architectural unique Dès l’entrée, le lieu impressionne par son atmosphère hors du commun : * Un spectaculaire lustre central suspendu sous un sky-dome * Un faux plafond travaillé avec des déta...",
     "prix": 100000,
     "surface": 297,
-    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_00_82318923.avif",
+    "image": "https://www.mubawab-media.com/ad/8/336/625F/h/photo_015_82318938.avif",
     "caracteristiques": [
       "2 salle(s) de bain"
     ],
@@ -843,6 +819,30 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "type_sol": "Carrelage",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8426525",
+    "ville": "Casablanca",
+    "quartier": "maarif",
+    "titre": "Local Commercial d'Exception sur Grand Boulevard",
+    "description": "",
+    "prix": 75000,
+    "surface": 421,
+    "image": "https://www.mubawab-media.com/ad/8/426/525F/h/WhatsApp_Image_2026-09-25_at_16.09.39_83341089.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8426525/local-commercial-d-exception-sur-grand-boulevard",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
   {
@@ -3325,7 +3325,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -3348,7 +3348,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
