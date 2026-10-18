@@ -212,28 +212,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8314756",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial gauthier 145 m²",
-    "description": "",
-    "prix": 23000,
-    "surface": 145,
-    "image": null,
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8314756/local-commercial-gauthier-145-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
     "id": "8432344",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -752,6 +730,24 @@
     "type_bien": "Local commercial",
     "annee": "10 ans",
     "salle_bain": "2"
+  },
+  {
+    "id": "7968831",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial de 140m2 à la location Rue d’Alger",
+    "description": "Capital Foncier vous propose à la location un local commercial de 140m2 sur la Rue d'Alger, composé de 80m2 au rdc et 60m2 en mezzanine. Le bien est idéal pour toute activité et est dans un état parfait. Pour plus d'infos contactez Mourad au 06 65 18 50 96Capital Foncier vous propose à la location un local commercial de 140m2 sur la Rue d&#8217;Alger, composé de 80m2 au rdc et 60m2 en mezzanine. Le bien est idéal pour toute activité et est dans u...",
+    "prix": 22000,
+    "surface": 140,
+    "image": "https://www.mubawab-media.com/ad/7/968/831F/h/IMG-20240724-WA0019_78551424.avif",
+    "caracteristiques": [],
+    "lien": "https://www.mubawab.ma/fr/a/7968831/local-commercial-de-140m2-%C3%A0-la-location-rue-d%E2%80%99alger",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial"
   },
   {
     "id": "8431468",
@@ -1466,7 +1462,7 @@
     "description": "",
     "prix": 34000,
     "surface": 69,
-    "image": "https://www.mubawab-media.com/ad/8/425/858F/h/thumbnail_2026_09_29_02_08_09_19_83333413.avif",
+    "image": "https://www.mubawab-media.com/ad/8/425/858F/h/34e1a1fa627d7ff19dcb_83333410.avif",
     "caracteristiques": [
       "Garage",
       "Sécurité"
@@ -2481,7 +2477,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2716,7 +2712,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -2739,7 +2735,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
