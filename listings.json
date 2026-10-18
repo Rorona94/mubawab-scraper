@@ -1466,7 +1466,7 @@
     "description": "",
     "prix": 34000,
     "surface": 69,
-    "image": "https://www.mubawab-media.com/ad/8/425/858F/h/34e1a1fa627d7ff19dcb_83333410.avif",
+    "image": "https://www.mubawab-media.com/ad/8/425/858F/h/thumbnail_2026_09_29_02_08_09_19_83333413.avif",
     "caracteristiques": [
       "Garage",
       "Sécurité"
@@ -1955,6 +1955,34 @@
     "salle_bain": "1"
   },
   {
+    "id": "7843464",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
+    "description": "",
+    "prix": 33000,
+    "surface": 120,
+    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_9_80035640.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8436655",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -1962,7 +1990,7 @@
     "description": "",
     "prix": 120000,
     "surface": 684,
-    "image": "https://www.mubawab-media.com/ad/8/436/655F/h/DJI_0624JPG_83539667.avif",
+    "image": null,
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -1998,34 +2026,6 @@
       "Sécurité"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "7843464",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
-    "description": "",
-    "prix": 33000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_0_80035631.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -2716,7 +2716,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -2739,7 +2739,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
