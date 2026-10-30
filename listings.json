@@ -1451,7 +1451,7 @@
     "description": "",
     "prix": 30000,
     "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/390/090F/h/image_741932607_83443912.avif",
+    "image": "https://www.mubawab-media.com/ad/8/390/090F/h/image_896791897_83443929.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -1474,7 +1474,7 @@
     "description": "",
     "prix": 43000,
     "surface": 250,
-    "image": "https://www.mubawab-media.com/ad/8/365/390F/h/1ae95f78-fc3c-49ea-bc93-bad9967dbfb0_82671013.avif",
+    "image": "https://www.mubawab-media.com/ad/8/365/390F/h/f111fcb3-1ba3-4ec6-8dfd-5d534cb3961c_82671018.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement"
@@ -2242,6 +2242,30 @@
     "type_bien": "Showroom"
   },
   {
+    "id": "8225690",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local Resto/Showroom PREMIUM 700m2 TOP Visibilité",
+    "description": "",
+    "prix": 170000,
+    "surface": 700,
+    "image": "https://www.mubawab-media.com/ad/8/225/690F/h/images-5_81527913.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8225690/local-resto-showroom-premium-700m2-top-visibilit%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Showroom",
+    "salle_bain": "1"
+  },
+  {
     "id": "8076225",
     "ville": "Casablanca",
     "quartier": "racine",
@@ -2249,7 +2273,7 @@
     "description": "",
     "prix": 35000,
     "surface": 150,
-    "image": "https://www.mubawab-media.com/ad/8/076/225F/h/photo_07_79616697.avif",
+    "image": "https://www.mubawab-media.com/ad/8/076/225F/h/photo_00_79616690.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Concierge",
@@ -2895,25 +2919,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8422469",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Commerce à louer 61 m² Racine Casablanca",
-    "description": "Idéalement situé au rez-de-chaussée dans le quartier prestigieux de Racine à Casablanca, ce local commercial de 200 m² représente une opportunité rare et particulièrement attractive pour tout entrepreneur ou investisseur souhaitant s'implanter dans l'une des adresses les plus recherchées et les mieux fréquentées de la ville. Fonctionnel, bien agencé et prêt à accueillir votre activité immédiatement, ce local offre une superficie généreuse permet...",
-    "prix": 27000,
-    "surface": 61,
-    "image": "https://www.mubawab-media.com/ad/8/422/469F/h/annonce-agenz-20260923T093312578Z-GeminiGeneratedImagejnvsddjnvsddjnvs_83296661.avif",
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8422469/commerce-%C3%A0-louer-61-m%C2%B2-racine-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée"
-  },
-  {
     "id": "8375255",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -3309,7 +3314,7 @@
     "description": "",
     "prix": 120000,
     "surface": 380,
-    "image": "https://www.mubawab-media.com/ad/8/291/216F/h/Image%2024-01-2026%20a%CC%80%2012.21_81835187.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Ascenseur",
@@ -3332,7 +3337,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -3341,6 +3346,34 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial"
+  },
+  {
+    "id": "7843464",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
+    "description": "",
+    "prix": 33000,
+    "surface": 120,
+    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_9_80035640.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8250807",
@@ -3393,34 +3426,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "7843464",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "EXCELLENTE SITUATION. Local commercial aménagé et bien situé...",
-    "description": "",
-    "prix": 33000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/7/843/464F/h/photo_9_80035640.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
@@ -3530,7 +3535,7 @@
     "quartier": "bourgogne_ouest",
     "titre": "Local commercial à louer bourgogne",
     "description": "",
-    "prix": 1000,
+    "prix": 17000,
     "surface": 127,
     "image": "https://www.mubawab-media.com/ad/8/424/415F/h/WhatsApp_Image_2026-09-28_at_17.16.37_83317522.avif",
     "caracteristiques": [
@@ -3917,7 +3922,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -4196,7 +4201,7 @@
     "description": "",
     "prix": 100000,
     "surface": 284,
-    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -4219,7 +4224,7 @@
     "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
     "prix": 40000,
     "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
+    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-d816da8de8dc66d72d2943512e13b661-s_75077758.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
