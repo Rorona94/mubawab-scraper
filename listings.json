@@ -745,7 +745,7 @@
     "description": "",
     "prix": null,
     "surface": 45,
-    "image": "https://www.mubawab-media.com/ad/8/310/210F/h/C2661T01_82036983.avif",
+    "image": "https://www.mubawab-media.com/ad/8/310/210F/h/C2660T01_82036991.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Chambre rangement",
@@ -1454,7 +1454,7 @@
     "description": "",
     "prix": 40000,
     "surface": 140,
-    "image": "https://www.mubawab-media.com/ad/8/388/138F/h/image_607740903_83444463.avif",
+    "image": "https://www.mubawab-media.com/ad/8/388/138F/h/image_738615831_83444493.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Climatisation",
@@ -1477,7 +1477,7 @@
     "description": "À louer, local commercial de 50 m² situé dans le quartier prisé du Maarif à Casablanca. Idéalement placé, ce bien offre une visibilité optimale pour votre activité. Loyer mensuel : 18 000 Dhs. Ne manquez pas cette opportunité pour développer votre entreprise dans un secteur dynamique",
     "prix": 18000,
     "surface": 50,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/387/575F/h/image_15922157_83444552.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -1488,6 +1488,31 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8438745",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local en location 3 niveau maarif ext",
+    "description": "",
+    "prix": 9500,
+    "surface": 61,
+    "image": "https://www.mubawab-media.com/ad/8/438/745F/h/photo_05_83563485.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8438745/local-en-location-3-niveau-maarif-ext",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "annee": "10 ans",
     "salle_bain": "1"
   },
   {
@@ -1519,7 +1544,7 @@
     "description": "",
     "prix": 12000,
     "surface": 30,
-    "image": "https://www.mubawab-media.com/ad/8/329/633F/h/photo_05_82244469.avif",
+    "image": "https://www.mubawab-media.com/ad/8/329/633F/h/photo_00_82244464.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -1533,31 +1558,6 @@
     "type_bien": "Local commercial",
     "etage": "1er étage",
     "annee": "5 ans",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8438745",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local en location 3 niveau maarif ext",
-    "description": "",
-    "prix": 9500,
-    "surface": 61,
-    "image": "https://www.mubawab-media.com/ad/8/438/745F/h/photo_00_83563480.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8438745/local-en-location-3-niveau-maarif-ext",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "annee": "10 ans",
     "salle_bain": "1"
   },
   {
@@ -1878,27 +1878,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8399733",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Louez ce local commercial à Rue Socrate. Superficie 173 m²",
-    "description": "103m rdc 70m mezzanine Rue Socrate 40000 DHS HT / mois Frais d’agence 12% du loyer annuel TTC",
-    "prix": 40000,
-    "surface": 173,
-    "image": "https://www.mubawab-media.com/ad/8/399/733F/h/photo_0_83049159.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8399733/louez-ce-local-commercial-%C3%A0-rue-socrate-superficie-173-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8367561",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -2188,7 +2167,7 @@
     "description": "",
     "prix": 170000,
     "surface": 945,
-    "image": "https://www.mubawab-media.com/ad/8/353/175F/h/WhatsApp%20Image%202026-05-08%20at%2007.40.41_82498049.avif",
+    "image": "https://www.mubawab-media.com/ad/8/353/175F/h/WhatsApp%20Image%202026-05-08%20at%2007.40.43%20%281%29_82498053.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage"
@@ -2204,22 +2183,22 @@
     "salle_bain": "1"
   },
   {
-    "id": "8413203",
+    "id": "8338321",
     "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Votre enseigne au cœur du Triangle d’Or",
-    "description": "Dernière opportunité retail à Metropolitan Au cœur du Triangle d’Or de Casablanca, **Metropolitan** devient l’une des nouvelles adresses premium de la ville : bureaux haut de gamme, hôtellerie internationale avec **LXR Hotels & Resorts by Hilton**, restaurants du **Moma Group**, retail sélectif et clientèle corporate à fort pouvoir d’achat. Ce local est le **dernier local commercial disponible** du projet. Ce local ne s’adresse pas à un...",
-    "prix": 70000,
-    "surface": 180,
-    "image": "https://www.mubawab-media.com/ad/8/413/203F/h/bureaux_c_et_d_2020_09_25_4_2_2x_83193383.avif",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial en location sur MAARIF EXTENSION",
+    "description": "Local commercial de 210 m2 dont 140 m2 de placnher- 70 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 35000 MAD HT Reference : LCL 00890 Honoraires : 1 mois de loyer HT",
+    "prix": 35000,
+    "surface": 210,
+    "image": "https://www.mubawab-media.com/ad/8/338/321F/h/WhatsApp%20Image%202026-04-16%20at%2007.43.52%20%284%29_800x600_82334440.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
-    "lien": "https://www.mubawab.ma/fr/a/8413203/votre-enseigne-au-c%C5%93ur-du-triangle-d%E2%80%99or",
+    "lien": "https://www.mubawab.ma/fr/a/8338321/local-commercial-en-location-sur-maarif-extension",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
+    "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
@@ -2250,7 +2229,7 @@
     "description": "Ce local commercial exceptionnel à louer est situé dans le quartier prisé de Racine, au sein du district d'Anfa, à Casablanca. Avec une surface totale de 200 m², l'espace se distingue par son espace intérieur généreux et bien agencé, parfait pour une large gamme d'activités commerciales. L'intérieur moderne du local affiche des sols en marbre qui ajoutent une touche d'élégance et de sophistication. À l'entrée, un espace d'accueil spacieux accuei...",
     "prix": 45000,
     "surface": 200,
-    "image": "https://www.mubawab-media.com/ad/8/438/554F/h/photo_0_83561649.avif",
+    "image": "https://www.mubawab-media.com/ad/8/438/554F/h/photo_10_83561659.avif",
     "caracteristiques": [
       "2 salle(s) de bain"
     ],
@@ -2922,6 +2901,27 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "2"
+  },
+  {
+    "id": "8413203",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Votre enseigne au cœur du Triangle d’Or",
+    "description": "Dernière opportunité retail à Metropolitan Au cœur du Triangle d’Or de Casablanca, **Metropolitan** devient l’une des nouvelles adresses premium de la ville : bureaux haut de gamme, hôtellerie internationale avec **LXR Hotels & Resorts by Hilton**, restaurants du **Moma Group**, retail sélectif et clientèle corporate à fort pouvoir d’achat. Ce local est le **dernier local commercial disponible** du projet. Ce local ne s’adresse pas à un...",
+    "prix": 70000,
+    "surface": 180,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8413203/votre-enseigne-au-c%C5%93ur-du-triangle-d%E2%80%99or",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
   },
   {
     "id": "8375255",
@@ -3950,7 +3950,7 @@
     "description": "Local commercial à louer placé à BOURGOGNE, avec une superficie de 564m2 environ au rez de chaussée. Possibilité d'aménagement personnalisé pour répondre à vos besoins spécifiques Pour plus d'informations ou pour planifier une visite, veuillez nous contacter Loyer : 80000 MAD Référence : LCL 00672 Honoraires : 1 mois de loyer HT",
     "prix": 80000,
     "surface": 564,
-    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.54%20%283%29_75722380.avif",
+    "image": "https://www.mubawab-media.com/ad/7/921/905F/h/WhatsApp%20Image%202024-05-23%20at%2000.33.55%20%283%29_81303136.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -3965,280 +3965,49 @@
     "salle_bain": "1"
   },
   {
-    "id": "8353734",
+    "id": "7940300",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
-    "titre": "Magasin Commercial à louer – Bourgogne",
-    "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
-    "prix": 19000,
-    "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/353/734F/h/c7492d3b-055a-4671-9038-a2455b0b439a_82503322.avif",
+    "titre": "Dépôt 1200 m² à Louer à ZI Sidi Bernoussi",
+    "description": "",
+    "prix": 62000,
+    "surface": 1200,
+    "image": "https://www.mubawab-media.com/ad/7/940/300F/h/WhatsApp%20Image%202024-06-22%20%C3%A0%2011.58.15_c046a534_77402268.avif",
     "caracteristiques": [
-      "1 salle(s) de bain"
+      "4 salle(s) de bain",
+      "Garage",
+      "Chambre rangement",
+      "Sécurité",
+      "Porte blindée"
     ],
-    "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne",
+    "lien": "https://www.mubawab.ma/fr/a/7940300/d%C3%A9p%C3%B4t-1200-m%C2%B2-%C3%A0-louer-%C3%A0-zi-sidi-bernoussi",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
     "restauration_mentionnee": false,
     "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
+    "type_bien": "Dépôt",
+    "salle_bain": "4"
   },
   {
-    "id": "8441677",
+    "id": "7817531",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
-    "titre": "Superbe Local Commercial 55m2 Bourgogne extension",
-    "description": "À Louer : Superbe Local Commercial de 55 m² – Bourgogne Extension (Quartier Bader)​Vous cherchez l'emplacement idéal pour lancer ou développer votre activité ? OTISS-IMMO vous propose ce magnifique local commercial très bien situé à Bourgogne Extension (Quartier Bader), bénéficiant d'une excellente visibilité.​Caractéristiques du bien :​Superficie : 55 m2​Vitrines : 2 grandes vitrines offrant une belle luminosité et une visibilité optimale...",
-    "prix": 8000,
-    "surface": 55,
-    "image": "https://www.mubawab-media.com/ad/8/441/677F/h/1761208065419_83596821.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8441677/superbe-local-commercial-55m2-bourgogne-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8126292",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local com Salon de Beauté café snack ou autre 120 m² Bd Anfa",
+    "titre": "Café restaurant 300m² á vendre au Bd El Qods",
     "description": "",
-    "prix": 6000,
-    "surface": 120,
-    "image": "https://www.mubawab-media.com/ad/8/126/292F/h/20240906_190754_80110448.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8126292/local-com-salon-de-beaut%C3%A9-caf%C3%A9-snack-ou-autre-120-m%C2%B2-bd-anfa",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8433909",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local 110m2 trés bien situé Bourgogne est",
-    "description": "",
-    "prix": 17000,
-    "surface": 110,
+    "prix": null,
+    "surface": 300,
     "image": null,
     "caracteristiques": [
-      "1 salle(s) de bain",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8433909/local-110m2-tr%C3%A9s-bien-situ%C3%A9-bourgogne-est",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8368253",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial à Louer de 258.0 m² à Casablanca, Bourgogne...",
-    "description": "",
-    "prix": 25000,
-    "surface": 258,
-    "image": "https://www.mubawab-media.com/ad/8/368/253F/h/image_636379226_83455912.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368253/local-commercial-%C3%A0-louer-de-258-0-m%C2%B2-%C3%A0-casablanca-bourgogne-sidi-belyout",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8111845",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial 75 m² 36 de sous pente, Ziraoui",
-    "description": "",
-    "prix": 30000,
-    "surface": 111,
-    "image": "https://www.mubawab-media.com/ad/8/111/845F/h/20250225_115556_79962947.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité",
+      "2 salle(s) de bain",
       "Cuisine équipée"
     ],
-    "lien": "https://www.mubawab.ma/fr/a/8111845/local-commercial-75-m%C2%B2-36-de-sous-pente-ziraoui",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8417962",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial de 350 m² à Casablanca",
-    "description": "À Louer : Grand Local Commercial de 350 m² avec Mezzanine – Bourgogne (Près Clinique Badre): Secteur ultra stratégique et à forte affluence ! Situé dans le quartier dynamique et prisé de Bourgogne à Casablanca, à deux pas du rond-point de la Clinique Badre, ce local commercial de 350 m² bénéficie d’une visibilité exceptionnelle et d'un passage piéton et routier très important. Idéal pour tout type d’activité (showroom, enseigne de franchise, age...",
-    "prix": 50000,
-    "surface": 350,
-    "image": "https://www.mubawab-media.com/ad/8/417/962F/h/49db1a28eeaea4f0b356_83246356.avif",
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8417962/local-commercial-de-350-m%C2%B2-%C3%A0-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial"
-  },
-  {
-    "id": "8368037",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial 265 m² avec mezzanine – Bourgogne est",
-    "description": "Bourgogne est, local commercial à usage professionnel offre une surface totale de 265 m², répartie sur un rez-de-chaussée de 180 m² et une mezzanine de 85 m². Idéal pour activité commerciale, showroom, atelier ou entrepôt, (PAS de restauration) Caractéristiques : • RDC de 180 m² • Mezzanine de 85 m² • Hauteur sous plafond exceptionnelle de 6,5 m • 2 rideaux métalliques (façade) • Livré en état brut, à aménager selon votre activité Prestations :...",
-    "prix": 30000,
-    "surface": 265,
-    "image": "https://www.mubawab-media.com/ad/8/368/037F/h/WhatsApp%20Image%202026-06-18%20at%2021.25.07_82700087.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368037/local-commercial-265-m%C2%B2-avec-mezzanine-%E2%80%93-bourgogne-est",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": true,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "7887454",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial de 90m2 à la location Bourgogne",
-    "description": "Capital foncier vous propose un local commercial de 90m2 composé de 65m2 au rdc et 25m2 en mezzanine. Le bien dispose d'une bonne visibilité pas loin de la clinique Badr. Pour plus d'infos contactez Mourad au 06 65 18 50 96Capital foncier vous propose un local commercial de 90m2 composé de 65m2 au rdc et 25m2 en mezzanine. Le bien dispose d&#8217;une bonne visibilité pas loin de la clinique Badr. Pour plus d&#8217;infos contactez Mourad au 06 65",
-    "prix": 20000,
-    "surface": 90,
-    "image": "https://www.mubawab-media.com/ad/7/887/454F/h/IMG_20230810_154438-scaled_75227211.avif",
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/7887454/local-commercial-de-90m2-%C3%A0-la-location-bourgogne",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial"
-  },
-  {
-    "id": "7848764",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial 720m2 à la location Avenue Tantan",
-    "description": "",
-    "prix": 180000,
-    "surface": 720,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Terrasse"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7848764/local-commercial-720m2-%C3%A0-la-location-avenue-tantan",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "7716218",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial de 135m2 à la local rue Ahmed Charci",
-    "description": "Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l'état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d'informations contactez Mourad au 06 65 18 50 96Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l&#8217;état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d&#...",
-    "prix": null,
-    "surface": 135,
-    "image": null,
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/7716218/local-commercial-de-135m2-%C3%A0-la-local-rue-ahmed-charci",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial"
-  },
-  {
-    "id": "7658318",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial aménagé 284m2 à la location en plein Bd Mas...",
-    "description": "",
-    "prix": 100000,
-    "surface": 284,
-    "image": "https://www.mubawab-media.com/ad/7/658/318F/h/local-commercial-amenage-284m2-a-la-vente-en-plein-bd-massira-83b14fefbe186201e0a3685a14847236-s_75098552.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7658318/local-commercial-am%C3%A9nag%C3%A9-284m2-%C3%A0-la-location-en-plein-bd-massira",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "7351092",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Restaurant aménagé et équipé de 314 m2 quartier bourgogne a...",
-    "description": "Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d'une superficie de 214 m2 au rdc 100 m2 de mezzanine . Local déjà aménagé avec de belles prestations ,. Idéal pour tout type d'activité de restauration . Excellent rapport qualité / prix. Loyer 40 000 dh . Pour infos contacter Mr Driss au 06 02 97 77 80.Capital Foncier vous propose un superbe restaurant en plein quartier bourgogne , d&#8217;une superficie de...",
-    "prix": 40000,
-    "surface": 314,
-    "image": "https://www.mubawab-media.com/ad/7/351/092F/h/restaurant-amenage-et-equipe-de-314-m2-quartier-bourgogne-a-la-location-16a21259e13028a6e14c8abc30df8e51-b_75077766.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7351092/restaurant-am%C3%A9nag%C3%A9-et-%C3%A9quip%C3%A9-de-314-m2-quartier-bourgogne-a-la-location",
+    "lien": "https://www.mubawab.ma/fr/a/7817531/caf%C3%A9-restaurant-300m%C2%B2-%C3%A1-vendre-au-bd-el-qods",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
     "restauration_mentionnee": true,
     "restauration_interdite": false,
-    "salle_bain": "1"
+    "salle_bain": "2"
   }
 ]
