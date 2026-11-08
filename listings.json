@@ -750,7 +750,7 @@
     "description": "",
     "prix": 20000,
     "surface": 80,
-    "image": "https://www.mubawab-media.com/ad/8/237/259F/h/photo_00_81272254.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge"
@@ -1451,7 +1451,7 @@
     "description": "Nouvelle annonce de Location d'un commercial à Casablanca, dans le quartier Maarif. Cette propriété spacieuse offre une surface de 159.0m². Prix attractif de 30000 Dhs. Contactez-nous dès maintenant pour visiter ce bien!",
     "prix": 30000,
     "surface": 159,
-    "image": "https://www.mubawab-media.com/ad/8/368/205F/h/image_817812339_83454287.avif",
+    "image": "https://www.mubawab-media.com/ad/8/368/205F/h/image_298262930_83659723.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -1472,7 +1472,7 @@
     "description": "",
     "prix": 220000,
     "surface": 689,
-    "image": "https://www.mubawab-media.com/ad/8/028/634F/h/image_761174939_83462987.avif",
+    "image": "https://www.mubawab-media.com/ad/8/028/634F/h/image_701810154_83462976.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -1830,7 +1830,7 @@
     "description": "",
     "prix": 120000,
     "surface": 380,
-    "image": "https://www.mubawab-media.com/ad/8/291/216F/h/Image%2024-01-2026%20a%CC%80%2012.21_81835187.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Ascenseur",
@@ -1853,7 +1853,7 @@
     "description": "Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 277m2 composé de 155m2 au rdc et 120m2 en mezzanine en plein Bd Oum Rabiî, idéal pour toute activité. Pour toutes informations contactez Mourad au 06 65 1...",
     "prix": 39000,
     "surface": 277,
-    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_152931-scaled_75225823.avif",
+    "image": "https://www.mubawab-media.com/ad/7/873/982F/h/IMG_20240227_151644-scaled_75225812.avif",
     "caracteristiques": [],
     "lien": "https://www.mubawab.ma/fr/a/7873982/local-commercial-277m2-%C3%A0-la-location-bd-oum-rabi%C3%AE",
     "gaine_extraction": false,
@@ -2781,30 +2781,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8442784",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Spa en location centre ville équipé",
-    "description": "",
-    "prix": 20000,
-    "surface": 146,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8442784/spa-en-location-centre-ville-%C3%A9quip%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "annee": "30 ans",
-    "type_sol": "Carrelage",
-    "salle_bain": "1"
-  },
-  {
     "id": "8438914",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -2827,6 +2803,30 @@
     "restauration_interdite": false,
     "type_bien": "Bureau",
     "salle_bain": "2"
+  },
+  {
+    "id": "8442784",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Spa en location centre ville équipé",
+    "description": "",
+    "prix": 20000,
+    "surface": 146,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8442784/spa-en-location-centre-ville-%C3%A9quip%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "annee": "30 ans",
+    "type_sol": "Carrelage",
+    "salle_bain": "1"
   },
   {
     "id": "8434624",
