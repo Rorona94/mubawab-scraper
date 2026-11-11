@@ -24,6 +24,49 @@
     "salle_bain": "2"
   },
   {
+    "id": "8450686",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Snack restaurant",
+    "description": "Emplacement central au coeur du quartier très animé de bourgogne. Très belle terrasse. restauration possible. gaine d'extraction existante",
+    "prix": 17000,
+    "surface": 75,
+    "image": "https://www.mubawab-media.com/ad/8/450/686F/h/image_happy_crusty_83698683.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450686/snack-restaurant",
+    "gaine_extraction": true,
+    "extraction_interdite": false,
+    "extraction_status": "oui",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
+  },
+  {
+    "id": "8450640",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Snack restaurant avec terrasse",
+    "description": "",
+    "prix": 17000,
+    "surface": 75,
+    "image": null,
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Climatisation",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450640/snack-restaurant-avec-terrasse",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
+  },
+  {
     "id": "8268807",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -31,7 +74,7 @@
     "description": "",
     "prix": 30000,
     "surface": 260,
-    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_04_81595942.avif",
+    "image": "https://www.mubawab-media.com/ad/8/268/807F/h/photo_00_81595938.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -721,48 +764,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8318697",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial de 200m2 à la location Gauthier – Très bonn...",
-    "description": "Capital Foncier vous propose un local commercial de 197m2 à location composé de 128m2 au rez-de-chaussée et 69m2 en mezzanine en plein avenue Moussa Ibn Noussair à Gauthier, idéal pour toute activité. Pour plus d'infos contactez Mourad Capital Foncier vous propose un local commercial de 197m2 à location composé de 128m2 au rez-de-chaussée et 69m2 en mezzanine en plein avenue Moussa Ibn Noussair à Gauthier, idéal pour toute activité. Pour plus d'i...",
-    "prix": 45000,
-    "surface": 197,
-    "image": null,
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/8318697/local-commercial-de-200m2-%C3%A0-la-location-gauthier-%E2%80%93-tr%C3%A8s-bonne-visibilit%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée"
-  },
-  {
-    "id": "8237259",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Beau local commercial en location à Gauthier. Surface totale...",
-    "description": "",
-    "prix": 20000,
-    "surface": 80,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8237259/beau-local-commercial-en-location-%C3%A0-gauthier-surface-totale-80-m%C2%B2-r%C3%A9sidence-avec-concierge",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etat": "Bon état",
     "salle_bain": "1"
   },
   {
@@ -2107,6 +2108,25 @@
     "salle_bain": "1"
   },
   {
+    "id": "8438482",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Commerce à louer ***-****** dh 39 m² Bourgogne Ouest Casa...",
+    "description": "",
+    "prix": 22000,
+    "surface": 39,
+    "image": "https://www.mubawab-media.com/ad/8/438/482F/h/annonce-agenz-20260319T123042099Z-1293_83560869.avif",
+    "caracteristiques": [
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8438482/commerce-%C3%A0-louer-22-000-dh-39-m%C2%B2-bourgogne-ouest-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false
+  },
+  {
     "id": "8432113",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2551,24 +2571,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "7716218",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local commercial de 135m2 à la local rue Ahmed Charci",
-    "description": "Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l'état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d'informations contactez Mourad au 06 65 18 50 96 Capital Foncier vous propose à la location un local commercial de 135m2 au sol à l'état brut, le local est mitoyens de plusieurs commerces de luxe et serait idéal pour toutes activités. Pour plus d'inform...",
-    "prix": null,
-    "surface": 135,
-    "image": null,
-    "caracteristiques": [],
-    "lien": "https://www.mubawab.ma/fr/a/7716218/local-commercial-de-135m2-%C3%A0-la-local-rue-ahmed-charci",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial"
-  },
-  {
     "id": "8446822",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -2750,6 +2752,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8450686",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Snack restaurant",
+    "description": "Emplacement central au coeur du quartier très animé de bourgogne. Très belle terrasse. restauration possible. gaine d'extraction existante",
+    "prix": 17000,
+    "surface": 75,
+    "image": null,
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450686/snack-restaurant",
+    "gaine_extraction": true,
+    "extraction_interdite": false,
+    "extraction_status": "oui",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
+  },
+  {
     "id": "8444592",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -2793,6 +2816,28 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
+  },
+  {
+    "id": "8450640",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Snack restaurant avec terrasse",
+    "description": "",
+    "prix": 17000,
+    "surface": 75,
+    "image": null,
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Climatisation",
+      "Terrasse"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450640/snack-restaurant-avec-terrasse",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "salle_bain": "2"
   },
   {
     "id": "8268807",
@@ -3282,58 +3327,5 @@
     "restauration_interdite": false,
     "type_bien": "Bureau",
     "salle_bain": "1"
-  },
-  {
-    "id": "8442012",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local aménagé très passante à palmier",
-    "description": "",
-    "prix": 7300,
-    "surface": 40,
-    "image": "https://www.mubawab-media.com/ad/8/442/012F/h/59564_83601137.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8442012/local-am%C3%A9nag%C3%A9-tr%C3%A8s-passante-%C3%A0-palmier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8150741",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial Prime 223 M² Boulevard D'Anfa",
-    "description": "",
-    "prix": 80000,
-    "surface": 223,
-    "image": "https://www.mubawab-media.com/ad/8/150/741F/h/WhatsApp%20Image%202025-05-27%20at%2011.29.15%20%284%29_80355090.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Ascenseur",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8150741/local-commercial-prime-223-m%C2%B2-boulevard-d-anfa",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
   }
 ]
