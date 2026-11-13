@@ -1557,6 +1557,28 @@
     "type_bien": "Showroom"
   },
   {
+    "id": "8452016",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local commercial to rent in racine. Area of 200 m²",
+    "description": "À LOUER | LOCAL COMMERCIAL DE 200 M² AU CŒUR DE RACINE Racine, Casablanca Essaid Estates vous propose à la location un local commercial aux aménagements contemporains, réparti sur deux niveaux en plein cœur de Racine. * 130 m² au rez-de-chaussée, offrant un espace principal modulable selon les besoins de votre activité. * 70 m² en mezzanine, pouvant accueillir des bureaux, un espace administratif ou des locaux de stockage. Actuellement aménag...",
+    "prix": 45000,
+    "surface": 200,
+    "image": "https://www.mubawab-media.com/ad/8/452/016F/h/photo_00_83714156.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8452016/local-commercial-to-rent-in-racine-area-of-200-m%C2%B2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "7579451",
     "ville": "Casablanca",
     "quartier": "racine",
@@ -2165,34 +2187,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8427134",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Local commercial à louer à Racine. Surface de 586 m². Presta...",
-    "description": "",
-    "prix": 180000,
-    "surface": 586,
-    "image": "https://www.mubawab-media.com/ad/8/427/134F/h/photo_0_83352025.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Garage",
-      "Concierge",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8427134/local-commercial-%C3%A0-louer-%C3%A0-racine-surface-de-586-m%C2%B2-prestation-de-conciergerie-air-conditionn%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
-    "annee": "20 ans",
-    "salle_bain": "2"
   },
   {
     "id": "8449599",
