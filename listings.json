@@ -1,29 +1,5 @@
 [
   {
-    "id": "8438914",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "DL. 1043: Restaurant à louer à Gauthier",
-    "description": "",
-    "prix": 45000,
-    "surface": 130,
-    "image": "https://www.mubawab-media.com/ad/8/438/914F/h/10_83565478.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement",
-      "Double vitrage",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8438914/dl-1043-restaurant-%C3%A0-louer-%C3%A0-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": true,
-    "restauration_interdite": false,
-    "type_bien": "Bureau",
-    "salle_bain": "2"
-  },
-  {
     "id": "8311443",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -52,7 +28,7 @@
     "description": "",
     "prix": 45000,
     "surface": 750,
-    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_0_83585159.avif",
+    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_4_83585163.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -69,6 +45,30 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
+    "id": "8438914",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "DL. 1043: Restaurant à louer à Gauthier",
+    "description": "",
+    "prix": 45000,
+    "surface": 130,
+    "image": "https://www.mubawab-media.com/ad/8/438/914F/h/1_83565469.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement",
+      "Double vitrage",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8438914/dl-1043-restaurant-%C3%A0-louer-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": true,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
     "salle_bain": "2"
   },
   {
@@ -753,7 +753,7 @@
     "description": "",
     "prix": 8200,
     "surface": 84,
-    "image": "https://www.mubawab-media.com/ad/8/340/581F/h/thumb_130635_property_xlarge_82358727.avif",
+    "image": "https://www.mubawab-media.com/ad/8/340/581F/h/thumb_130632_property_xlarge_82358724.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -2156,7 +2156,7 @@
     "description": "",
     "prix": 50000,
     "surface": 363,
-    "image": "https://www.mubawab-media.com/ad/8/376/019F/h/WhatsApp%20Image%202026-07-03%20at%2010.59.18%20%284%29_82789541.avif",
+    "image": "https://www.mubawab-media.com/ad/8/376/019F/h/WhatsApp%20Image%202026-07-03%20at%2010.59.18_82789554.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge",
@@ -2179,7 +2179,7 @@
     "description": "",
     "prix": 18000,
     "surface": 58,
-    "image": "https://www.mubawab-media.com/ad/8/426/098F/h/photo_00_83336039.avif",
+    "image": "https://www.mubawab-media.com/ad/8/426/098F/h/photo_010_83336049.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -3307,27 +3307,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8353734",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Magasin Commercial à louer – Bourgogne",
-    "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
-    "prix": 19000,
-    "surface": 100,
-    "image": "https://www.mubawab-media.com/ad/8/353/734F/h/c7492d3b-055a-4671-9038-a2455b0b439a_82503322.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
-    "salle_bain": "1"
-  },
-  {
     "id": "8368037",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3335,7 +3314,7 @@
     "description": "Bourgogne est, local commercial à usage professionnel offre une surface totale de 265 m², répartie sur un rez-de-chaussée de 180 m² et une mezzanine de 85 m². Idéal pour activité commerciale, showroom, atelier ou entrepôt, (PAS de restauration) Caractéristiques : • RDC de 180 m² • Mezzanine de 85 m² • Hauteur sous plafond exceptionnelle de 6,5 m • 2 rideaux métalliques (façade) • Livré en état brut, à aménager selon votre activité Prestations :...",
     "prix": 30000,
     "surface": 265,
-    "image": "https://www.mubawab-media.com/ad/8/368/037F/h/WhatsApp%20Image%202026-06-18%20at%2021.25.07_82700087.avif",
+    "image": "https://www.mubawab-media.com/ad/8/368/037F/h/WhatsApp%20Image%202026-06-18%20at%2021.25.06%20%284%29_82700093.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -3347,6 +3326,27 @@
     "restauration_interdite": true,
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8353734",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Magasin Commercial à louer – Bourgogne",
+    "description": "Serraj immobilier Vous propose:Très belle opportunité de location au cœur du quartier Bourgogne, un secteur dynamique et recherché offrant une excellente visibilité commerciale. Caractéristiques : Superficie : 100 m² Espace spacieux et facilement aménageable Idéal pour tout type d’activité commerciale Emplacement stratégique avec fort passage Proche de toutes commodités et axes principaux Pour plus d’informations ou organiser une visite",
+    "prix": 19000,
+    "surface": 100,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8353734/magasin-commercial-%C3%A0-louer-%E2%80%93-bourgogne",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
     "salle_bain": "1"
   },
   {
