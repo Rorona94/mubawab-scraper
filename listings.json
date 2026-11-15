@@ -753,7 +753,7 @@
     "description": "",
     "prix": 8200,
     "surface": 84,
-    "image": "https://www.mubawab-media.com/ad/8/340/581F/h/thumb_130632_property_xlarge_82358724.avif",
+    "image": "https://www.mubawab-media.com/ad/8/340/581F/h/thumb_130635_property_xlarge_82358727.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -2623,6 +2623,29 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8450799",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Magasin à louer à Bourgogne pas loin de la mosquée Hassan 2",
+    "description": "",
+    "prix": 7000,
+    "surface": 25,
+    "image": "https://www.mubawab-media.com/ad/8/450/799F/h/photo_00_83700202.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Concierge",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450799/magasin-%C3%A0-louer-%C3%A0-bourgogne-pas-loin-de-la-mosqu%C3%A9e-hassan-2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Magasin",
+    "salle_bain": "1"
+  },
+  {
     "id": "7843464",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2648,29 +2671,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8450799",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Magasin à louer à Bourgogne pas loin de la mosquée Hassan 2",
-    "description": "",
-    "prix": 7000,
-    "surface": 25,
-    "image": "https://www.mubawab-media.com/ad/8/450/799F/h/photo_00_83700202.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8450799/magasin-%C3%A0-louer-%C3%A0-bourgogne-pas-loin-de-la-mosqu%C3%A9e-hassan-2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Magasin",
     "salle_bain": "1"
   },
   {
