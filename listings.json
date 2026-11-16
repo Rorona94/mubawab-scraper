@@ -1,26 +1,5 @@
 [
   {
-    "id": "8311443",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial emplacement premium à louer",
-    "description": "189m² mezzanine de 84m²",
-    "prix": 48000,
-    "surface": 273,
-    "image": "https://www.mubawab-media.com/ad/8/311/443F/h/WhatsApp%20Image%202026-03-01%20at%2017.58.51%20%281%29_82050351.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
     "id": "8440646",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -39,6 +18,27 @@
       "Porte blindée"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8440646/local-commercial-en-location-%C3%A0-gauthier-surface-totale-750-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
+    "id": "8311443",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial emplacement premium à louer",
+    "description": "189m² mezzanine de 84m²",
+    "prix": 48000,
+    "surface": 273,
+    "image": "https://www.mubawab-media.com/ad/8/311/443F/h/WhatsApp%20Image%202026-03-01%20at%2017.58.51%20%281%29_82050351.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -795,6 +795,29 @@
     "salle_bain": "1"
   },
   {
+    "id": "8450856",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "A louer Beau local aménagé 684m² exploitable Maârif Extensio...",
+    "description": "",
+    "prix": 75000,
+    "surface": 684,
+    "image": "https://www.mubawab-media.com/ad/8/450/856F/h/20261111_124029_83703717.avif",
+    "caracteristiques": [
+      "3 salle(s) de bain",
+      "Sécurité",
+      "Cuisine équipée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8450856/a-louer-beau-local-am%C3%A9nag%C3%A9-684m%C2%B2-exploitable-ma%C3%A2rif-extension",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "3"
+  },
+  {
     "id": "8450176",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -802,7 +825,7 @@
     "description": "Local commercial 220 m² avec mezzanine, au cœur du Maârif (Casablanca). Manazil propose à la vente ou à la location ce local en rez-de-chaussée, situé rue Ibrahim Nakhai, à deux pas du Stade Mohamed V. Il développe 263 m² de surface titre, dont 176 m² intérieurs et une mezzanine intégrée de 87 m², avec une façade de 4 m et une gaine technique. Livré en état brut, il se prête à un aménagement sur mesure : boutique, showroom, corner premium ou acti...",
     "prix": 35000,
     "surface": 180,
-    "image": "https://www.mubawab-media.com/ad/8/450/176F/h/WhatsApp_Image_2026-11-11_at_08.58.58_83707970.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -815,29 +838,6 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
-  },
-  {
-    "id": "8450856",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Beau local aménagé 486m² à louer à Maârif Extension",
-    "description": "",
-    "prix": 75000,
-    "surface": 684,
-    "image": "https://www.mubawab-media.com/ad/8/450/856F/h/20261111_123824_83703700.avif",
-    "caracteristiques": [
-      "3 salle(s) de bain",
-      "Sécurité",
-      "Cuisine équipée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8450856/beau-local-am%C3%A9nag%C3%A9-486m%C2%B2-%C3%A0-louer-%C3%A0-ma%C3%A2rif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "3"
   },
   {
     "id": "8338324",
@@ -1441,7 +1441,7 @@
     "description": "",
     "prix": 170000,
     "surface": 945,
-    "image": "https://www.mubawab-media.com/ad/8/353/175F/h/WhatsApp%20Image%202026-05-08%20at%2007.40.41_82498049.avif",
+    "image": "https://www.mubawab-media.com/ad/8/353/175F/h/WhatsApp%20Image%202026-05-08%20at%2007.40.43%20%281%29_82498053.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage"
@@ -1464,7 +1464,7 @@
     "description": "Local commercial de 210 m2 dont 140 m2 de placnher- 70 m2 de souspente en location, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local brut offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 35000 MAD HT Reference : LCL 00890 Honoraires : 1 mois de loyer HT",
     "prix": 35000,
     "surface": 210,
-    "image": "https://www.mubawab-media.com/ad/8/338/321F/h/WhatsApp%20Image%202026-04-16%20at%2007.43.53%20%283%29_800x600_82334437.avif",
+    "image": "https://www.mubawab-media.com/ad/8/338/321F/h/WhatsApp%20Image%202026-04-16%20at%2007.43.52%20%284%29_800x600_82334440.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -2156,7 +2156,7 @@
     "description": "",
     "prix": 50000,
     "surface": 363,
-    "image": "https://www.mubawab-media.com/ad/8/376/019F/h/WhatsApp%20Image%202026-07-03%20at%2010.59.18%20%284%29_82789541.avif",
+    "image": "https://www.mubawab-media.com/ad/8/376/019F/h/WhatsApp%20Image%202026-07-03%20at%2010.59.18_82789554.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge",
@@ -2179,7 +2179,7 @@
     "description": "",
     "prix": 18000,
     "surface": 58,
-    "image": "https://www.mubawab-media.com/ad/8/426/098F/h/photo_00_83336039.avif",
+    "image": "https://www.mubawab-media.com/ad/8/426/098F/h/photo_010_83336049.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Climatisation",
@@ -2623,6 +2623,31 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8289714",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "Local Commercial à Louer Bd de la Corniche",
+    "description": "",
+    "prix": 21000,
+    "surface": 39,
+    "image": "https://www.mubawab-media.com/ad/8/289/714F/h/WhatsApp%20Image%202026-01-21%20at%2016.44.03_81819098.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8415659",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2653,7 +2678,7 @@
     "description": "",
     "prix": 7000,
     "surface": 25,
-    "image": "https://www.mubawab-media.com/ad/8/450/799F/h/photo_00_83700202.avif",
+    "image": null,
     "caracteristiques": [
       "1 salle(s) de bain",
       "Concierge",
@@ -2688,31 +2713,6 @@
       "Porte blindée"
     ],
     "lien": "https://www.mubawab.ma/fr/a/7843464/excellente-situation-local-commercial-am%C3%A9nag%C3%A9-et-bien-situ%C3%A9-en-location-bourgogne-ouest-120-m%C2%B2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8289714",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "Local Commercial à Louer Bd de la Corniche",
-    "description": "",
-    "prix": 21000,
-    "surface": 39,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage",
-      "Ascenseur",
-      "Concierge",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8289714/local-commercial-%C3%A0-louer-bd-de-la-corniche",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -3487,6 +3487,33 @@
     "salle_bain": "1"
   },
   {
+    "id": "8440646",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local commercial en location à Gauthier. Surface totale 750...",
+    "description": "",
+    "prix": 45000,
+    "surface": 750,
+    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_0_83585159.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8440646/local-commercial-en-location-%C3%A0-gauthier-surface-totale-750-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "2"
+  },
+  {
     "id": "8442784",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3601,33 +3628,6 @@
       "2 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8311443/local-commercial-emplacement-premium-%C3%A0-louer",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "2"
-  },
-  {
-    "id": "8440646",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial en location à Gauthier. Surface totale 750...",
-    "description": "",
-    "prix": 45000,
-    "surface": 750,
-    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_0_83585159.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Garage",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8440646/local-commercial-en-location-%C3%A0-gauthier-surface-totale-750-m%C2%B2-porte-blind%C3%A9e-s%C3%A9curit%C3%A9",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
