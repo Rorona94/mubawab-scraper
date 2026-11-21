@@ -22,6 +22,27 @@
     "salle_bain": "2"
   },
   {
+    "id": "8248771",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Local commercial à louer à GAUTHIER",
+    "description": "Local commercial aménage à louer de 200 m2 Situé sur GAUTHIER a proxmite du Bd Moulay youssef dans une rue tres achalandée Convient pour : tout commerce Loyer : 35000 MAD Reference : LCL-LCV 00009 Honoraires : 1 mois de loyer HT",
+    "prix": 5000,
+    "surface": 200,
+    "image": "https://www.mubawab-media.com/ad/8/248/771F/h/WhatsApp%20Image%202025-12-30%20at%2013.42.26%20%284%29_800x600_82390906.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8248771/local-commercial-%C3%A0-louer-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8206070",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -56,7 +77,7 @@
     "description": "",
     "prix": 45000,
     "surface": 750,
-    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_4_83585163.avif",
+    "image": "https://www.mubawab-media.com/ad/8/440/646F/h/photo_0_83585159.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Garage",
@@ -749,29 +770,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "7856689",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "A louer local commercial 120m2 Gauthier",
-    "description": "",
-    "prix": 30000,
-    "surface": 120,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Climatisation"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/7856689/a-louer-local-commercial-120m2-gauthier",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8396934",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1390,27 +1388,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8334041",
-    "ville": "Casablanca",
-    "quartier": "maarif_extension",
-    "titre": "Local commercial en location sur MAARIF EXTENSION",
-    "description": "Situé à MAARIF EXTENSION Avec une surface de 53m2, Ce local commercial est aménage et offre un emplacement idéal, la flexibilité et l'espace dont vous avez besoin pour réaliser vos projets commerciaux. Mezzanine : 20m2 plancher: 33m2 Loyer : 18000 Mad TTC Reference : LCL 00889 Honoraires locataire : 1 mois de loyer HT",
-    "prix": 18000,
-    "surface": 53,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8334041/local-commercial-en-location-sur-maarif-extension",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8353175",
     "ville": "Casablanca",
     "quartier": "maarif_extension",
@@ -1467,6 +1444,27 @@
       "1 salle(s) de bain"
     ],
     "lien": "https://www.mubawab.ma/fr/a/8334039/local-commercial-%C3%A0-louer-sur-bd-yacoub-el-mansour",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8334035",
+    "ville": "Casablanca",
+    "quartier": "maarif_extension",
+    "titre": "Local commercial en location sur Bd YACOUB EL MANSOUR",
+    "description": "Local commercial de 202m² en location dont 138 m2 de plancher et 64 m2 de mezzanine, situé dans un emplacement privilégié sur MAARIF EXTENSION. Ce local offre une visibilité d'un volume intéressant, polyvalent pour diverses activités commerciales. Loyer : 45000 MAD HT TSC TVA Reference : LCL 00887 Honoraires : 1 mois de loyer HT",
+    "prix": 45000,
+    "surface": 202,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8334035/local-commercial-en-location-sur-bd-yacoub-el-mansour",
     "gaine_extraction": false,
     "extraction_interdite": false,
     "extraction_status": "inconnue",
@@ -1774,29 +1772,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8448363",
-    "ville": "Casablanca",
-    "quartier": "racine",
-    "titre": "Plateau de bureau à louer à RACINE",
-    "description": "",
-    "prix": 49500,
-    "surface": 353,
-    "image": "https://www.mubawab-media.com/ad/8/448/363F/h/WhatsApp_Image_2024-12-20_at_12.09.47_800x600_83672008.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8448363/plateau-de-bureau-%C3%A0-louer-%C3%A0-racine",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Bureau",
-    "etage": "02ème étage",
-    "salle_bain": "1"
   },
   {
     "id": "8448329",
@@ -2191,6 +2166,34 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
+  },
+  {
+    "id": "8427134",
+    "ville": "Casablanca",
+    "quartier": "racine",
+    "titre": "Local commercial à louer à Racine. Surface de 586 m². Presta...",
+    "description": "",
+    "prix": 180000,
+    "surface": 586,
+    "image": "https://www.mubawab-media.com/ad/8/427/134F/h/photo_0_83352025.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Garage",
+      "Concierge",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8427134/local-commercial-%C3%A0-louer-%C3%A0-racine-surface-de-586-m%C2%B2-prestation-de-conciergerie-air-conditionn%C3%A9",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "annee": "20 ans",
+    "salle_bain": "2"
   },
   {
     "id": "8383589",
@@ -3482,6 +3485,27 @@
     "salle_bain": "1"
   },
   {
+    "id": "8248771",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local commercial à louer à GAUTHIER",
+    "description": "Local commercial aménage à louer de 200 m2 Situé sur GAUTHIER a proxmite du Bd Moulay youssef dans une rue tres achalandée Convient pour : tout commerce Loyer : 35000 MAD Reference : LCL-LCV 00009 Honoraires : 1 mois de loyer HT",
+    "prix": 5000,
+    "surface": 200,
+    "image": "https://www.mubawab-media.com/ad/8/248/771F/h/WhatsApp%20Image%202025-12-30%20at%2013.42.27%20%284%29_800x600_82390901.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8248771/local-commercial-%C3%A0-louer-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8456239",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3503,6 +3527,30 @@
     "type_bien": "Local commercial",
     "etage": "Rez-de-chaussée",
     "salle_bain": "1"
+  },
+  {
+    "id": "8451545",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Spa équipé à la location au centre ville",
+    "description": "",
+    "prix": 21000,
+    "surface": 57,
+    "image": "https://www.mubawab-media.com/ad/8/451/545F/h/45311_83708664.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8451545/spa-%C3%A9quip%C3%A9-%C3%A0-la-location-au-centre-ville",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
+    "salle_bain": "2"
   },
   {
     "id": "8206070",
@@ -3605,30 +3653,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8451545",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Spa équipé à la location au centre ville",
-    "description": "",
-    "prix": 21000,
-    "surface": 57,
-    "image": "https://www.mubawab-media.com/ad/8/451/545F/h/45311_83708664.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8451545/spa-%C3%A9quip%C3%A9-%C3%A0-la-location-au-centre-ville",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Bureau",
-    "salle_bain": "2"
   },
   {
     "id": "8366554",
@@ -4010,26 +4034,5 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8448316",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial à louer à ALSACE LORRAINE",
-    "description": "Superbe local commercial à louer de 34m2 dont 23m2 au plancher et 11 m2 en Mezzanine Situé dans le quartier ALSACE LORRAINE Etat : aménage Convient pour : Tout commerce Loyer : 7500 Mad Reference : LCL 00925 Honoraires locataire : 1 mois de loyer HT",
-    "prix": 7500,
-    "surface": 34,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8448316/local-commercial-%C3%A0-louer-%C3%A0-alsace-lorraine",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   }
 ]
