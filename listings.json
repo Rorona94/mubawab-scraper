@@ -55,6 +55,27 @@
     "salle_bain": "2"
   },
   {
+    "id": "8460565",
+    "ville": "Casablanca",
+    "quartier": "gauthier",
+    "titre": "Top emplacement, local à louer à Gauthier",
+    "description": "Local Commercial à Vendre / Louer – Emplacement Premium côté class dish | Gauthier Situé au cœur du quartier prisé de Gauthier, ce local commercial bénéficie d’un emplacement stratégique offrant une excellente visibilité et un fort potentiel commercial. Il se compose de : * 109 m² de superficie principale * 56 m² de mezzanine Grâce à sa configuration et à son emplacement privilégié, ce bien convient parfaitement à différentes activit...",
+    "prix": 38000,
+    "surface": 166,
+    "image": "https://www.mubawab-media.com/ad/8/460/565F/h/253f703b-2ad6-418d-8769-5171d5952a3e_83810503.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8460565/top-emplacement-local-%C3%A0-louer-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8460396",
     "ville": "Casablanca",
     "quartier": "gauthier",
@@ -62,7 +83,7 @@
     "description": "Local commercial à louer à Gauthier, Casablanca. RDC : 224 m² Mezzanine : 99 m² Surface totale : 323 m² Emplacement de prestige. Loyer : 60 000 DH par mois. Un deuxième local est disponible dans le même immeuble (RDC 217 m² + mezzanine 98 m²)",
     "prix": 60000,
     "surface": 323,
-    "image": "https://www.mubawab-media.com/ad/8/460/396F/h/gauthier_l2_locaux_02_83808884.avif",
+    "image": "https://www.mubawab-media.com/ad/8/460/396F/h/gauthier_l2_facade_01_83808881.avif",
     "caracteristiques": [
       "1 salle(s) de bain"
     ],
@@ -745,29 +766,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8373479",
-    "ville": "Casablanca",
-    "quartier": "gauthier",
-    "titre": "Local commercial premium à Louer",
-    "description": "",
-    "prix": 55000,
-    "surface": 197,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Concierge",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8373479/local-commercial-premium-%C3%A0-louer",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
   },
   {
     "id": "8284194",
@@ -2230,28 +2228,6 @@
     "salle_bain": "1"
   },
   {
-    "id": "8288904",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "Local commercial à louer 87 m2",
-    "description": "",
-    "prix": 25725,
-    "surface": 87,
-    "image": "https://www.mubawab-media.com/ad/8/288/904F/h/Image%20Local%20Commercial_81810862.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-87-m2",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
     "id": "8375255",
     "ville": "Casablanca",
     "quartier": "cfc",
@@ -2259,7 +2235,7 @@
     "description": "",
     "prix": 25000,
     "surface": 150,
-    "image": null,
+    "image": "https://www.mubawab-media.com/ad/8/375/255F/h/photo_0_83585625.avif",
     "caracteristiques": [
       "2 salle(s) de bain",
       "Concierge",
@@ -2278,6 +2254,57 @@
     "restauration_mentionnee": true,
     "restauration_interdite": false,
     "salle_bain": "2"
+  },
+  {
+    "id": "8288904",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "Local commercial à louer 87 m2",
+    "description": "",
+    "prix": 25725,
+    "surface": 87,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8288904/local-commercial-%C3%A0-louer-87-m2",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8327780",
+    "ville": "Casablanca",
+    "quartier": "cfc",
+    "titre": "En Location: Magnifique Locaux commerciaux de 60 à 540 m à C...",
+    "description": "",
+    "prix": null,
+    "surface": 60,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Garage",
+      "Ascenseur",
+      "Concierge",
+      "Chambre rangement",
+      "Climatisation",
+      "Chauffage central",
+      "Sécurité",
+      "Double vitrage",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8327780/en-location-magnifique-locaux-commerciaux-de-60-%C3%A0-540-m-%C3%A0-casa-finance-city-cfc-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "salle_bain": "1"
   },
   {
     "id": "8206053",
@@ -2357,35 +2384,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "2"
-  },
-  {
-    "id": "8327780",
-    "ville": "Casablanca",
-    "quartier": "cfc",
-    "titre": "En Location: Magnifique Locaux commerciaux de 60 à 540 m à C...",
-    "description": "",
-    "prix": null,
-    "surface": 60,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Garage",
-      "Ascenseur",
-      "Concierge",
-      "Chambre rangement",
-      "Climatisation",
-      "Chauffage central",
-      "Sécurité",
-      "Double vitrage",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8327780/en-location-magnifique-locaux-commerciaux-de-60-%C3%A0-540-m-%C3%A0-casa-finance-city-cfc-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "salle_bain": "1"
   },
   {
     "id": "7750677",
@@ -2621,6 +2619,30 @@
     "salle_bain": "1"
   },
   {
+    "id": "8437618",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_ouest",
+    "titre": "À louer, local commercial 195m², bourgogne ouest",
+    "description": "",
+    "prix": 35000,
+    "surface": 195,
+    "image": "https://www.mubawab-media.com/ad/8/437/618F/h/Image31_83550049.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Climatisation",
+      "Sécurité",
+      "Porte blindée"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8437618/%C3%A0-louer-local-commercial-195m%C2%B2-bourgogne-ouest",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8437260",
     "ville": "Casablanca",
     "quartier": "bourgogne_ouest",
@@ -2628,7 +2650,7 @@
     "description": "",
     "prix": 9500,
     "surface": 38,
-    "image": "https://www.mubawab-media.com/ad/8/437/260F/h/WhatsApp_Image_2026-10-19_at_08.48.08_83546091.avif",
+    "image": "https://www.mubawab-media.com/ad/8/437/260F/h/WhatsApp_Image_2026-10-19_at_08.48.07__1__83546088.avif",
     "caracteristiques": [
       "1 salle(s) de bain",
       "Garage",
@@ -2646,30 +2668,6 @@
     "restauration_interdite": false,
     "type_bien": "Magasin",
     "etage": "Rez de chaussée",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8437618",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_ouest",
-    "titre": "À louer, local commercial 195m², bourgogne ouest",
-    "description": "",
-    "prix": 35000,
-    "surface": 195,
-    "image": "https://www.mubawab-media.com/ad/8/437/618F/h/Image09_83550035.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation",
-      "Sécurité",
-      "Porte blindée"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8437618/%C3%A0-louer-local-commercial-195m%C2%B2-bourgogne-ouest",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
     "salle_bain": "1"
   },
   {
@@ -3223,6 +3221,28 @@
     "type_bien": "Local commercial"
   },
   {
+    "id": "8368037",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Local commercial 265 m² avec mezzanine – Bourgogne est",
+    "description": "Bourgogne est, local commercial à usage professionnel offre une surface totale de 265 m², répartie sur un rez-de-chaussée de 180 m² et une mezzanine de 85 m². Idéal pour activité commerciale, showroom, atelier ou entrepôt, (PAS de restauration) Caractéristiques : • RDC de 180 m² • Mezzanine de 85 m² • Hauteur sous plafond exceptionnelle de 6,5 m • 2 rideaux métalliques (façade) • Livré en état brut, à aménager selon votre activité Prestations :...",
+    "prix": 30000,
+    "surface": 265,
+    "image": "https://www.mubawab-media.com/ad/8/368/037F/h/WhatsApp%20Image%202026-06-18%20at%2021.25.06%20%284%29_82700093.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8368037/local-commercial-265-m%C2%B2-avec-mezzanine-%E2%80%93-bourgogne-est",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": true,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
     "id": "8368253",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3265,28 +3285,6 @@
     "restauration_mentionnee": true,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8368037",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Local commercial 265 m² avec mezzanine – Bourgogne est",
-    "description": "Bourgogne est, local commercial à usage professionnel offre une surface totale de 265 m², répartie sur un rez-de-chaussée de 180 m² et une mezzanine de 85 m². Idéal pour activité commerciale, showroom, atelier ou entrepôt, (PAS de restauration) Caractéristiques : • RDC de 180 m² • Mezzanine de 85 m² • Hauteur sous plafond exceptionnelle de 6,5 m • 2 rideaux métalliques (façade) • Livré en état brut, à aménager selon votre activité Prestations :...",
-    "prix": 30000,
-    "surface": 265,
-    "image": "https://www.mubawab-media.com/ad/8/368/037F/h/WhatsApp%20Image%202026-06-18%20at%2021.25.06%20%284%29_82700093.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8368037/local-commercial-265-m%C2%B2-avec-mezzanine-%E2%80%93-bourgogne-est",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": true,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
   {
@@ -3448,6 +3446,96 @@
     "salle_bain": "1"
   },
   {
+    "id": "8456239",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "DL. 1052: Local commercial à louer à Mers Sultan",
+    "description": "",
+    "prix": 7500,
+    "surface": 38,
+    "image": "https://www.mubawab-media.com/ad/8/456/239F/h/1_83760909.avif",
+    "caracteristiques": [
+      "1 salle(s) de bain",
+      "Chambre rangement"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8456239/dl-1052-local-commercial-%C3%A0-louer-%C3%A0-mers-sultan",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "etage": "Rez-de-chaussée",
+    "salle_bain": "1"
+  },
+  {
+    "id": "8366554",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "En Location: Magnifique Locaux Commerciaux de 81 m 35 mezzan...",
+    "description": "",
+    "prix": 45000,
+    "surface": 116,
+    "image": "https://www.mubawab-media.com/ad/8/366/554F/h/photo_0_82687863.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Concierge",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8366554/en-location-magnifique-locaux-commerciaux-de-81-m-35-mezzanine-et-de-95-m-35-mez-emplacement-premium-%C3%A0-gauthier-sur-une-art%C3%A8re-vivante-et-recherch%C3%A9e-%C3%A0-gauthier-casablanca",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "salle_bain": "2"
+  },
+  {
+    "id": "8451545",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Spa équipé à la location au centre ville",
+    "description": "",
+    "prix": 21000,
+    "surface": 57,
+    "image": "https://www.mubawab-media.com/ad/8/451/545F/h/45311_83708664.avif",
+    "caracteristiques": [
+      "2 salle(s) de bain",
+      "Chambre rangement",
+      "Climatisation",
+      "Sécurité"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8451545/spa-%C3%A9quip%C3%A9-%C3%A0-la-location-au-centre-ville",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Bureau",
+    "salle_bain": "2"
+  },
+  {
+    "id": "8460565",
+    "ville": "Casablanca",
+    "quartier": "bourgogne_est",
+    "titre": "Top emplacement, local à louer à Gauthier",
+    "description": "Local Commercial à Vendre / Louer – Emplacement Premium côté class dish | Gauthier Situé au cœur du quartier prisé de Gauthier, ce local commercial bénéficie d’un emplacement stratégique offrant une excellente visibilité et un fort potentiel commercial. Il se compose de : * 109 m² de superficie principale * 56 m² de mezzanine Grâce à sa configuration et à son emplacement privilégié, ce bien convient parfaitement à différentes activit...",
+    "prix": 38000,
+    "surface": 166,
+    "image": null,
+    "caracteristiques": [
+      "1 salle(s) de bain"
+    ],
+    "lien": "https://www.mubawab.ma/fr/a/8460565/top-emplacement-local-%C3%A0-louer-%C3%A0-gauthier",
+    "gaine_extraction": false,
+    "extraction_interdite": false,
+    "extraction_status": "inconnue",
+    "restauration_mentionnee": false,
+    "restauration_interdite": false,
+    "type_bien": "Local commercial",
+    "salle_bain": "1"
+  },
+  {
     "id": "8460396",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3487,29 +3575,6 @@
     "restauration_mentionnee": false,
     "restauration_interdite": false,
     "type_bien": "Local commercial",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8456239",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "DL. 1052: Local commercial à louer à Mers Sultan",
-    "description": "",
-    "prix": 7500,
-    "surface": 38,
-    "image": "https://www.mubawab-media.com/ad/8/456/239F/h/1_83760909.avif",
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Chambre rangement"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8456239/dl-1052-local-commercial-%C3%A0-louer-%C3%A0-mers-sultan",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "etage": "Rez-de-chaussée",
     "salle_bain": "1"
   },
   {
@@ -3617,30 +3682,6 @@
     "salle_bain": "2"
   },
   {
-    "id": "8451545",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Spa équipé à la location au centre ville",
-    "description": "",
-    "prix": 21000,
-    "surface": 57,
-    "image": "https://www.mubawab-media.com/ad/8/451/545F/h/45311_83708664.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Chambre rangement",
-      "Climatisation",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8451545/spa-%C3%A9quip%C3%A9-%C3%A0-la-location-au-centre-ville",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Bureau",
-    "salle_bain": "2"
-  },
-  {
     "id": "8055426",
     "ville": "Casablanca",
     "quartier": "bourgogne_est",
@@ -3732,28 +3773,6 @@
     "restauration_interdite": false,
     "type_bien": "Local commercial",
     "salle_bain": "1"
-  },
-  {
-    "id": "8366554",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "En Location: Magnifique Locaux Commerciaux de 81 m 35 mezzan...",
-    "description": "",
-    "prix": 45000,
-    "surface": 116,
-    "image": "https://www.mubawab-media.com/ad/8/366/554F/h/photo_0_82687863.avif",
-    "caracteristiques": [
-      "2 salle(s) de bain",
-      "Concierge",
-      "Sécurité"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8366554/en-location-magnifique-locaux-commerciaux-de-81-m-35-mezzanine-et-de-95-m-35-mez-emplacement-premium-%C3%A0-gauthier-sur-une-art%C3%A8re-vivante-et-recherch%C3%A9e-%C3%A0-gauthier-casablanca",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "salle_bain": "2"
   },
   {
     "id": "8142365",
@@ -3949,30 +3968,6 @@
     "restauration_interdite": false,
     "type_bien": "Magasin",
     "etat": "Neuf",
-    "salle_bain": "1"
-  },
-  {
-    "id": "8442784",
-    "ville": "Casablanca",
-    "quartier": "bourgogne_est",
-    "titre": "Spa en location centre ville équipé",
-    "description": "",
-    "prix": 20000,
-    "surface": 146,
-    "image": null,
-    "caracteristiques": [
-      "1 salle(s) de bain",
-      "Climatisation"
-    ],
-    "lien": "https://www.mubawab.ma/fr/a/8442784/spa-en-location-centre-ville-%C3%A9quip%C3%A9",
-    "gaine_extraction": false,
-    "extraction_interdite": false,
-    "extraction_status": "inconnue",
-    "restauration_mentionnee": false,
-    "restauration_interdite": false,
-    "type_bien": "Local commercial",
-    "annee": "30 ans",
-    "type_sol": "Carrelage",
     "salle_bain": "1"
   }
 ]
